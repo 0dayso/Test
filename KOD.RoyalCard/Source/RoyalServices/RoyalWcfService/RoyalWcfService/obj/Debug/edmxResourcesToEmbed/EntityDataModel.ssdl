@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LOYALTYNMModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="LOYALTYNMModelStoreContainer">
+    <EntitySet Name="Great Indian Nautanki Company$Contact" EntityType="LOYALTYNMModel.Store.Great Indian Nautanki Company$Contact" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Great Indian Nautanki Company$Temp Web Booking" EntityType="LOYALTYNMModel.Store.Great Indian Nautanki Company$Temp Web Booking" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Great Indian Nautanki Company$Contact">
+    <Key>
+      <PropertyRef Name="No_" />
+    </Key>
+    <Property Name="timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="No_" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Search Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Name 2" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Address" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Address 2" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="City" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Phone No_" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Telex No_" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Territory Code" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Currency Code" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Language Code" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Salesperson Code" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Country_Region Code" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Last Date Modified" Type="datetime" Nullable="false" />
+    <Property Name="Fax No_" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Telex Answer Back" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="VAT Registration No_" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Picture" Type="image" />
+    <Property Name="Post Code" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="County" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="E-Mail" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Home Page" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="No_ Series" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="Company No_" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Company Name" Type="varchar" Nullable="false" MaxLength="40" />
+    <Property Name="Lookup Contact No_" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="First Name" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Middle Name" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Surname" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Job Title" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Initials" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Extension No_" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Mobile Phone No_" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Pager" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Organizational Level Code" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Exclude from Segment" Type="tinyint" Nullable="false" />
+    <Property Name="External ID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Correspondence Type" Type="int" Nullable="false" />
+    <Property Name="Salutation Code" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Search E-Mail" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Last Time Modified" Type="datetime" Nullable="false" />
+    <Property Name="E-Mail 2" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Next Order Selection" Type="int" Nullable="false" />
+    <Property Name="Next Order Restaurant" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Next Order Date" Type="datetime" Nullable="false" />
+    <Property Name="Next Order Time" Type="datetime" Nullable="false" />
+    <Property Name="Next Delivery Tender" Type="int" Nullable="false" />
+    <Property Name="Recall Order" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Next Order Rest_ Temporary" Type="tinyint" Nullable="false" />
+    <Property Name="Date Created" Type="datetime" Nullable="false" />
+    <Property Name="DOB" Type="datetime" Nullable="false" />
+    <Property Name="Anniversary Date" Type="datetime" Nullable="false" />
+    <Property Name="SC Number" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Issue Date" Type="datetime" Nullable="false" />
+    <Property Name="Expiry Date" Type="datetime" Nullable="false" />
+    <Property Name="POS Data Entry No" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Issue MemberShip" Type="tinyint" Nullable="false" />
+    <Property Name="Old POS Data Entry" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Designation" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Marital Status" Type="int" Nullable="false" />
+    <Property Name="Gender" Type="int" Nullable="false" />
+    <Property Name="Birthday" Type="tinyint" Nullable="false" />
+    <Property Name="Bithday Year" Type="int" Nullable="false" />
+    <Property Name="Anniversary" Type="tinyint" Nullable="false" />
+    <Property Name="Anniversary Year" Type="int" Nullable="false" />
+    <Property Name="Addon Member Name" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Addon Member Address" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Addon Member Address2" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="RelationShip" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Addon member Mobile No" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Addon Member E-Mail" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="Addon Member DOB" Type="datetime" Nullable="false" />
+    <Property Name="Addon Member Anniversary Date" Type="datetime" Nullable="false" />
+    <Property Name="Addon Member Gender" Type="int" Nullable="false" />
+    <Property Name="Addon Member Martial Status" Type="int" Nullable="false" />
+    <Property Name="Issue Addon Membership Card" Type="tinyint" Nullable="false" />
+    <Property Name="Issue Addon card" Type="tinyint" Nullable="false" />
+    <Property Name="Salutation" Type="int" Nullable="false" />
+    <Property Name="Created Time" Type="datetime" Nullable="false" />
+    <Property Name="No of Guest Entered" Type="int" Nullable="false" />
+    <Property Name="Guest Entered Date" Type="datetime" Nullable="false" />
+    <Property Name="Free valet Parking" Type="int" Nullable="false" />
+    <Property Name="Free Valet Parking Date" Type="datetime" Nullable="false" />
+    <Property Name="Free Complimentary Drink" Type="int" Nullable="false" />
+    <Property Name="Free Complimentary Drink Date" Type="datetime" Nullable="false" />
+    <Property Name="Member Card Print-Front" Type="tinyint" Nullable="false" />
+    <Property Name="Member Card Print-Back" Type="tinyint" Nullable="false" />
+    <Property Name="USERID Card Print-Front" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="USERID Card Print-Back" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="ReissueMember Card Print-Front" Type="tinyint" Nullable="false" />
+    <Property Name="Reissue Member Card Print-Back" Type="tinyint" Nullable="false" />
+    <Property Name="ReissueUSERID Card Print-Front" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="ReissueUSERID Card Print-Back" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="UpgradeMember Card Print-Front" Type="tinyint" Nullable="false" />
+    <Property Name="Upgrade Member Card Print-Back" Type="tinyint" Nullable="false" />
+    <Property Name="UpgradeUSERID Card Print-Front" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="UpgradeUSERID Card Print-Back" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Show Allocation ID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Show Date" Type="datetime" Nullable="false" />
+    <Property Name="Seat No" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="NM Receipt No" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Booking ID" Type="int" Nullable="false" />
+    <Property Name="Form Serial No" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Add On Front" Type="tinyint" Nullable="false" />
+    <Property Name="No Of Membership Prints" Type="int" Nullable="false" />
+    <Property Name="No Of Upgrade Prints" Type="int" Nullable="false" />
+    <Property Name="No Of Re-issue Prints" Type="int" Nullable="false" />
+    <Property Name="No Of Add On Prints" Type="int" Nullable="false" />
+    <Property Name="No Of Add On Upgrade Prints" Type="int" Nullable="false" />
+    <Property Name="Addon Member Name1" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Addon Member Address1" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Addon Member Address2-1" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Addon member Mobile No1" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Addon Member E-Mail1" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="Addon Member DOB1" Type="datetime" Nullable="false" />
+    <Property Name="Addon Member Anniversary Date1" Type="datetime" Nullable="false" />
+    <Property Name="Addon Member Gender1" Type="int" Nullable="false" />
+    <Property Name="Addon Member Martial Status1" Type="int" Nullable="false" />
+    <Property Name="Issue Addon Membership Card1" Type="tinyint" Nullable="false" />
+    <Property Name="Issue Addon card1" Type="tinyint" Nullable="false" />
+    <Property Name="Addon Member Name2" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Addon Member Address-2" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Addon Member Address2-2" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Addon member Mobile No2" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Addon Member E-Mail2" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="Addon Member DOB2" Type="datetime" Nullable="false" />
+    <Property Name="Addon Member Anniversary Date2" Type="datetime" Nullable="false" />
+    <Property Name="Addon Member Gender2" Type="int" Nullable="false" />
+    <Property Name="Addon Member Martial Status2" Type="int" Nullable="false" />
+    <Property Name="Issue Addon Membership Card2" Type="tinyint" Nullable="false" />
+    <Property Name="Issue Addon card2" Type="tinyint" Nullable="false" />
+    <Property Name="Addon RelationShip1" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Addon RelationShip2" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Add On Front1" Type="tinyint" Nullable="false" />
+    <Property Name="Add On Front2" Type="tinyint" Nullable="false" />
+    <Property Name="Last Modify UserId" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Replication Counter" Type="int" Nullable="false" />
+    <Property Name="Web User Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Web Password" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Web Member Id" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Tele_Web ID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Enrollment Date" Type="datetime" Nullable="false" />
+    <Property Name="Send SMS" Type="tinyint" Nullable="false" />
+    <Property Name="Send E-Mail" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Great Indian Nautanki Company$Temp Web Booking">
+    <Key>
+      <PropertyRef Name="No_" />
+    </Key>
+    <Property Name="timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="Member Id" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Name 2" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Address" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Address 2" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="City" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="County" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Phone No_" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Mobile Phone No_" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="E-Mail" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DOB" Type="datetime" Nullable="false" />
+    <Property Name="Anniversary Date" Type="datetime" Nullable="false" />
+    <Property Name="Marital Status" Type="int" Nullable="false" />
+    <Property Name="Gender" Type="int" Nullable="false" />
+    <Property Name="Payment Amount" Type="decimal" Nullable="false" Precision="38" Scale="20" />
+    <Property Name="Payment Date" Type="datetime" Nullable="false" />
+    <Property Name="Card No_" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Bank Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="User Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Designation" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="Box Office" Type="tinyint" Nullable="false" />
+    <Property Name="Courier" Type="tinyint" Nullable="false" />
+    <Property Name="Create Contact Card" Type="tinyint" Nullable="false" />
+    <Property Name="Salutation" Type="int" Nullable="false" />
+    <Property Name="PaymentStatus" Type="int" Nullable="false" />
+    <Property Name="ReadyToCreate" Type="int" Nullable="false" />
+    <Property Name="PaymentAmount" Type="decimal" Nullable="false" Precision="38" Scale="20" />
+    <Property Name="ReceiptNo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Successful" Type="tinyint" Nullable="false" />
+    <Property Name="WebTransaction" Type="tinyint" Nullable="false" />
+    <Property Name="Loyalty Member ID" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Replication Counter" Type="int" Nullable="false" />
+    <Property Name="No_" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <Function Name="Proc_AllTierDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Proc_CardTransaction" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MemberId" Type="varchar" Mode="In" />
+    <Parameter Name="TransactionAmt" Type="numeric" Mode="In" />
+    <Parameter Name="TransactionDate" Type="date" Mode="In" />
+    <Parameter Name="ReceiptNo" Type="varchar" Mode="In" />
+    <Parameter Name="TransactionType" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Proc_ForgetPassword" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MembershipId" Type="varchar" Mode="In" />
+    <Parameter Name="EmailId" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Proc_GetMemberBalance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MemberID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Proc_GetTopWebId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Proc_GetWebAccountByEmailId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EmailId" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Proc_GetWebAccountByTempWebId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TempMemberId" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Proc_InsertWebAccount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="WebMemberId" Type="varchar" Mode="In" />
+    <Parameter Name="Salutation" Type="varchar" Mode="In" />
+    <Parameter Name="FirstName" Type="varchar" Mode="In" />
+    <Parameter Name="LastName" Type="varchar" Mode="In" />
+    <Parameter Name="Address" Type="varchar" Mode="In" />
+    <Parameter Name="AddressTwo" Type="varchar" Mode="In" />
+    <Parameter Name="City" Type="varchar" Mode="In" />
+    <Parameter Name="Country" Type="varchar" Mode="In" />
+    <Parameter Name="PhoneNo" Type="varchar" Mode="In" />
+    <Parameter Name="MobileNo" Type="varchar" Mode="In" />
+    <Parameter Name="Email" Type="varchar" Mode="In" />
+    <Parameter Name="DOB" Type="date" Mode="In" />
+    <Parameter Name="AnniversaryDate" Type="date" Mode="In" />
+    <Parameter Name="MaritalStatus" Type="varchar" Mode="In" />
+    <Parameter Name="Gender" Type="varchar" Mode="In" />
+    <Parameter Name="PaymentAmount" Type="numeric" Mode="In" />
+    <Parameter Name="PaymentDate" Type="date" Mode="In" />
+    <Parameter Name="CardNo" Type="varchar" Mode="In" />
+    <Parameter Name="BankName" Type="varchar" Mode="In" />
+    <Parameter Name="UserName" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+    <Parameter Name="Designation" Type="varchar" Mode="In" />
+    <Parameter Name="BoxOffiec" Type="bit" Mode="In" />
+    <Parameter Name="Courier" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="Proc_Login" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MembershipId" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Proc_PaymentSuccessfullUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TransactionID" Type="varchar" Mode="In" />
+    <Parameter Name="Successfull" Type="int" Mode="In" />
+    <Parameter Name="TransactionType" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Proc_PointRedeem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TrasactionId" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Proc_PointStatment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MemberID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Proc_RegisterUsers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="WebMemberId" Type="varchar" Mode="In" />
+    <Parameter Name="Salutation" Type="varchar" Mode="In" />
+    <Parameter Name="FirstName" Type="varchar" Mode="In" />
+    <Parameter Name="LastName" Type="varchar" Mode="In" />
+    <Parameter Name="Address" Type="varchar" Mode="In" />
+    <Parameter Name="AddressTwo" Type="varchar" Mode="In" />
+    <Parameter Name="City" Type="varchar" Mode="In" />
+    <Parameter Name="Country" Type="varchar" Mode="In" />
+    <Parameter Name="PhoneNo" Type="varchar" Mode="In" />
+    <Parameter Name="MobileNo" Type="varchar" Mode="In" />
+    <Parameter Name="Email" Type="varchar" Mode="In" />
+    <Parameter Name="DOB" Type="date" Mode="In" />
+    <Parameter Name="AnniversaryDate" Type="date" Mode="In" />
+    <Parameter Name="MaritalStatus" Type="varchar" Mode="In" />
+    <Parameter Name="Gender" Type="varchar" Mode="In" />
+    <Parameter Name="PaymentAmount" Type="numeric" Mode="In" />
+    <Parameter Name="PaymentDate" Type="date" Mode="In" />
+    <Parameter Name="CardNo" Type="varchar" Mode="In" />
+    <Parameter Name="BankName" Type="varchar" Mode="In" />
+    <Parameter Name="UserName" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+    <Parameter Name="Designation" Type="varchar" Mode="In" />
+    <Parameter Name="BoxOffiec" Type="bit" Mode="In" />
+    <Parameter Name="Courier" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="Proc_TierDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SchemeCode" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Proc_TopUp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TrasactionId" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Proc_UpdateAccountDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MemberId" Type="varchar" Mode="In" />
+    <Parameter Name="Salutation" Type="varchar" Mode="In" />
+    <Parameter Name="FirstName" Type="varchar" Mode="In" />
+    <Parameter Name="LastName" Type="varchar" Mode="In" />
+    <Parameter Name="Address" Type="varchar" Mode="In" />
+    <Parameter Name="AddressTwo" Type="varchar" Mode="In" />
+    <Parameter Name="City" Type="varchar" Mode="In" />
+    <Parameter Name="Country" Type="varchar" Mode="In" />
+    <Parameter Name="MobileNo" Type="varchar" Mode="In" />
+    <Parameter Name="Email" Type="varchar" Mode="In" />
+    <Parameter Name="DOB" Type="date" Mode="In" />
+    <Parameter Name="AnniversaryDate" Type="date" Mode="In" />
+    <Parameter Name="MaritalStatus" Type="varchar" Mode="In" />
+    <Parameter Name="Designation" Type="varchar" Mode="In" />
+    <Parameter Name="PhoneNo" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Proc_UpdateAccountPaymentDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MemberId" Type="varchar" Mode="In" />
+    <Parameter Name="PaymentStatus" Type="int" Mode="In" />
+    <Parameter Name="ReadyToCreate" Type="int" Mode="In" />
+    <Parameter Name="PaymentAmount" Type="decimal" Mode="In" />
+    <Parameter Name="ReceiptNo" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Proc_UpdatePassword" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MembershipId" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+    <Parameter Name="NewPassword" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Proc_ViewAccountDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MemberId" Type="varchar" Mode="In" />
+  </Function>
+</Schema>

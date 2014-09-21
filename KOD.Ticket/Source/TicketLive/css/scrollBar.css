@@ -1,0 +1,56 @@
+
+.scroll-pane {
+width: 710px;
+overflow: auto;
+height:320px;
+float: left;
+}
+
+.scroll-pane01 {
+width: 380px;
+overflow: auto;
+height:320px;
+float: left;
+padding:0px 10px 0px 10px;
+}
+
+.scroll-pane02 {
+width: 710px;
+overflow: auto;
+height:420px;
+float: left;
+}
+
+ /*JScrollPane CSS*/
+.jScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	padding-right:20px;
+}
+.jScrollPaneTrack{
+	position:absolute;
+	cursor:pointer;
+	right:0;top:0;
+	height:100%;
+	background:url(../images/scroll-track.jpg) no-repeat 1px 0px;
+}
+.jScrollPaneDrag{
+	position:absolute; 
+	background: url(../images/scroll-drag.jpg) no-repeat 4px 10px;
+	cursor:pointer;
+	overflow:hidden;
+	}
+
+.scroll-pane{padding:0;}
+.scroll-pane p{
+
+}
+
+.divscroll {
+width: 630px;
+overflow: auto;
+height:320px;
+float: left;
+padding:0px 10px 0px 10px;
+}

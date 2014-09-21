@@ -1,0 +1,849 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FB4E3498-8A64-405D-8388-C70ED5B43BE6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RoyalWebApp</RootNamespace>
+    <AssemblyName>RoyalWebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.20820.16598, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxControlToolkit.resources, Version=3.0.20820.16598, Culture=ar, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Benefits.aspx" />
+    <Content Include="Account\BlueCard.aspx" />
+    <Content Include="Account\BlueCardBenefits.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ContactDetails.aspx" />
+    <Content Include="Account\Digital_Kaos.aspx" />
+    <Content Include="Account\EditProfile.aspx" />
+    <Content Include="Account\FirstTimeLogin.aspx" />
+    <Content Include="Account\FirstTimeLoginUserDetails.aspx" />
+    <Content Include="Account\ForgotPassword.aspx" />
+    <Content Include="Account\GeneratePassword.aspx" />
+    <Content Include="Account\GoldCard.aspx" />
+    <Content Include="Account\GoldCardBenefits.aspx" />
+    <Content Include="Account\KingCard.aspx" />
+    <Content Include="Account\KingCardBenefits.aspx" />
+    <Content Include="Account\Logout.aspx" />
+    <Content Include="Account\Membership.aspx" />
+    <Content Include="Account\PGDetails.aspx" />
+    <Content Include="Account\PlatinumCard.aspx" />
+    <Content Include="Account\PlatinumCardBenefits.aspx" />
+    <Content Include="Account\PointStatement.aspx" />
+    <Content Include="Account\PrinceCard.aspx" />
+    <Content Include="Account\PrinceCardBenefits.aspx" />
+    <Content Include="Account\Print-Receipt.aspx" />
+    <Content Include="Account\PurpleCard.aspx" />
+    <Content Include="Account\PurpleCardBenefits.aspx" />
+    <Content Include="Account\RedeemPoints.aspx" />
+    <Content Include="Account\SeatLayout.aspx" />
+    <Content Include="Account\Terms.htm" />
+    <Content Include="Account\TermsAndConditions.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\TestAjay.aspx" />
+    <Content Include="Account\TicketBooking.aspx" />
+    <Content Include="Account\TitaniumCard.aspx" />
+    <Content Include="Account\TitaniumCardBenefits.aspx" />
+    <Content Include="Account\TopUp.aspx" />
+    <Content Include="Account\TransactionDetails.aspx" />
+    <Content Include="Account\UserCard.aspx" />
+    <Content Include="Account\ViewProfile.aspx" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\AjaxControlToolkit.pdb" />
+    <Content Include="bin\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ar\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\cs\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\de\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\es\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\fr\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\he\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\hi\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\it\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ja\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ko\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\nl\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\pt\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\RoyalWebApp.dll" />
+    <Content Include="bin\RoyalWebApp.pdb" />
+    <Content Include="bin\ru\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\tr-TR\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\zh-CHS\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\zh-CHT\AjaxControlToolkit.resources.dll" />
+    <Content Include="Default.aspx" />
+    <Content Include="Account\FAQ.aspx" />
+    <Content Include="Account\Feedback.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="packages.config" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <Content Include="Payment\Amex\CR.aspx" />
+    <Content Include="Payment\Amex\Default.aspx" />
+    <Content Include="Payment\HDFC\Default.aspx" />
+    <Content Include="Payment\HDFC\Error.aspx" />
+    <Content Include="Payment\HDFC\Print-Receipt.aspx" />
+    <Content Include="Payment\HDFC\ReturnReceipt.aspx" />
+    <Content Include="Payment\Idbi\CR.aspx" />
+    <Content Include="Payment\Idbi\Default.aspx" />
+    <Content Include="Payment\Idbi\PostRequest.aspx" />
+    <None Include="Service References\EntityServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\EntityServiceReference\configuration.svcinfo" />
+    <None Include="Service References\EntityServiceReference\EntityService1.wsdl" />
+    <None Include="Service References\EntityServiceReference\EntityService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EntityServiceReference\EntityService41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EntityServiceReference\EntityService42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EntityServiceReference\EntityService43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EntityServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\EntityServiceReference\EntityService1.disco" />
+    <Content Include="Payment\Idbi\ReturnReceipt.aspx" />
+    <Content Include="Script\jquery-1.8.2.min.js" />
+    <Content Include="Skins\CardImages\BLUE.png" />
+    <Content Include="Skins\Controls\Footer.ascx" />
+    <Content Include="Skins\css\anylinkcssmenu.css" />
+    <Content Include="Skins\css\digitalstyle.css" />
+    <Content Include="Skins\css\navigation.css" />
+    <Content Include="Skins\css\pngfix.css" />
+    <Content Include="Skins\css\royaltyCard.css" />
+    <Content Include="Skins\css\scroll-bar.css" />
+    <Content Include="Skins\css\scrollBar.css" />
+    <Content Include="Skins\css\style.css" />
+    <Content Include="Skins\images\all-card.png" />
+    <Content Include="Skins\images\amex.jpg" />
+    <Content Include="Skins\images\arrow.png" />
+    <Content Include="Skins\images\Banner-01.jpg" />
+    <Content Include="Skins\images\Banner-02.jpg" />
+    <Content Include="Skins\images\Banner-03.jpg" />
+    <Content Include="Skins\images\Banner-04.jpg" />
+    <Content Include="Skins\images\blueCard.png" />
+    <Content Include="Skins\images\blueCardBenefits.png" />
+    <Content Include="Skins\images\booking-engine-seat-layout.jpg" />
+    <Content Include="Skins\images\box-office.jpg" />
+    <Content Include="Skins\images\boxImg.png" />
+    <Content Include="Skins\images\close4.jpg" />
+    <Content Include="Skins\images\Cover Page.bmp" />
+    <Content Include="Skins\images\default_01.png" />
+    <Content Include="Skins\images\default_02.png" />
+    <Content Include="Skins\images\default_03.png" />
+    <Content Include="Skins\images\default_04.png" />
+    <Content Include="Skins\images\default_05.png" />
+    <Content Include="Skins\images\default_06.png" />
+    <Content Include="Skins\images\default_07.png" />
+    <Content Include="Skins\images\default_08.png" />
+    <Content Include="Skins\images\default_09.png" />
+    <Content Include="Skins\images\down.png" />
+    <Content Include="Skins\images\Emailer2.jpg" />
+    <Content Include="Skins\images\EmailerBg.jpg" />
+    <Content Include="Skins\images\enter.png" />
+    <Content Include="Skins\images\enter01.png" />
+    <Content Include="Skins\images\Experience-Box.png" />
+    <Content Include="Skins\images\footBG.jpg" />
+    <Content Include="Skins\images\footer_img.png" />
+    <Content Include="Skins\images\form-for-web-01.jpg" />
+    <Content Include="Skins\images\goldCard.png" />
+    <Content Include="Skins\images\goldCardBenefits.png" />
+    <Content Include="Skins\images\Gy_chair.gif" />
+    <Content Include="Skins\images\G_chair.gif" />
+    <Content Include="Skins\images\home-page-bg.jpg" />
+    <Content Include="Skins\images\homeKod.png" />
+    <Content Include="Skins\images\homelogo.png" />
+    <Content Include="Skins\images\jhumroo-seat-layout.jpg" />
+    <Content Include="Skins\images\KFD.png" />
+    <Content Include="Skins\images\kingCard.png" />
+    <Content Include="Skins\images\kingCardBenefits.png" />
+    <Content Include="Skins\images\kodlogo.png" />
+    <Content Include="Skins\images\KodNew_01.png" />
+    <Content Include="Skins\images\KodNew_02.png" />
+    <Content Include="Skins\images\KodNew_04.png" />
+    <Content Include="Skins\images\KodNew_05.png" />
+    <Content Include="Skins\images\KodNew_06.png" />
+    <Content Include="Skins\images\KodNew_10.png" />
+    <Content Include="Skins\images\leftElephant.png" />
+    <Content Include="Skins\images\loginbg.png" />
+    <Content Include="Skins\images\loginbg2.png" />
+    <Content Include="Skins\images\loginPageBG - Copy.jpg" />
+    <Content Include="Skins\images\loginPageBG.jpg" />
+    <Content Include="Skins\images\LoginPage_home-page-bg.jpg" />
+    <Content Include="Skins\images\LoginPanelBg.jpg" />
+    <Content Include="Skins\images\login_home-page-bg.jpg" />
+    <Content Include="Skins\images\logo.jpg" />
+    <Content Include="Skins\images\mainbg.jpg" />
+    <Content Include="Skins\images\map.jpg" />
+    <Content Include="Skins\images\navBand.png" />
+    <Content Include="Skins\images\pattern.jpg" />
+    <Content Include="Skins\images\Pattern1.png" />
+    <Content Include="Skins\images\platinumCard.png" />
+    <Content Include="Skins\images\platinumCardBenefits.png" />
+    <Content Include="Skins\images\princeCard.png" />
+    <Content Include="Skins\images\princeCardBenefits.png" />
+    <Content Include="Skins\images\purpleCard.png" />
+    <Content Include="Skins\images\purpleCardBenefits.png" />
+    <Content Include="Skins\images\rightElephant.png" />
+    <Content Include="Skins\images\Royal Card Grid.png" />
+    <Content Include="Skins\images\royal card-web-01.png" />
+    <Content Include="Skins\images\royal card-web-02.png" />
+    <Content Include="Skins\images\royal card-web-03.png" />
+    <Content Include="Skins\images\royal card-web-04.png" />
+    <Content Include="Skins\images\royalcardlogo.png" />
+    <Content Include="Skins\images\royaltycardbg.jpg" />
+    <Content Include="Skins\images\ruller.png" />
+    <Content Include="Skins\images\R_chair.gif" />
+    <Content Include="Skins\images\scroll-drag - Copy.jpg" />
+    <Content Include="Skins\images\scroll-drag.jpg" />
+    <Content Include="Skins\images\scroll-drag.png" />
+    <Content Include="Skins\images\scroll-track - Copy.jpg" />
+    <Content Include="Skins\images\scroll-track.jpg" />
+    <Content Include="Skins\images\scroll-track.png" />
+    <Content Include="Skins\images\side_tile_left.png" />
+    <Content Include="Skins\images\side_tile_right.png" />
+    <Content Include="Skins\images\signInbtn_left.png" />
+    <Content Include="Skins\images\signInbtn_right.png" />
+    <Content Include="Skins\images\signInbtn_stretch.png" />
+    <Content Include="Skins\images\spacer.gif" />
+    <Content Include="Skins\images\Special-Offers.png" />
+    <Content Include="Skins\images\tilebgd.png" />
+    <Content Include="Skins\images\titaniumCard.png" />
+    <Content Include="Skins\images\titaniumCardBenefits.png" />
+    <Content Include="Skins\images\tripadvisor.jpg" />
+    <Content Include="Skins\images\up.png" />
+    <Content Include="Skins\images\W_chair.gif" />
+    <Content Include="Skins\images\zangoora-seat-layout.jpg" />
+    <Content Include="Skins\images\___home-page-bg.jpg" />
+    <Content Include="Skins\js\anylinkcssmenu.js" />
+    <Content Include="Skins\js\dropDown.js" />
+    <Content Include="Skins\js\jquery-1.3.2.min.js" />
+    <Content Include="Skins\js\modal.js" />
+    <Content Include="Skins\js\scrolling.js" />
+    <Content Include="Skins\js\sliderAni.js" />
+    <Content Include="Skins\js\smoothscroll.js" />
+    <Content Include="Skins\nav-btn-new\about-us.jpg" />
+    <Content Include="Skins\nav-btn-new\blog.jpg" />
+    <Content Include="Skins\nav-btn-new\career.jpg" />
+    <Content Include="Skins\nav-btn-new\contact-us.jpg" />
+    <Content Include="Skins\nav-btn-new\culture-gully.jpg" />
+    <Content Include="Skins\nav-btn-new\facebook-icon.jpg" />
+    <Content Include="Skins\nav-btn-new\facebook.jpg" />
+    <Content Include="Skins\nav-btn-new\gcell.jpg" />
+    <Content Include="Skins\nav-btn-new\home.jpg" />
+    <Content Include="Skins\nav-btn-new\iifa-buzz.jpg" />
+    <Content Include="Skins\nav-btn-new\in-icon.jpg" />
+    <Content Include="Skins\nav-btn-new\lost-and-found.jpg" />
+    <Content Include="Skins\nav-btn-new\nautanki-mahal.jpg" />
+    <Content Include="Skins\nav-btn-new\showshaa-theatre.jpg" />
+    <Content Include="Skins\nav-btn-new\the-kingdom.jpg" />
+    <Content Include="Skins\nav-btn-new\twitter-icn.jpg" />
+    <Content Include="Skins\nav-btn-new\twitter.jpg" />
+    <Content Include="Skins\UC\AllCardsList.ascx" />
+    <Content Include="Skins\UC\BottomMenu.ascx" />
+    <Content Include="Skins\UC\TopMenu.ascx" />
+    <Content Include="Skins\UC\UCLogin.ascx" />
+    <Content Include="Test.aspx" />
+    <Content Include="Account\UserRegisterationSuccess.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\EntityServiceReference\RoyalWebApp.EntityServiceReference.Proc_AllTierDetails_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EntityServiceReference\RoyalWebApp.EntityServiceReference.Proc_CardTransaction_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EntityServiceReference\RoyalWebApp.EntityServiceReference.Proc_ForgetPassword_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EntityServiceReference\RoyalWebApp.EntityServiceReference.Proc_GetMemberBalance_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EntityServiceReference\RoyalWebApp.EntityServiceReference.Proc_GetTopWebId_Result1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EntityServiceReference\RoyalWebApp.EntityServiceReference.Proc_GetWebAccountByEmailId_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EntityServiceReference\RoyalWebApp.EntityServiceReference.Proc_GetWebAccountByTempWebId_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EntityServiceReference\RoyalWebApp.EntityServiceReference.Proc_InsertWebAccount_Result1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EntityServiceReference\RoyalWebApp.EntityServiceReference.Proc_Login_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EntityServiceReference\RoyalWebApp.EntityServiceReference.Proc_PointStatment_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EntityServiceReference\RoyalWebApp.EntityServiceReference.Proc_RegisterUsers_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EntityServiceReference\RoyalWebApp.EntityServiceReference.Proc_TierDetails_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EntityServiceReference\RoyalWebApp.EntityServiceReference.Proc_ViewAccountDetails_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Skins\KOD_RoyalCards.pdf" />
+    <Content Include="Skins\Master\AccountMaster.Master" />
+    <Content Include="Skins\Master\MainMaster.Master" />
+    <Content Include="Skins\Master\Payment.Master" />
+    <Content Include="Skins\Master\AccMaster.Master" />
+    <Content Include="Skins\Master\Digital.Master" />
+    <None Include="Skins\nav-btn-new\Thumbs.db" />
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Benefits.aspx.cs">
+      <DependentUpon>Benefits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Benefits.aspx.designer.cs">
+      <DependentUpon>Benefits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\BlueCard.aspx.cs">
+      <DependentUpon>BlueCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\BlueCard.aspx.designer.cs">
+      <DependentUpon>BlueCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\BlueCardBenefits.aspx.cs">
+      <DependentUpon>BlueCardBenefits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\BlueCardBenefits.aspx.designer.cs">
+      <DependentUpon>BlueCardBenefits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ContactDetails.aspx.cs">
+      <DependentUpon>ContactDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ContactDetails.aspx.designer.cs">
+      <DependentUpon>ContactDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Digital_Kaos.aspx.cs">
+      <DependentUpon>Digital_Kaos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Digital_Kaos.aspx.designer.cs">
+      <DependentUpon>Digital_Kaos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\DropDownList3.cs" />
+    <Compile Include="Account\EditProfile.aspx.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\EditProfile.aspx.designer.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\FirstTimeLogin.aspx.cs">
+      <DependentUpon>FirstTimeLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\FirstTimeLoginUserDetails.aspx.cs">
+      <DependentUpon>FirstTimeLoginUserDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\FirstTimeLoginUserDetails.aspx.designer.cs">
+      <DependentUpon>FirstTimeLoginUserDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\GeneratePassword.aspx.cs">
+      <DependentUpon>GeneratePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\GoldCard.aspx.cs">
+      <DependentUpon>GoldCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\GoldCard.aspx.designer.cs">
+      <DependentUpon>GoldCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\GoldCardBenefits.aspx.cs">
+      <DependentUpon>GoldCardBenefits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\GoldCardBenefits.aspx.designer.cs">
+      <DependentUpon>GoldCardBenefits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\KingCard.aspx.cs">
+      <DependentUpon>KingCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\KingCard.aspx.designer.cs">
+      <DependentUpon>KingCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\KingCardBenefits.aspx.cs">
+      <DependentUpon>KingCardBenefits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\KingCardBenefits.aspx.designer.cs">
+      <DependentUpon>KingCardBenefits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Membership.aspx.cs">
+      <DependentUpon>Membership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Membership.aspx.designer.cs">
+      <DependentUpon>Membership.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\PGDetails.aspx.cs">
+      <DependentUpon>PGDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\PGDetails.aspx.designer.cs">
+      <DependentUpon>PGDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\PlatinumCard.aspx.cs">
+      <DependentUpon>PlatinumCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\PlatinumCard.aspx.designer.cs">
+      <DependentUpon>PlatinumCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\PlatinumCardBenefits.aspx.cs">
+      <DependentUpon>PlatinumCardBenefits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\PlatinumCardBenefits.aspx.designer.cs">
+      <DependentUpon>PlatinumCardBenefits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\PointStatement.aspx.cs">
+      <DependentUpon>PointStatement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\PointStatement.aspx.designer.cs">
+      <DependentUpon>PointStatement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\PrinceCard.aspx.cs">
+      <DependentUpon>PrinceCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\PrinceCard.aspx.designer.cs">
+      <DependentUpon>PrinceCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\PrinceCardBenefits.aspx.cs">
+      <DependentUpon>PrinceCardBenefits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\PrinceCardBenefits.aspx.designer.cs">
+      <DependentUpon>PrinceCardBenefits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Print-Receipt.aspx.cs">
+      <DependentUpon>Print-Receipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Print-Receipt.aspx.designer.cs">
+      <DependentUpon>Print-Receipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\PurpleCard.aspx.cs">
+      <DependentUpon>PurpleCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\PurpleCard.aspx.designer.cs">
+      <DependentUpon>PurpleCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\PurpleCardBenefits.aspx.cs">
+      <DependentUpon>PurpleCardBenefits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\PurpleCardBenefits.aspx.designer.cs">
+      <DependentUpon>PurpleCardBenefits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RedeemPoints.aspx.cs">
+      <DependentUpon>RedeemPoints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RedeemPoints.aspx.designer.cs">
+      <DependentUpon>RedeemPoints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RoyalMail.cs" />
+    <Compile Include="Account\SeatLayout.aspx.cs">
+      <DependentUpon>SeatLayout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\SeatLayout.aspx.designer.cs">
+      <DependentUpon>SeatLayout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\TermsAndConditions.aspx.cs">
+      <DependentUpon>TermsAndConditions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\TermsAndConditions.aspx.designer.cs">
+      <DependentUpon>TermsAndConditions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\TestAjay.aspx.cs">
+      <DependentUpon>TestAjay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\TestAjay.aspx.designer.cs">
+      <DependentUpon>TestAjay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\TicketBooking.aspx.cs">
+      <DependentUpon>TicketBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\TicketBooking.aspx.designer.cs">
+      <DependentUpon>TicketBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\TitaniumCard.aspx.cs">
+      <DependentUpon>TitaniumCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\TitaniumCard.aspx.designer.cs">
+      <DependentUpon>TitaniumCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\TitaniumCardBenefits.aspx.cs">
+      <DependentUpon>TitaniumCardBenefits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\TitaniumCardBenefits.aspx.designer.cs">
+      <DependentUpon>TitaniumCardBenefits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\TopUp.aspx.cs">
+      <DependentUpon>TopUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\TopUp.aspx.designer.cs">
+      <DependentUpon>TopUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\TransactionDetails.aspx.cs">
+      <DependentUpon>TransactionDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\TransactionDetails.aspx.designer.cs">
+      <DependentUpon>TransactionDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\UserCard.aspx.cs">
+      <DependentUpon>UserCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\UserCard.aspx.designer.cs">
+      <DependentUpon>UserCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ViewProfile.aspx.cs">
+      <DependentUpon>ViewProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ViewProfile.aspx.designer.cs">
+      <DependentUpon>ViewProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\Common.cs" />
+    <Compile Include="Payment\Amex\CR.aspx.cs">
+      <DependentUpon>CR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\Amex\CR.aspx.designer.cs">
+      <DependentUpon>CR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\Amex\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\Amex\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\HDFC\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\HDFC\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\HDFC\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\HDFC\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\HDFC\Print-Receipt.aspx.cs">
+      <DependentUpon>Print-Receipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\HDFC\Print-Receipt.aspx.designer.cs">
+      <DependentUpon>Print-Receipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\HDFC\ReturnReceipt.aspx.cs">
+      <DependentUpon>ReturnReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\HDFC\ReturnReceipt.aspx.designer.cs">
+      <DependentUpon>ReturnReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\Idbi\CR.aspx.cs">
+      <DependentUpon>CR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\Idbi\CR.aspx.designer.cs">
+      <DependentUpon>CR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\Idbi\ReturnReceipt.aspx.cs">
+      <DependentUpon>ReturnReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service References\EntityServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Skins\Master\AccMaster.Master.cs">
+      <DependentUpon>AccMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Skins\Master\AccMaster.Master.designer.cs">
+      <DependentUpon>AccMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Skins\Master\Digital.Master.cs">
+      <DependentUpon>Digital.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Skins\Master\Digital.Master.designer.cs">
+      <DependentUpon>Digital.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Skins\Master\Payment.Master.cs">
+      <DependentUpon>Payment.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Skins\Master\Payment.Master.designer.cs">
+      <DependentUpon>Payment.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Skins\UC\BottomMenu.ascx.cs">
+      <DependentUpon>BottomMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Skins\UC\BottomMenu.ascx.designer.cs">
+      <DependentUpon>BottomMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Skins\UC\TopMenu.ascx.cs">
+      <DependentUpon>TopMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Skins\UC\TopMenu.ascx.designer.cs">
+      <DependentUpon>TopMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Skins\UC\UCLogin.ascx.cs">
+      <DependentUpon>UCLogin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Skins\UC\UCLogin.ascx.designer.cs">
+      <DependentUpon>UCLogin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\SmsServer.cs" />
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\UserRegisterationSuccess.aspx.cs">
+      <DependentUpon>UserRegisterationSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\UserRegisterationSuccess.aspx.designer.cs">
+      <DependentUpon>UserRegisterationSuccess.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\enUtility.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\MailServer.cs" />
+    <Compile Include="Payment\Idbi\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\Amex\PaymentCodesHelper.cs" />
+    <Compile Include="Payment\Amex\VPCRequest.cs" />
+    <Compile Include="Payment\Idbi\enUtility.cs" />
+    <Compile Include="Payment\Idbi\PostRequest.aspx.cs">
+      <DependentUpon>PostRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Skins\Master\AccountMaster.Master.cs">
+      <DependentUpon>AccountMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Skins\Master\AccountMaster.Master.designer.cs">
+      <DependentUpon>AccountMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Skins\Master\MainMaster.Master.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Skins\Master\MainMaster.Master.designer.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Skins\UC\AllCardsList.ascx.cs">
+      <DependentUpon>AllCardsList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Skins\UC\AllCardsList.ascx.designer.cs">
+      <DependentUpon>AllCardsList.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="NewFolder1\" />
+    <Folder Include="obj\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\EntityServiceReference\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3760</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/RoyalWebApp</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

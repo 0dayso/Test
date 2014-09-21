@@ -1,0 +1,10 @@
+﻿Changes on DBAccess :
+MSticket Connection string
+  -Comment first one and Uncomment second one
+Web booking Connection String
+  - replace :  .190 to .187
+  - Uid : Web to WEBBOOKING
+
+  change on Contact page from Default page and contact Details page for date 
+
+ --while deploying on the live server dont change the web file just edit it manually in case of any addition.

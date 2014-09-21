@@ -1,0 +1,103 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs"
+    Inherits="Admin_AdminMaster" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="../css/stylesheetAdmin.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="Title" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="headerbg">
+        <tr>
+            <td>
+                <asp:Image ID="imglogo" runat="server" ImageUrl="~/Admin/images/kod-logo.jpg" Width="235"
+                    Height="137" />
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td class="headerbgright" align="center">
+                <%--<table width="57%" border="0" cellspacing="0" cellpadding="0">
+        <tr class="toplink">
+          <td width="178" class="btn"><a href="#">Home</a></td>
+          <td width="190" class="btn"><a href="#">Contact Us </a></td>
+          <td width="184" class="btn"><a href="#">Logout</a></td>
+        </tr>
+      </table>--%>
+            </td>
+        </tr>
+    </table>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <!-- Left Panel Start-->
+            <td valign="top" style="width: 10%">
+                <asp:Menu ID="Menu1" runat="server" BackColor="#d964b3" DynamicHorizontalOffset="2"
+                    Font-Names="Verdana" Font-Size="12px" ForeColor="White" StaticSubMenuIndent="10px"
+                    Orientation="Vertical" DisappearAfter="1000">
+                    <StaticSelectedStyle BackColor="#d964b3" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicHoverStyle BackColor="#3c247c" ForeColor="White" />
+                    <DynamicMenuStyle BackColor="#d964b3" />
+                    <DynamicSelectedStyle BackColor="#FFFFFF" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticHoverStyle BackColor="#3c247c" ForeColor="White" />
+                    <Items>
+                        <asp:MenuItem Text="Agents" Value="Agents" NavigateUrl="~/Admin/Agent/users/ManageUsers.aspx" />
+                        <asp:MenuItem Text="Agent Activation" Value="Agent Activation" NavigateUrl="~/Admin/Agent/Reports/?t=agentactivation" />
+                        <asp:MenuItem Text="Attach Scan Documents" Value="Attach Scan Documents" NavigateUrl="#" />
+                        <asp:MenuItem Text="Payments" Value="Payments" NavigateUrl="#">
+                            <asp:MenuItem Text="Amount Recieved" Value="Amount Recieved" NavigateUrl="~/Admin/Agent/Masters/payments.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Adjustments" Value="Adjustments" NavigateUrl="~/Admin/Agent/Masters/Adjustments.aspx">
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Credits" Value="Credits" NavigateUrl="#">
+                            <asp:MenuItem Text="Security Deposit" Value="Security Deposit" NavigateUrl="#" />
+                            <asp:MenuItem Text="Periods" Value="Periods" NavigateUrl="#" />
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Reports" Value="Reports" NavigateUrl="#">
+                            <asp:MenuItem Text="Finance Details" Value="Finance Details" NavigateUrl="~/Admin/Agent/Reports/Finance.aspx" />
+                            <asp:MenuItem Text="Agentwise" Value="Agentwise" NavigateUrl="~/Admin/Agent/Reports/?t=agent" />
+                            <asp:MenuItem Text="Currencywise" Value="Currencywise" NavigateUrl="~/Admin/Agent/Reports/?t=currency" />
+                            <asp:MenuItem Text="Datewise" Value="Datewise" NavigateUrl="~/Admin/Agent/Reports/?t=datewise" />
+                            <asp:MenuItem Text="All Details" Value="All Details" NavigateUrl="~/Admin/Agent/Reports/?t=alldetail" />
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Messages" Value="Messages" NavigateUrl="~/Admin/Agent/users/MessageFromUser.aspx" />
+                    </Items>
+                </asp:Menu>
+                <br />
+            </td>
+            <!-- Left Panel Ends-->
+            <!-- Main Content Start -->
+            <td valign="top" align="center">
+                <asp:ContentPlaceHolder ID="bodyContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+            <!-- Main Content Ends -->
+        </tr>
+    </table>
+    <p>
+        &nbsp;</p>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" id="footbg">
+        <tr>
+            <td width="84%" class="footlink">
+                &copy; 2010
+                <asp:Label ID="fotter" runat="server" />
+                - Administrator Panel
+            </td>
+            <td width="16%" align="right">
+                <asp:Image ID="logo" runat="server" ImageUrl="~/Admin/images/Gcell-logo.jpg" Width="199"
+                    Height="50" />
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

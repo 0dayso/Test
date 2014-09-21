@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EntityService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/RoyalWcfService/EntityService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/RoyalWcfService/EntityService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/RoyalWcfService/EntityService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/RoyalWcfService" />
+      <xsd:import schemaLocation="http://localhost/RoyalWcfService/EntityService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEntityService_GetUserDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetails" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_GetUserDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_InsertUserDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserDetails" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_InsertUserDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_registeruserwithoutpayment_InputMessage">
+    <wsdl:part name="parameters" element="tns:registeruserwithoutpayment" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_registeruserwithoutpayment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registeruserwithoutpaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_GetUserLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserLogin" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_GetUserLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_ChangePassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangePassword" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_ChangePassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_ForgotPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:ForgotPassword" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_ForgotPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ForgotPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_UpdateUserDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserDetails" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_UpdateUserDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_GetMaxMemberId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaxMemberId" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_GetMaxMemberId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaxMemberIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_GetUserDetailsByEmailId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetailsByEmailId" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_GetUserDetailsByEmailId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetailsByEmailIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_GetAllCardsDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCardsDetails" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_GetAllCardsDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCardsDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_GetCardsDetailsbyType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardsDetailsbyType" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_GetCardsDetailsbyType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardsDetailsbyTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_UpdatePaymentDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePaymentDetails" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_UpdatePaymentDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePaymentDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_GetPointStatusByMemberId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPointStatusByMemberId" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_GetPointStatusByMemberId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPointStatusByMemberIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_GetCardsBalanceByMemberId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardsBalanceByMemberId" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_GetCardsBalanceByMemberId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCardsBalanceByMemberIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_InsertTopUpDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTopUpDetails" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_InsertTopUpDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTopUpDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_UpdateTopUpStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTopUpStatus" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_UpdateTopUpStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTopUpStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_GetTempUserDetailsByWebId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTempUserDetailsByWebId" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_GetTempUserDetailsByWebId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTempUserDetailsByWebIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_EmailExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmailExists" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_EmailExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmailExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_MobilenoExist_InputMessage">
+    <wsdl:part name="parameters" element="tns:MobilenoExist" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_MobilenoExist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MobilenoExistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_FirstTimeLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:FirstTimeLogin" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_FirstTimeLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FirstTimeLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_PasswordExistsCheck_InputMessage">
+    <wsdl:part name="parameters" element="tns:PasswordExistsCheck" />
+  </wsdl:message>
+  <wsdl:message name="IEntityService_PasswordExistsCheck_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PasswordExistsCheckResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEntityService">
+    <wsdl:operation name="GetUserDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/GetUserDetails" message="tns:IEntityService_GetUserDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/GetUserDetailsResponse" message="tns:IEntityService_GetUserDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/InsertUserDetails" message="tns:IEntityService_InsertUserDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/InsertUserDetailsResponse" message="tns:IEntityService_InsertUserDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registeruserwithoutpayment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/registeruserwithoutpayment" message="tns:IEntityService_registeruserwithoutpayment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/registeruserwithoutpaymentResponse" message="tns:IEntityService_registeruserwithoutpayment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/GetUserLogin" message="tns:IEntityService_GetUserLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/GetUserLoginResponse" message="tns:IEntityService_GetUserLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/ChangePassword" message="tns:IEntityService_ChangePassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/ChangePasswordResponse" message="tns:IEntityService_ChangePassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/ForgotPassword" message="tns:IEntityService_ForgotPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/ForgotPasswordResponse" message="tns:IEntityService_ForgotPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/UpdateUserDetails" message="tns:IEntityService_UpdateUserDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/UpdateUserDetailsResponse" message="tns:IEntityService_UpdateUserDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaxMemberId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/GetMaxMemberId" message="tns:IEntityService_GetMaxMemberId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/GetMaxMemberIdResponse" message="tns:IEntityService_GetMaxMemberId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetailsByEmailId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/GetUserDetailsByEmailId" message="tns:IEntityService_GetUserDetailsByEmailId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/GetUserDetailsByEmailIdResponse" message="tns:IEntityService_GetUserDetailsByEmailId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCardsDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/GetAllCardsDetails" message="tns:IEntityService_GetAllCardsDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/GetAllCardsDetailsResponse" message="tns:IEntityService_GetAllCardsDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCardsDetailsbyType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/GetCardsDetailsbyType" message="tns:IEntityService_GetCardsDetailsbyType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/GetCardsDetailsbyTypeResponse" message="tns:IEntityService_GetCardsDetailsbyType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePaymentDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/UpdatePaymentDetails" message="tns:IEntityService_UpdatePaymentDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/UpdatePaymentDetailsResponse" message="tns:IEntityService_UpdatePaymentDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPointStatusByMemberId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/GetPointStatusByMemberId" message="tns:IEntityService_GetPointStatusByMemberId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/GetPointStatusByMemberIdResponse" message="tns:IEntityService_GetPointStatusByMemberId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCardsBalanceByMemberId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/GetCardsBalanceByMemberId" message="tns:IEntityService_GetCardsBalanceByMemberId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/GetCardsBalanceByMemberIdResponse" message="tns:IEntityService_GetCardsBalanceByMemberId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTopUpDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/InsertTopUpDetails" message="tns:IEntityService_InsertTopUpDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/InsertTopUpDetailsResponse" message="tns:IEntityService_InsertTopUpDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTopUpStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/UpdateTopUpStatus" message="tns:IEntityService_UpdateTopUpStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/UpdateTopUpStatusResponse" message="tns:IEntityService_UpdateTopUpStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTempUserDetailsByWebId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/GetTempUserDetailsByWebId" message="tns:IEntityService_GetTempUserDetailsByWebId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/GetTempUserDetailsByWebIdResponse" message="tns:IEntityService_GetTempUserDetailsByWebId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EmailExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/EmailExists" message="tns:IEntityService_EmailExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/EmailExistsResponse" message="tns:IEntityService_EmailExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MobilenoExist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/MobilenoExist" message="tns:IEntityService_MobilenoExist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/MobilenoExistResponse" message="tns:IEntityService_MobilenoExist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FirstTimeLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/FirstTimeLogin" message="tns:IEntityService_FirstTimeLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/FirstTimeLoginResponse" message="tns:IEntityService_FirstTimeLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PasswordExistsCheck">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEntityService/PasswordExistsCheck" message="tns:IEntityService_PasswordExistsCheck_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEntityService/PasswordExistsCheckResponse" message="tns:IEntityService_PasswordExistsCheck_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IEntityService" type="tns:IEntityService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserDetails">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/GetUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserDetails">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/InsertUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registeruserwithoutpayment">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/registeruserwithoutpayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserLogin">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/GetUserLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/ChangePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPassword">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/ForgotPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserDetails">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/UpdateUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaxMemberId">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/GetMaxMemberId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetailsByEmailId">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/GetUserDetailsByEmailId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCardsDetails">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/GetAllCardsDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCardsDetailsbyType">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/GetCardsDetailsbyType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePaymentDetails">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/UpdatePaymentDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPointStatusByMemberId">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/GetPointStatusByMemberId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCardsBalanceByMemberId">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/GetCardsBalanceByMemberId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTopUpDetails">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/InsertTopUpDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTopUpStatus">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/UpdateTopUpStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTempUserDetailsByWebId">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/GetTempUserDetailsByWebId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmailExists">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/EmailExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MobilenoExist">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/MobilenoExist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FirstTimeLogin">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/FirstTimeLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PasswordExistsCheck">
+      <soap:operation soapAction="http://tempuri.org/IEntityService/PasswordExistsCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EntityService">
+    <wsdl:port name="BasicHttpBinding_IEntityService" binding="tns:BasicHttpBinding_IEntityService">
+      <soap:address location="http://localhost/RoyalWcfService/EntityService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

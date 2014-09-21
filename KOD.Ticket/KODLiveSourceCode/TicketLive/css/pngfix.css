@@ -1,0 +1,24 @@
+/* CSS PNG Transparency fix by Rogie King, Komodo Media  
+   Patched by Herryanto Siatono, Pluit Solutions to solve background 'none' call to the server */
+* html img,
+* html .png {
+  azimuth: expression(
+    this.pngSet?
+      this.pngSet=true : 
+        (this.nodeName == "IMG" ? 
+          (this.src.toLowerCase().indexOf('.png')>-1 ? 
+            (this.runtimeStyle.backgroundImage = "none", this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+                this.src = "../images/blank.gif") :
+            '') :          
+          (this.currentStyle.backgroundImage.toLowerCase().indexOf('.png')>-1) ?
+            (this.origBg = (this.origBg) ? 
+              this.origBg :             
+              this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+              this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+              this.runtimeStyle.backgroundImage = "none") :
+            ''
+        ), this.pngSet=true
+  );
+}
+
+

@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LOYALTYNMModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="LOYALTYNMEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="Proc_ForgetPassword" ReturnType="Collection(LOYALTYNMModel.Proc_ForgetPassword_Result)">
+      <Parameter Name="MembershipId" Mode="In" Type="String" />
+      <Parameter Name="EmailId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_Login" ReturnType="Collection(LOYALTYNMModel.Proc_Login_Result)">
+      <Parameter Name="MembershipId" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_PointStatment" ReturnType="Collection(LOYALTYNMModel.Proc_PointStatment_Result)">
+      <Parameter Name="MemberID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_TierDetails" ReturnType="Collection(LOYALTYNMModel.Proc_TierDetails_Result)">
+      <Parameter Name="SchemeCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_UpdatePassword">
+      <Parameter Name="MembershipId" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+      <Parameter Name="NewPassword" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_ViewAccountDetails" ReturnType="Collection(LOYALTYNMModel.Proc_ViewAccountDetails_Result)">
+      <Parameter Name="MemberId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_UpdateAccountDetails">
+      <Parameter Name="MemberId" Mode="In" Type="String" />
+      <Parameter Name="Salutation" Mode="In" Type="String" />
+      <Parameter Name="FirstName" Mode="In" Type="String" />
+      <Parameter Name="LastName" Mode="In" Type="String" />
+      <Parameter Name="Address" Mode="In" Type="String" />
+      <Parameter Name="AddressTwo" Mode="In" Type="String" />
+      <Parameter Name="City" Mode="In" Type="String" />
+      <Parameter Name="Country" Mode="In" Type="String" />
+      <Parameter Name="MobileNo" Mode="In" Type="String" />
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="DOB" Mode="In" Type="DateTime" />
+      <Parameter Name="AnniversaryDate" Mode="In" Type="DateTime" />
+      <Parameter Name="MaritalStatus" Mode="In" Type="String" />
+      <Parameter Name="Designation" Mode="In" Type="String" />
+      <Parameter Name="PhoneNo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_AllTierDetails" ReturnType="Collection(LOYALTYNMModel.Proc_AllTierDetails_Result)" />
+    <FunctionImport Name="Proc_TopUp">
+      <Parameter Name="TrasactionId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_GetWebAccountByEmailId" ReturnType="Collection(LOYALTYNMModel.Proc_GetWebAccountByEmailId_Result)">
+      <Parameter Name="EmailId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_PointRedeem">
+      <Parameter Name="TrasactionId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_CardTransaction" ReturnType="Collection(LOYALTYNMModel.Proc_CardTransaction_Result)">
+      <Parameter Name="MemberId" Mode="In" Type="String" />
+      <Parameter Name="TransactionAmt" Mode="In" Type="Decimal" />
+      <Parameter Name="TransactionDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ReceiptNo" Mode="In" Type="String" />
+      <Parameter Name="TransactionType" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_PaymentSuccessfullUpdate">
+      <Parameter Name="TransactionID" Mode="In" Type="String" />
+      <Parameter Name="Successfull" Mode="In" Type="Int32" />
+      <Parameter Name="TransactionType" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_UpdateAccountPaymentDetails">
+      <Parameter Name="MemberId" Mode="In" Type="String" />
+      <Parameter Name="PaymentStatus" Mode="In" Type="Int32" />
+      <Parameter Name="ReadyToCreate" Mode="In" Type="Int32" />
+      <Parameter Name="PaymentAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="ReceiptNo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_GetWebAccountByTempWebId" ReturnType="Collection(LOYALTYNMModel.Proc_GetWebAccountByTempWebId_Result)">
+      <Parameter Name="TempMemberId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_GetTopWebId" ReturnType="Collection(LOYALTYNMModel.Proc_GetTopWebId_Result1)" />
+    <FunctionImport Name="Proc_InsertWebAccount" ReturnType="Collection(LOYALTYNMModel.Proc_InsertWebAccount_Result1)">
+      <Parameter Name="WebMemberId" Mode="In" Type="String" />
+      <Parameter Name="Salutation" Mode="In" Type="String" />
+      <Parameter Name="FirstName" Mode="In" Type="String" />
+      <Parameter Name="LastName" Mode="In" Type="String" />
+      <Parameter Name="Address" Mode="In" Type="String" />
+      <Parameter Name="AddressTwo" Mode="In" Type="String" />
+      <Parameter Name="City" Mode="In" Type="String" />
+      <Parameter Name="Country" Mode="In" Type="String" />
+      <Parameter Name="PhoneNo" Mode="In" Type="String" />
+      <Parameter Name="MobileNo" Mode="In" Type="String" />
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="DOB" Mode="In" Type="DateTime" />
+      <Parameter Name="AnniversaryDate" Mode="In" Type="DateTime" />
+      <Parameter Name="MaritalStatus" Mode="In" Type="String" />
+      <Parameter Name="Gender" Mode="In" Type="String" />
+      <Parameter Name="PaymentAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="PaymentDate" Mode="In" Type="DateTime" />
+      <Parameter Name="CardNo" Mode="In" Type="String" />
+      <Parameter Name="BankName" Mode="In" Type="String" />
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+      <Parameter Name="Designation" Mode="In" Type="String" />
+      <Parameter Name="BoxOffiec" Mode="In" Type="Boolean" />
+      <Parameter Name="Courier" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_GetMemberBalance" ReturnType="Collection(LOYALTYNMModel.Proc_GetMemberBalance_Result)">
+      <Parameter Name="MemberID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_FirstTimeLogin" ReturnType="Collection(Int32)">
+      <Parameter Name="Memberid" Mode="In" Type="String" />
+      <Parameter Name="DOB" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="Proc_RegisterUsers" ReturnType="Collection(LOYALTYNMModel.Proc_RegisterUsers_Result)">
+      <Parameter Name="WebMemberId" Mode="In" Type="String" />
+      <Parameter Name="Salutation" Mode="In" Type="String" />
+      <Parameter Name="FirstName" Mode="In" Type="String" />
+      <Parameter Name="LastName" Mode="In" Type="String" />
+      <Parameter Name="Address" Mode="In" Type="String" />
+      <Parameter Name="AddressTwo" Mode="In" Type="String" />
+      <Parameter Name="City" Mode="In" Type="String" />
+      <Parameter Name="Country" Mode="In" Type="String" />
+      <Parameter Name="PhoneNo" Mode="In" Type="String" />
+      <Parameter Name="MobileNo" Mode="In" Type="String" />
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="DOB" Mode="In" Type="DateTime" />
+      <Parameter Name="AnniversaryDate" Mode="In" Type="DateTime" />
+      <Parameter Name="MaritalStatus" Mode="In" Type="String" />
+      <Parameter Name="Gender" Mode="In" Type="String" />
+      <Parameter Name="PaymentAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="PaymentDate" Mode="In" Type="DateTime" />
+      <Parameter Name="CardNo" Mode="In" Type="String" />
+      <Parameter Name="BankName" Mode="In" Type="String" />
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+      <Parameter Name="Designation" Mode="In" Type="String" />
+      <Parameter Name="BoxOffiec" Mode="In" Type="Boolean" />
+      <Parameter Name="Courier" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <EntitySet Name="Great_Indian_Nautanki_Company_Temp_Web_Booking" EntityType="LOYALTYNMModel.Great_Indian_Nautanki_Company_Temp_Web_Booking" />
+    <EntitySet Name="Great_Indian_Nautanki_Company_Contact" EntityType="LOYALTYNMModel.Great_Indian_Nautanki_Company_Contact" />
+  </EntityContainer>
+  <ComplexType Name="Proc_Login_Result">
+    <Property Type="Int32" Name="Value" Nullable="true" />
+    <Property Type="String" Name="ERPMemberId" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="Proc_ForgetPassword_Result">
+    <Property Type="Int32" Name="Value" Nullable="true" />
+    <Property Type="String" Name="Password" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="Proc_GetTopWebId_Result">
+    <Property Type="String" Name="Member_Id" Nullable="false" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="Proc_GetWebAccountByEmailId_Result">
+    <Property Type="String" Name="MemberID" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Salutation" Nullable="true" MaxLength="7" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Address" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Address2" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Mobile" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="PhoneNo" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="DOB" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="AnniversaryDate" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="City" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="County" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Designation" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="MaritalStatus" Nullable="true" MaxLength="17" />
+  </ComplexType>
+  <ComplexType Name="Proc_TierDetails_Result">
+    <Property Type="String" Name="Code" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="30" />
+    <Property Type="Decimal" Name="MinimumValue" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="MaximumValue" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Amount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Points" Nullable="true" Precision="18" Scale="3" />
+  </ComplexType>
+  <ComplexType Name="Proc_AllTierDetails_Result">
+    <Property Type="String" Name="Code" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="30" />
+    <Property Type="Decimal" Name="MinimumValue" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="MaximumValue" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Amount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Points" Nullable="true" Precision="18" Scale="3" />
+  </ComplexType>
+  <ComplexType Name="Proc_GetMemberBalance_Result">
+    <Property Type="String" Name="MembershipId" Nullable="false" MaxLength="20" />
+    <Property Type="Decimal" Name="RemainingPoints" Nullable="false" Precision="38" Scale="2" />
+    <Property Type="Decimal" Name="RemainingAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="After24HourPoints" Nullable="false" Precision="38" Scale="2" />
+    <Property Type="Decimal" Name="RechargeAmount" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="Proc_PointStatment_Result">
+    <Property Type="String" Name="PointType" Nullable="true" MaxLength="11" />
+    <Property Type="String" Name="DateOfIssue" Nullable="true" MaxLength="30" />
+    <Property Type="Decimal" Name="Points" Nullable="true" Precision="38" Scale="2" />
+    <Property Type="String" Name="ExpirationDate" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="Proc_CardTransaction_Result">
+    <Property Type="String" Name="Transaction_Id" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="Proc_GetWebAccountByTempWebId_Result">
+    <Property Type="String" Name="Salutation" Nullable="true" MaxLength="7" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Address" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Address2" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Mobile" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="PhoneNo" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="DOB" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="AnniversaryDate" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="City" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="County" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Designation" Nullable="false" MaxLength="60" />
+    <Property Type="String" Name="MaritalStatus" Nullable="true" MaxLength="17" />
+    <Property Type="String" Name="Member_Id" Nullable="false" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="Proc_GetTopWebId_Result1">
+    <Property Type="Int32" Name="No_" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="Proc_InsertWebAccount_Result">
+    <Property Type="Int32" Name="Column1" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="Proc_InsertWebAccount_Result1">
+    <Property Type="Int32" Name="tempwebid" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="Proc_RegisterUsers_Result">
+    <Property Type="Int32" Name="tempwebid" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="Great_Indian_Nautanki_Company_Temp_Web_Booking">
+    <Key>
+      <PropertyRef Name="No_" />
+    </Key>
+    <Property Type="Binary" Name="timestamp" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Type="String" Name="Member_Id" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Name_2" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Address" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Address_2" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="City" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="County" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Phone_No_" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Mobile_Phone_No_" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="E_Mail" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DOB" Nullable="false" />
+    <Property Type="DateTime" Name="Anniversary_Date" Nullable="false" />
+    <Property Type="Int32" Name="Marital_Status" Nullable="false" />
+    <Property Type="Int32" Name="Gender" Nullable="false" />
+    <Property Type="Decimal" Name="Payment_Amount" Nullable="false" Precision="38" Scale="20" />
+    <Property Type="DateTime" Name="Payment_Date" Nullable="false" />
+    <Property Type="String" Name="Card_No_" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Bank_Name" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="User_Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Designation" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Byte" Name="Box_Office" Nullable="false" />
+    <Property Type="Byte" Name="Courier" Nullable="false" />
+    <Property Type="Byte" Name="Create_Contact_Card" Nullable="false" />
+    <Property Type="Int32" Name="Salutation" Nullable="false" />
+    <Property Type="Int32" Name="PaymentStatus" Nullable="false" />
+    <Property Type="Int32" Name="ReadyToCreate" Nullable="false" />
+    <Property Type="Decimal" Name="PaymentAmount" Nullable="false" Precision="38" Scale="20" />
+    <Property Type="String" Name="ReceiptNo" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Byte" Name="Successful" Nullable="false" />
+    <Property Type="Byte" Name="WebTransaction" Nullable="false" />
+    <Property Type="String" Name="Loyalty_Member_ID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Replication_Counter" Nullable="false" />
+    <Property Type="Int32" Name="No_" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <ComplexType Name="Proc_ViewAccountDetails_Result">
+    <Property Type="String" Name="MemberID" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Salutation" Nullable="true" MaxLength="7" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Address" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Address2" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Mobile" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="PhoneNo" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="DOB" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="AnniversaryDate" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="City" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="County" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Designation" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="MaritalStatus" Nullable="true" MaxLength="17" />
+    <Property Type="String" Name="CardCode" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="CardName" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="CardNumber" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="DateonCard" Nullable="true" Precision="23" />
+  </ComplexType>
+  <EntityType Name="Great_Indian_Nautanki_Company_Contact">
+    <Key>
+      <PropertyRef Name="No_" />
+    </Key>
+    <Property Type="Binary" Name="timestamp" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Type="String" Name="No_" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Search_Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Name_2" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Address" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Address_2" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="City" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Phone_No_" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Telex_No_" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Territory_Code" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Currency_Code" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Language_Code" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Salesperson_Code" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Country_Region_Code" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Last_Date_Modified" Nullable="false" />
+    <Property Type="String" Name="Fax_No_" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Telex_Answer_Back" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="VAT_Registration_No_" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Binary" Name="Picture" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="Post_Code" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="County" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="E_Mail" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Home_Page" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="No__Series" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Type" Nullable="false" />
+    <Property Type="String" Name="Company_No_" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Company_Name" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lookup_Contact_No_" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="First_Name" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Middle_Name" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Surname" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Job_Title" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Initials" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Extension_No_" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Mobile_Phone_No_" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Pager" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Organizational_Level_Code" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Byte" Name="Exclude_from_Segment" Nullable="false" />
+    <Property Type="String" Name="External_ID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Correspondence_Type" Nullable="false" />
+    <Property Type="String" Name="Salutation_Code" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Search_E_Mail" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Last_Time_Modified" Nullable="false" />
+    <Property Type="String" Name="E_Mail_2" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Next_Order_Selection" Nullable="false" />
+    <Property Type="String" Name="Next_Order_Restaurant" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Next_Order_Date" Nullable="false" />
+    <Property Type="DateTime" Name="Next_Order_Time" Nullable="false" />
+    <Property Type="Int32" Name="Next_Delivery_Tender" Nullable="false" />
+    <Property Type="String" Name="Recall_Order" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Byte" Name="Next_Order_Rest__Temporary" Nullable="false" />
+    <Property Type="DateTime" Name="Date_Created" Nullable="false" />
+    <Property Type="DateTime" Name="DOB" Nullable="false" />
+    <Property Type="DateTime" Name="Anniversary_Date" Nullable="false" />
+    <Property Type="String" Name="SC_Number" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Issue_Date" Nullable="false" />
+    <Property Type="DateTime" Name="Expiry_Date" Nullable="false" />
+    <Property Type="String" Name="POS_Data_Entry_No" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Byte" Name="Issue_MemberShip" Nullable="false" />
+    <Property Type="String" Name="Old_POS_Data_Entry" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Designation" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Marital_Status" Nullable="false" />
+    <Property Type="Int32" Name="Gender" Nullable="false" />
+    <Property Type="Byte" Name="Birthday" Nullable="false" />
+    <Property Type="Int32" Name="Bithday_Year" Nullable="false" />
+    <Property Type="Byte" Name="Anniversary" Nullable="false" />
+    <Property Type="Int32" Name="Anniversary_Year" Nullable="false" />
+    <Property Type="String" Name="Addon_Member_Name" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Addon_Member_Address" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Addon_Member_Address2" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="RelationShip" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Addon_member_Mobile_No" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Addon_Member_E_Mail" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Addon_Member_DOB" Nullable="false" />
+    <Property Type="DateTime" Name="Addon_Member_Anniversary_Date" Nullable="false" />
+    <Property Type="Int32" Name="Addon_Member_Gender" Nullable="false" />
+    <Property Type="Int32" Name="Addon_Member_Martial_Status" Nullable="false" />
+    <Property Type="Byte" Name="Issue_Addon_Membership_Card" Nullable="false" />
+    <Property Type="Byte" Name="Issue_Addon_card" Nullable="false" />
+    <Property Type="Int32" Name="Salutation" Nullable="false" />
+    <Property Type="DateTime" Name="Created_Time" Nullable="false" />
+    <Property Type="Int32" Name="No_of_Guest_Entered" Nullable="false" />
+    <Property Type="DateTime" Name="Guest_Entered_Date" Nullable="false" />
+    <Property Type="Int32" Name="Free_valet_Parking" Nullable="false" />
+    <Property Type="DateTime" Name="Free_Valet_Parking_Date" Nullable="false" />
+    <Property Type="Int32" Name="Free_Complimentary_Drink" Nullable="false" />
+    <Property Type="DateTime" Name="Free_Complimentary_Drink_Date" Nullable="false" />
+    <Property Type="Byte" Name="Member_Card_Print_Front" Nullable="false" />
+    <Property Type="Byte" Name="Member_Card_Print_Back" Nullable="false" />
+    <Property Type="String" Name="USERID_Card_Print_Front" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="USERID_Card_Print_Back" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Byte" Name="ReissueMember_Card_Print_Front" Nullable="false" />
+    <Property Type="Byte" Name="Reissue_Member_Card_Print_Back" Nullable="false" />
+    <Property Type="String" Name="ReissueUSERID_Card_Print_Front" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ReissueUSERID_Card_Print_Back" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Byte" Name="UpgradeMember_Card_Print_Front" Nullable="false" />
+    <Property Type="Byte" Name="Upgrade_Member_Card_Print_Back" Nullable="false" />
+    <Property Type="String" Name="UpgradeUSERID_Card_Print_Front" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UpgradeUSERID_Card_Print_Back" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Show_Allocation_ID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Show_Date" Nullable="false" />
+    <Property Type="String" Name="Seat_No" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NM_Receipt_No" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Booking_ID" Nullable="false" />
+    <Property Type="String" Name="Form_Serial_No" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Byte" Name="Add_On_Front" Nullable="false" />
+    <Property Type="Int32" Name="No_Of_Membership_Prints" Nullable="false" />
+    <Property Type="Int32" Name="No_Of_Upgrade_Prints" Nullable="false" />
+    <Property Type="Int32" Name="No_Of_Re_issue_Prints" Nullable="false" />
+    <Property Type="Int32" Name="No_Of_Add_On_Prints" Nullable="false" />
+    <Property Type="Int32" Name="No_Of_Add_On_Upgrade_Prints" Nullable="false" />
+    <Property Type="String" Name="Addon_Member_Name1" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Addon_Member_Address1" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Addon_Member_Address2_1" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Addon_member_Mobile_No1" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Addon_Member_E_Mail1" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Addon_Member_DOB1" Nullable="false" />
+    <Property Type="DateTime" Name="Addon_Member_Anniversary_Date1" Nullable="false" />
+    <Property Type="Int32" Name="Addon_Member_Gender1" Nullable="false" />
+    <Property Type="Int32" Name="Addon_Member_Martial_Status1" Nullable="false" />
+    <Property Type="Byte" Name="Issue_Addon_Membership_Card1" Nullable="false" />
+    <Property Type="Byte" Name="Issue_Addon_card1" Nullable="false" />
+    <Property Type="String" Name="Addon_Member_Name2" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Addon_Member_Address_2" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Addon_Member_Address2_2" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Addon_member_Mobile_No2" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Addon_Member_E_Mail2" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Addon_Member_DOB2" Nullable="false" />
+    <Property Type="DateTime" Name="Addon_Member_Anniversary_Date2" Nullable="false" />
+    <Property Type="Int32" Name="Addon_Member_Gender2" Nullable="false" />
+    <Property Type="Int32" Name="Addon_Member_Martial_Status2" Nullable="false" />
+    <Property Type="Byte" Name="Issue_Addon_Membership_Card2" Nullable="false" />
+    <Property Type="Byte" Name="Issue_Addon_card2" Nullable="false" />
+    <Property Type="String" Name="Addon_RelationShip1" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Addon_RelationShip2" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Byte" Name="Add_On_Front1" Nullable="false" />
+    <Property Type="Byte" Name="Add_On_Front2" Nullable="false" />
+    <Property Type="String" Name="Last_Modify_UserId" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Replication_Counter" Nullable="false" />
+    <Property Type="String" Name="Web_User_Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Web_Password" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Web_Member_Id" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Tele_Web_ID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Enrollment_Date" Nullable="false" />
+    <Property Type="Byte" Name="Send_SMS" Nullable="false" />
+    <Property Type="Byte" Name="Send_E_Mail" Nullable="false" />
+  </EntityType>
+</Schema>

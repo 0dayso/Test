@@ -1,0 +1,568 @@
+body {
+	padding:0px;
+	margin:0px;
+	font:12px "Palatino Linotype", "Century Gothic", Arial;
+	color:#ECA035;
+	background:url(../images/footer_img.png) no-repeat center bottom transparent;
+}
+img {
+	border:none;
+	outline:none;
+}
+#main_wrapper {
+	width:100%;
+	margin:0 auto;
+	vertical-align:top;	
+}
+
+.wrapper {
+	width:958px;
+	margin:0 auto;	
+}
+.logo-row {
+	width:930px;
+	margin:0 auto;
+	height:144px;
+}
+.logo-row .logo {
+	width:330px;
+	float:left;
+	padding-top:8px;
+}
+.logo-row .a-spectable {
+	width:280px;
+	float:left;
+	padding-top:74px;
+}
+.logo-row .sociallink {
+	float:right;
+	padding-top:120px;
+	padding-right:10px;
+}
+/* Mail Login Page Css */
+
+.royaltyCardProgram {
+	width:913px;
+	margin:0 auto;
+	height:393px;
+}
+.royaltyCard {
+	background: url(../images/loginPageBG.jpg) no-repeat top;
+	height:537px;
+}
+.loginPanel {
+	padding:100px 0px 0px 50px;
+}
+.loginPanel .loginBg {
+	background: url(../images/LoginPanelBg.jpg) no-repeat;
+	height:186px;
+	width:359px;
+}
+.loginPanel .loginSection {
+	width:255px;
+	height:140px;
+	margin:0px 54px 0px 56px;
+	*margin:0px 54px 0px 56px;
+}
+.loginPanel .loginSection .username {
+	width:246px;
+	padding:0px 0px 0px 0px;
+}
+.loginPanel .loginSection .username .inputBdr {
+	border:#fcd05d 1px solid;
+	width:246px;
+	height:24px;
+	background:#fff0ba;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#3f260a;
+	padding:0px 0px 0px 0px;
+}
+.loginPanel .loginSection .password {
+	width:246px;
+	padding:10px 0px 0px 0px;
+}
+.loginPanel .loginSection .password .inputBdr {
+	border:#fcd05d 1px solid;
+	width:246px;
+	height:24px;
+	background:#fff0ba;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#3f260a;
+	padding:3px 0px 0px 5px;
+}
+.loginPanel .loginSection .forgotPassword {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#3f260a;
+	padding:10px 0px 0px 5px;
+	text-decoration:none;
+}
+.loginPanel .loginSection .forgotPassword a {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#3f260a;
+	padding:10px 0px 0px 5px;
+	text-decoration:none;
+}
+.loginPanel .loginSection .forgotPassword a:hover {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color: #600;
+	padding:10px 0px 0px 5px;
+	text-decoration:underline;
+}
+.loginPanel .loginSection .becomeaMember {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#3f260a;
+	padding:20px 0px 0px 5px;
+	height:33px;
+}
+.loginPanel .loginSection .becomeaMember a {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#3f260a;
+	padding:20px 0px 0px 5px;
+	text-decoration:none;
+}
+.loginPanel .loginSection .becomeaMember a:hover {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#600;
+	padding:20px 0px 0px 5px;
+	text-decoration:underline;
+}
+/* close here Css */
+
+
+/* Footer Navigation Css */
+
+.new-navigation {
+	width:980px;
+	float:left;
+}
+/*.new-navigation {
+	width:980px;
+	margin:0 auto;
+	margin-top:70px;
+} */
+.new-nav {
+	float:left;
+	margin-left:36px;
+	*margin-left:36px;
+}
+.new-nav .the-kingdom {
+	width:106px;
+	float:left;
+	padding-left:38px;
+}
+.new-nav .nautanki-mahal {
+	width:142px;
+	float:left;
+	padding-left:51px;
+}
+.new-nav .showshaa-threatre {
+	width:148px;
+	float:left;
+	padding-left:52px;
+}
+.new-nav .culture-gully {
+	width:107px;
+	float:left;
+	padding-left:51px;
+}
+.new-nav .iifa-buzz {
+	width:72px;
+	float:left;
+	padding-left:51px;
+}
+.new-nav .home {
+	width:45px;
+	float:left;
+	padding:6px 0 0 110px;
+}
+.new-nav .about {
+	width:77px;
+	float:left;
+	padding:6px 0 0 43px;
+}
+.new-nav .contact {
+	width:89px;
+	float:left;
+	padding:6px 0 0 43px;
+}
+.new-nav .lost-found {
+	width:111px;
+	float:left;
+	padding:6px 0 0 45px;
+}
+.new-nav .blog {
+	width:39px;
+	float:left;
+	padding:6px 0 0 43px;
+}
+.new-nav .career {
+	width:56px;
+	float:left;
+	padding:6px 0 0 44px;
+}
+.new-nav .gcell {
+	width:79px;
+	float:left;
+	padding:6px 0 0 41px;
+}
+.clr {
+	clear:both;
+}
+/*Royalty card program css */
+
+.royaltyCardInner {
+	/*background: url(../images/pattern.jpg) repeat top;*/
+	height:640px;
+	min-height:620px;
+	/*border:10px solid #452905;*/
+}
+.mainImg {
+	background: url(../images/mainbg.jpg) no-repeat top;
+	height:640px;
+	min-height:640px;
+}
+.navigationBand {
+	background: url(../images/navBand.png) no-repeat center;
+	padding:130px 10px 20px 30px;
+}
+.navigation {
+	color:#451d13;
+	font:13px Arial, Helvetica, sans-serif;
+}
+.navigation a {
+	color:#451d13;
+	text-decoration:none;
+}
+.navigation a:hover {
+	color:#2F1D11;
+	text-decoration:none;
+	border-bottom:#900 solid 1px;
+}
+.contentDiv {
+	padding:0px 20px 0px 40px;
+	height:400px;
+	width:730px;
+	margin-top:-20px;
+	*margin-top:-30px;
+}
+.tabNav {
+	text-transform:uppercase;
+	color:#451d13;
+	font:12px Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+.tabNav a {
+	color:#451d13;
+	text-decoration:none;
+	font-weight:bold;
+}
+.tabNav a:hover {
+	color:#2F1D11;
+	text-decoration:none;
+	border-bottom:#900 solid 1px;
+}
+.tabNav .active {
+	color:#59103e;
+	text-decoration:underline;
+}
+.home-content-left {
+	width:548px;
+	height:320px;
+	float:left;
+	padding:0px 10px 0px 0px;
+}
+.home-content-left h3 {
+	font:18px "Palatino Linotype", "Century Gothic", Arial;
+	color:#5d2619;
+	padding:0px;
+	margin:5px 0px 5px 0px;
+	*margin:5px 0px 5px 0px;
+}
+.home-content-left h3 a {
+	color:#0005;
+	text-decoration:none;
+}
+.home-content-left h3 a:hover {
+	color:#ECA035;
+	text-decoration:underline;
+}
+.home-content-left p {
+	font:12px "Palatino Linotype", "Century Gothic", Arial;
+	color:#000;
+	line-height:20px;
+	padding:0px;
+	margin:0px 0px 10px 0px;
+	*margin:0px 0px 10px 0px;
+}
+.home-content-left01 {
+	width:310px;
+	float:left;
+	padding:0px 20px 0px 0px;
+}
+.home-content-left01 h3 {
+	font:18px "Palatino Linotype", "Century Gothic", Arial;
+	color:#5d2619;
+	padding:0px;
+	margin:15px 0px 10px 0px;
+	*margin:15px 0px 10px 0px;
+}
+.home-content-left01 h3 a {
+	color:#0005;
+	text-decoration:none;
+}
+.home-content-left01 h3 a:hover {
+	color:#ECA035;
+	text-decoration:underline;
+}
+.home-content-left01 p {
+	font:12px "Palatino Linotype", "Century Gothic", Arial;
+	color:#000;
+	line-height:20px;
+	padding:0px;
+	margin:0px 0px 10px 0px;
+	*margin:0px 0px 10px 0px;
+	text-align:justify;
+}
+.ul {
+	margin:0 auto;
+	padding:0 auto;
+}
+.ul .li {
+	padding:0px;
+	text-align:justify;
+	margin-left:-25px;
+	*margin-left:-25px;
+	line-height:22px;
+	color:Black;
+	font-weight:bold;
+}
+.tableBG {
+	background:#8e4d18;
+	border:#351a04 1px solid;
+	font:12px "Palatino Linotype", "Century Gothic", Arial;
+	color:#fde791;
+}
+
+.tableBdr {
+	border:#8e4d18 1px solid;
+}
+.tableHeading {
+	font:12px "Palatino Linotype", "Century Gothic", Arial;
+	color:#fde791;
+	line-height:26px;
+	font-weight:bold;
+	*line-height:18px;
+}
+
+.tableHeading a {
+	font:12px "Palatino Linotype", "Century Gothic", Arial;
+	color:#fde791;
+	line-height:26px;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.tableHeading a:hover {
+	color:#efe704;
+	text-decoration:none;
+	border-bottom:dashed 1px #efe704;
+}
+
+.tablefontBold {
+	font:12px "Palatino Linotype", "Century Gothic", Arial;
+	color:#5d2619;
+	line-height:20px;
+	font-weight:bold;
+}
+.backlink {
+	font:13px "Palatino Linotype", "Century Gothic", Arial;
+	color:#5d2619;
+	padding:0px;
+	margin:15px 0px 10px 0px;
+	*margin:15px 0px 10px 0px;
+}
+.backlink a {
+	color:#5d2619;
+	text-decoration:none;
+}
+.backlink a:hover {
+	color:#000;
+	text-decoration:underline;
+}
+
+.inputBdr {
+	border:#fcd05d 1px solid;
+	width:176px;
+	height:16px;
+	background:#fff0ba;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#3f260a;
+	padding:3px 0px 0px 5px;
+}
+
+.forgotPassword {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#3f260a;
+	text-decoration:none;
+}
+.forgotPassword a {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#3f260a;
+	text-decoration:none;
+}
+.forgotPassword a:hover {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color: #600;
+	text-decoration:underline;
+}
+
+.faqUl {
+	margin:0 auto;
+	padding:0 auto;
+	list-style:none;
+}
+.faqUl .faqLi {
+	text-align:justify;
+	line-height:22px;
+	font-weight:bold;
+	margin-left:-40px;
+	*margin-left:-40px;
+	color:#000;
+}
+
+.faqUl .faqLi a {
+	text-align:justify;
+	line-height:22px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#000;
+}
+
+.faqUl .faqLi a:hover {
+	text-align:justify;
+	line-height:22px;
+	font-weight:bold;
+	text-decoration:underline;
+	color:#333;
+}
+
+.button {
+	float: left;
+	clear: both;
+	background:url(../images/signInbtn_left.png) no-repeat;
+	padding: 0 0 0 10px;
+	margin: 5px 0;
+	color: #231f20;
+	*margin: 5px 0;
+    
+}
+.button a {
+	float: left;
+	background: url(../images/signInbtn_stretch.png) repeat-x left top;
+	line-height: 25px;
+	padding: 0 0px;
+	color: #231f20;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-decoration: none;
+	font-size:12px;
+}
+.button a:hover {
+	float: left;
+	height: 25px;
+	background: url(../images/signInbtn_stretch.png) repeat-x left top;
+	line-height: 25px;
+	padding: 0 0px;
+	color: #177a80;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#fff;
+	text-decoration: none;
+	font-size:12px;
+}
+.button span {
+	background: url(../images/signInbtn_right.png) no-repeat;
+	float: left;
+	width: 10px;
+	height: 25px;
+	color: #948555;
+}
+
+
+.divtext
+{   
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#3f260a;	
+	text-decoration:none;	
+}
+
+.inputbg {
+	border:#fcd05d 1px solid;
+	width:170px;
+	height:20px;
+	background:#fff0ba;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;	
+	color:#3f260a;	
+	font-size:12px;
+}
+
+.divborder {
+	border:#fff0ba 2px solid;
+	background:#fcd05d;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;	
+	color:#3f260a;	
+	font-size:12px;
+	padding:3px;
+	text-align:center;
+    width: 95%;
+}
+.inputdropdown
+{
+	border:#fcd05d 1px solid;	
+	height:20px;
+	background:#fff0ba;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;	
+	color:#3f260a;	
+	font-size:12px;
+}
+.divtext h3 {
+	font:16px "Palatino Linotype", "Century Gothic", Arial;
+	color:#5d2619;
+	padding-top:2px;	
+	
+}
+.divtextlogin {
+	width:260px;
+	height:135px;
+	margin:0px 12px 0px 12px;
+	*margin:0px 10px 0px 10px;
+}
+
+.divMailerMain {
+	height:990px;
+	width:700px;
+	background:url(http://royalty.kingdomofdreams.in/Skins/images/EmailerBg.jpg) no-repeat;
+}
+.divMailerSub
+ {
+padding:470px 20px 20px 65px;
+font-family:Palatino Linotype, Century Gothic, Arial;
+font-weight:bold;
+text-align:center;
+}
+

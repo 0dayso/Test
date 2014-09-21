@@ -1,0 +1,590 @@
+/* CSS Document */
+body {
+	padding:0px;
+	margin:0px;
+	font:12px "Palatino Linotype", "Century Gothic", Arial;
+	color:#ECA035;
+	background:url(../images/footer_img.png) no-repeat center bottom transparent;
+}
+#main_wrapper {
+	width:100%;
+	margin:0 auto;
+	vertical-align:top;
+}
+/* common css starts here */
+.clr {
+ clear:both:
+}
+img {
+	border:none;
+}
+html {
+	background:url(../images/home-page-bg.jpg) no-repeat center top #000000;
+}
+/* common css ends here */
+
+/* home page css starts here */
+.page-body{
+	width:958px;
+	margin:0 auto;
+}
+.home-page-bg_login {
+	background:url(../images/LoginPage_home-page-bg.jpg) no-repeat center top #000000;
+}
+.home-valentine-bg {
+	background:url(../images/valentineBg.jpg) no-repeat center top #000000;
+}
+.enter-page-bg {
+	background:url(../images/enter-page-bg.jpg) no-repeat center top #000000;
+}
+.wrapper {
+	width:958px;
+	margin:0 auto;
+}
+.logo-row {
+	width:930px;
+	margin:0 auto;
+	height:144px;
+}
+.logo-row .logo {
+	width:330px;
+	float:left;
+	padding-top:8px;
+}
+.logo-row .a-spectable {
+	width:280px;
+	float:left;
+	padding-top:74px;
+}
+.logo-row .sociallink {
+	float:right;
+	padding-top:115px;
+	padding-right:10px;
+}
+.home-flash {
+	width:913px;
+	margin:0 auto;
+	height:396px;
+}
+.home-banner-row {
+	width:912px;
+	margin:0 auto;
+}
+.culture-gully-banner {
+	width:182px;
+	float:left;
+}
+.nautanki-mahal-banner {
+	width:184px;
+	float:left;
+}
+.kod-banner {
+	width:182px;
+	float:left;
+}
+.show-sha-banner {
+	width:181px;
+	float:left;
+}
+.iifa-buzz-banner {
+	width:183px;
+	float:left;
+}
+.home-content {
+	width:930px;
+	float:left;
+	margin:0px 0px 0px 28px;
+	_margin:0px 0px 0px 12px;
+}
+.home-content-left {
+	width:710px;
+	float:left;
+	padding:0px 20px 0px 0px;
+}
+.home-content-left h3 {
+	font:18px "Palatino Linotype", "Century Gothic", Arial;
+	color:#ECA035;
+	padding:0px;
+	margin:15px 0px 10px 0px;
+}
+.home-content-left h3 a {
+	color:#ECA035;
+	text-decoration:none;
+}
+.home-content-left h3 a:hover {
+	color:#ECA035;
+	text-decoration:underline;
+}
+.home-content-left p {
+	font:12px "Palatino Linotype", "Century Gothic", Arial;
+	color:#ECA035;
+	padding:0px;
+	margin:0px 0px 10px 0px;
+}
+.home-content-right {
+	width:179px;
+	float:left;
+	padding-top:23px;
+}
+.home-content-right2 {
+	width:170px;
+	float:left;
+	padding-top:2px;
+}
+
+.home-content-right3 {
+	width:179px;
+	float:left;
+	padding-top:27px;
+}
+
+.footer {
+	width:980px;
+	margin:0 auto;
+}
+.navigation {
+	width:974px;
+	float:left;
+}
+.navigation .home {
+	width:59px;
+	float:left;
+	padding-top:2px;
+ *padding-top:0px;
+}
+.navigation .about-us {
+	width:78px;
+	float:left;
+	padding-top:2px;
+ *padding-top:0px;
+}
+.navigation .contact {
+	width:95px;
+	float:left;
+	padding-top:2px;
+ *padding-top:0px;
+}
+.navigation .the-kingdom {
+	width:103px;
+	float:left;
+	padding-top:2px;
+ *padding-top:0px;
+}
+.navigation .nautanki-mahal {
+	width:126px;
+	float:left;
+	padding-top:2px;
+ *padding-top:0px;
+}
+.navigation .show-sha {
+	width:144px;
+	float:left;
+	padding-top:2px;
+ *padding-top:0px;
+}
+.navigation .culture-gully {
+	width:111px;
+	float:left;
+	padding-top:2px;
+ *padding-top:0px;
+}
+.navigation .iifa-buzz {
+	width:81px;
+	float:left;
+	padding-top:2px;
+ *padding-top:0px;
+}
+.navigation .face-book {
+	width:40px;
+	float:left;
+	padding-top:2px;
+ *padding-top:0px;
+}
+.navigation .twitter {
+	width:40px;
+	float:left;
+	padding-top:2px;
+ *padding-top:0px;
+}
+.navigation .g-cell {
+	width:73px;
+	float:left;
+	padding-top:5px;
+ *padding-top:3px;
+}
+/* home page css ends here */
+/* css for nautanki mahal page starts here */
+.red-text {
+	color:#F62B6B !important;
+}
+.nautanki-mahal-ul {
+	padding:0px;
+	margin:0px;
+}
+.nautanki-mahal-ul li {
+	list-style:none;
+	background:url(../images/nautanki-mahla-bullet.jpg) no-repeat 0px 10px;
+	padding:0px 0px 0px 10px;
+}
+.picture-gallery {
+	padding:0px 0px 0px 20px;
+}
+.terms-condition {
+	padding:0px 0px 0px 17px;
+}
+.zangoora-story {
+	padding:0px 0px 0px 20px;
+}
+.zangoora-characters {
+	padding:0px 0px 0px 20px;
+}
+.zangoora-cast {
+	padding:0px 0px 0px 20px;
+}
+/* css for nautanki mahal page ends here */
+/* css for enter page starts here */
+.enter-wrapper {
+	width:734px;
+	margin:0 auto;
+}
+.enter-wrapper-inside {
+	width:734px;
+	float:left;
+	margin-top:381px;
+}
+.enter-page-banner {
+	width:734px;
+	float:left;
+}
+.enter-high {
+	width:304px;
+	float:left;
+}
+.enter-low {
+	width:298px;
+	float:right;
+	text-align:right;
+}
+.enter-address {
+	width:734px;
+	text-align:center;
+	float:left;
+	margin-top:50px;
+}
+.enter-address h3 {
+	font:24px "Palatino Linotype", "Century Gothic", Arial;
+	color:#DCA718;
+	padding:0px;
+	margin:0px;
+}
+.enter-address p {
+	padding:0px;
+	margin:0px 0px 10px 0px;
+}
+/* css for enter page ends here */
+
+
+
+
+
+#mask {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:9000;
+	background-color:#000;
+	display:none;
+}
+#boxes .window {
+	position:absolute;
+	left:0;
+	top:0;
+	width:700px;
+	height:500px;
+	display:none;
+	z-index:9999;
+	padding:20px;
+}
+
+#boxes .windowAlrtMsg {
+	position:absolute;
+	width:500px;
+	height:100px;
+	display:none;
+	z-index:9999;
+	padding:20px;
+	background-color:#000000;
+	border:solid 1px #FF9900;
+}
+
+#boxes #dialog {
+	width:600px;
+	height:400px;
+	padding:20px;
+	background-color:#000000;
+	font:13px "Palatino Linotype", "Century Gothic", Arial;
+	color:#ECBF41;
+	text-align:justify;
+	border:solid 1px #FF9900;
+}
+#boxes #dialog h2 {
+	font:22px "Palatino Linotype", "Century Gothic", Arial;
+	color:#FFF457;
+	font-weight:bold;
+}
+#dialog1 {
+	width:600px;
+	height:350px;
+	padding:20px;
+	background-color:#000000;
+	font:14px "Palatino Linotype", "Century Gothic", Arial;
+	color:#FFF457;
+	text-align:justify;
+	border:solid 1px #FF9900;
+	overflow:auto;
+}
+#boxes #dialog1 h2 {
+	font:22px "Palatino Linotype", "Century Gothic", Arial;
+	color:#FFF457;
+	font-weight:bold;
+}
+#dialog2 {
+	width:600px;
+	height:350px;
+	padding:20px;
+	background-color:#000000;
+	font:14px "Palatino Linotype", "Century Gothic", Arial;
+	color:#FFF457;
+	text-align:justify;
+	border:solid 1px #FF9900;
+	overflow:auto;
+}
+#boxes #dialog2 h2 {
+	font:22px "Palatino Linotype", "Century Gothic", Arial;
+	color:#FFF457;
+	font-weight:bold;
+}
+.terms-main {
+	width:600px;
+	float:left;
+	font:14px "Palatino Linotype", "Century Gothic", Arial;
+	color:#FFFFFF;
+	padding:20px;
+}
+.terms-main h4 {
+	font:bold 14px "Palatino Linotype", "Century Gothic", Arial;
+	color:#ECBF41;
+	padding:0px;
+	margin:15px 0px 3px 0px;
+}
+.terms-main h3 {
+	font:14px "Palatino Linotype", "Century Gothic", Arial;
+	color:#ECBF41;
+	padding:0px;
+	margin:15px 0px 3px 0px;
+}
+.iifa-gallery {
+	padding:0px 0px 0px 20px;
+}
+#partner-logo {
+	padding-top:40px;
+	width:auto;
+	height:auto;
+}
+.clear {
+	clear:both;
+}
+#boxes .window {
+	position:absolute;
+	left:0;
+	top:0;
+	width:700px;
+	height:500px;
+	display:none;
+	z-index:9999;
+	padding:20px;
+}
+#boxes .tnc {
+	width:500px;
+	height:100px;
+ *height:200px;
+	padding:5px 35px 5px 10px;
+ *padding:10px;
+	background-color:#000000;
+	font:13px "Palatino Linotype", "Century Gothic", Arial;
+	color:#ECBF41;
+	text-align:justify;
+	border:solid 1px #FF9900;
+}
+#boxes .tnc h2 {
+	font:22px "Palatino Linotype", "Century Gothic", Arial;
+	color:#FFF457;
+	font-weight:bold;
+}
+#boxes #tiketprice {
+	width:600px;
+	height:450px;
+ *height:200px;
+	padding:5px 35px 5px 10px;
+ *padding:10px;
+	background-color:#000000;
+	font:13px "Palatino Linotype", "Century Gothic", Arial;
+	color:#ECBF41;
+	text-align:justify;
+	border:solid 1px #FF9900;
+}
+#boxes #tiketprice h2 {
+	font:22px "Palatino Linotype", "Century Gothic", Arial;
+	color:#FFF457;
+	font-weight:bold;
+}
+.height124 {
+	height:124px;
+	background:url(../images/zangoora-header02.jpg) no-repeat top;
+}
+.tnc-ul {
+	padding:0px;
+	margin:0px;
+	color:#ECA035;
+}
+.tnc-ul li {
+	list-style:none;
+	background:url(../images/nautanki-mahla-bullet.jpg) no-repeat 0px 10px;
+	padding:0px 0px 0px 10px;
+}
+.bookbowbg {
+	background:url(../images/book-now-bg.jpg) center;
+}
+.booknow-text {
+	font:18px "Palatino Linotype", "Century Gothic", Arial;
+	color:#F6D300;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.input-width {
+	width:150px;
+}
+.text-input {
+	font:13px "Palatino Linotype", "Century Gothic", Arial;
+	color:#000000;
+	font-weight:bold;
+}
+.botton02 {
+	background:#660066;
+	color:#FFFFFF;
+	border:#660099 solid 1px;
+}
+.royaltyCard {
+	background: url(../images/royaltycardbg.jpg) no-repeat top;
+	height:530px;
+}
+.royaltyCard .loginPanel {
+	padding:200px 5px 10px 252px;
+}
+.royaltyCard .loginTab {
+	width:560px;
+	float:left;
+}
+.royaltyCard .loginTab .name {
+	float:left;
+	width:140px;
+}
+.royaltyCard .loginTab .mobileNo {
+	float:left;
+	width:140px;
+	padding:30px 0px 0px 0px;
+}
+.royaltyCard .loginTab .email {
+	float:left;
+	width:140px;
+	padding:30px 0px 0px 0px;
+}
+.royaltyCard .loginTab .enter {
+	float:left;
+	width:140px;
+	padding:30px 0px 0px 120px;
+}
+.royaltyCard .loginTab .fieldbg {
+	float:left;
+	background:url(../images/rc_field.jpg) no-repeat;
+	width:246px;
+	height:30px;
+}
+.royaltyCard .loginTab .fieldbg02 {
+	float:left;
+	margin:30px 0px 0px 0px;
+	background:url(../images/rc_field.jpg) no-repeat;
+	width:246px;
+	height:30px;
+}
+.royaltyCard .loginTab .textField {
+	float:left;
+	margin:2px 5px 5px 8px;
+	border:none;
+	outline:none;
+	background:none;
+	width:226px;
+	height:24px;
+	color:#f1b741;
+}
+
+.royaltyCard .loginTab .textField02 {
+	float:left;
+	margin:2px 5px 5px 8px;
+	border:none;
+	outline:none;
+	background:none;
+	width:226px;
+	height:24px;
+	color:#f1b741;
+}
+#boxes #royaltyCard {
+  width:450px;
+  height:140px;
+  *height:140px;
+  padding:5px 15px 5px 10px;
+  *padding:10px;
+  background-color:#000000;
+  font:13px "Palatino Linotype", "Century Gothic", Arial;
+  color:#ECA035;
+  text-align:justify;
+  border:solid 1px #FF9900;
+ 
+}
+
+#boxes #royaltyCard h2{
+  font:22px "Palatino Linotype", "Century Gothic", Arial;
+  color:#FFF457;
+  font-weight:bold;
+  
+}
+#boxes #royaltyCard .bdr01 {
+  border-bottom:solid 1px #ECBF41;
+    
+}
+
+.royaltyCard .loginTab .errormsg {
+	
+	float:left;
+ 	color:#593a11;
+ 	padding-left:5px;
+ 	font-family:Arial;
+ 	font-weight:bold;
+ 	font-size:13px;
+}
+
+.theBlackLight {
+	background:url(../images/theblacklightbg.jpg) no-repeat top;
+	height:530px;
+}
+
+.valentineSpecial {
+	background: url(../images/lading-page-valentine.jpg) no-repeat top;
+	height:850px;
+}
+.side-tile-left{
+	background:url(../images/side_tile_left.png) repeat-y left top;
+}
+.side-tile-right{
+	background:url(../images/side_tile_right.png) repeat-y right top;
+}

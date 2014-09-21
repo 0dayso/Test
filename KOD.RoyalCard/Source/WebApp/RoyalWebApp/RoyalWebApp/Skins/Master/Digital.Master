@@ -1,0 +1,67 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Digital.master.cs" Inherits="RoyalWebApp.Skins.Master.Digital" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<%@ Register Src="~/Skins/Controls/Footer.ascx" TagName="Footer" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Kingdom of Dreams : Ticket Booking</title>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+
+        _gaq.push(['_setAccount', 'UA-17427160-2']);
+
+        _gaq.push(['_trackPageview']);
+        (function () {
+
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+        })();
+                    </script>
+    <link href="../css/digitalstyle.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    <body class="home-page-bg">
+    <form id="form1"  style="height:800px" runat="server">  
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="True">
+    </asp:ScriptManager>
+    <div class="wrapper">
+           <div class="logo-row">
+            <div class="logo">
+            </div>
+        </div>
+        <!--logo-row ends here -->
+        <div class="digital-image">
+        <div class="seats-main">
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <!--end site navigation -->
+                                                <div style="text-align: left; margin-bottom:200px;">
+                                                    <h3>
+                                                        <asp:ContentPlaceHolder ID="CPHPageHeading" runat="server" />
+                                                    </h3>
+                                                </div>
+                                                <br />
+                                                <div style="width: 720px; margin-left:100px;">
+                                                    <asp:ContentPlaceHolder ID="CPHPageData" runat="server" />
+                                                </div>
+                                                </div>
+        <!-- seats-main ends here -->
+    </div>
+    <!-- wrapper ends here -->
+    </div>
+    <!-- footer-main ends here -->
+    <div class="home-content" style="height: 100px; visibility: hidden">
+                        </div>
+                        <uc1:Footer ID="Footer" runat="server" />
+    </form>
+</body>
+</html>

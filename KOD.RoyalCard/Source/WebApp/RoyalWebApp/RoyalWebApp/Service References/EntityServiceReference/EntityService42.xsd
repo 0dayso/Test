@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/RoyalWcfService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/RoyalWcfService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/RoyalWcfService/EntityService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" />
+  <xs:complexType name="ArrayOfProc_ViewAccountDetails_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Proc_ViewAccountDetails_Result" nillable="true" type="tns:Proc_ViewAccountDetails_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProc_ViewAccountDetails_Result" nillable="true" type="tns:ArrayOfProc_ViewAccountDetails_Result" />
+  <xs:complexType name="Proc_ViewAccountDetails_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q1:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Address2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AnniversaryDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CardCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CardName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CardNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="County" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DOB" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DateonCard" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Designation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MaritalStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Mobile" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PhoneNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Salutation" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Proc_ViewAccountDetails_Result" nillable="true" type="tns:Proc_ViewAccountDetails_Result" />
+  <xs:complexType name="ArrayOfProc_InsertWebAccount_Result1">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Proc_InsertWebAccount_Result1" nillable="true" type="tns:Proc_InsertWebAccount_Result1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProc_InsertWebAccount_Result1" nillable="true" type="tns:ArrayOfProc_InsertWebAccount_Result1" />
+  <xs:complexType name="Proc_InsertWebAccount_Result1">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q2:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="tempwebid" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Proc_InsertWebAccount_Result1" nillable="true" type="tns:Proc_InsertWebAccount_Result1" />
+  <xs:complexType name="ArrayOfProc_RegisterUsers_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Proc_RegisterUsers_Result" nillable="true" type="tns:Proc_RegisterUsers_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProc_RegisterUsers_Result" nillable="true" type="tns:ArrayOfProc_RegisterUsers_Result" />
+  <xs:complexType name="Proc_RegisterUsers_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q3:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="tempwebid" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Proc_RegisterUsers_Result" nillable="true" type="tns:Proc_RegisterUsers_Result" />
+  <xs:complexType name="ArrayOfProc_Login_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Proc_Login_Result" nillable="true" type="tns:Proc_Login_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProc_Login_Result" nillable="true" type="tns:ArrayOfProc_Login_Result" />
+  <xs:complexType name="Proc_Login_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q4:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ERPMemberId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Value" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Proc_Login_Result" nillable="true" type="tns:Proc_Login_Result" />
+  <xs:complexType name="ArrayOfProc_ForgetPassword_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Proc_ForgetPassword_Result" nillable="true" type="tns:Proc_ForgetPassword_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProc_ForgetPassword_Result" nillable="true" type="tns:ArrayOfProc_ForgetPassword_Result" />
+  <xs:complexType name="Proc_ForgetPassword_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q5:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Value" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Proc_ForgetPassword_Result" nillable="true" type="tns:Proc_ForgetPassword_Result" />
+  <xs:complexType name="ArrayOfProc_GetTopWebId_Result1">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Proc_GetTopWebId_Result1" nillable="true" type="tns:Proc_GetTopWebId_Result1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProc_GetTopWebId_Result1" nillable="true" type="tns:ArrayOfProc_GetTopWebId_Result1" />
+  <xs:complexType name="Proc_GetTopWebId_Result1">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q6:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="No_" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Proc_GetTopWebId_Result1" nillable="true" type="tns:Proc_GetTopWebId_Result1" />
+  <xs:complexType name="ArrayOfProc_GetWebAccountByEmailId_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Proc_GetWebAccountByEmailId_Result" nillable="true" type="tns:Proc_GetWebAccountByEmailId_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProc_GetWebAccountByEmailId_Result" nillable="true" type="tns:ArrayOfProc_GetWebAccountByEmailId_Result" />
+  <xs:complexType name="Proc_GetWebAccountByEmailId_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q7:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Address2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AnniversaryDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="County" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DOB" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Designation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MaritalStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Mobile" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PhoneNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Salutation" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Proc_GetWebAccountByEmailId_Result" nillable="true" type="tns:Proc_GetWebAccountByEmailId_Result" />
+  <xs:complexType name="ArrayOfProc_AllTierDetails_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Proc_AllTierDetails_Result" nillable="true" type="tns:Proc_AllTierDetails_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProc_AllTierDetails_Result" nillable="true" type="tns:ArrayOfProc_AllTierDetails_Result" />
+  <xs:complexType name="Proc_AllTierDetails_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q8:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MaximumValue" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="MinimumValue" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Points" nillable="true" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Proc_AllTierDetails_Result" nillable="true" type="tns:Proc_AllTierDetails_Result" />
+  <xs:complexType name="ArrayOfProc_TierDetails_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Proc_TierDetails_Result" nillable="true" type="tns:Proc_TierDetails_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProc_TierDetails_Result" nillable="true" type="tns:ArrayOfProc_TierDetails_Result" />
+  <xs:complexType name="Proc_TierDetails_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q9:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MaximumValue" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="MinimumValue" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Points" nillable="true" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Proc_TierDetails_Result" nillable="true" type="tns:Proc_TierDetails_Result" />
+  <xs:complexType name="ArrayOfProc_PointStatment_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Proc_PointStatment_Result" nillable="true" type="tns:Proc_PointStatment_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProc_PointStatment_Result" nillable="true" type="tns:ArrayOfProc_PointStatment_Result" />
+  <xs:complexType name="Proc_PointStatment_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q10:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DateOfIssue" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExpirationDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PointType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Points" nillable="true" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Proc_PointStatment_Result" nillable="true" type="tns:Proc_PointStatment_Result" />
+  <xs:complexType name="ArrayOfProc_GetMemberBalance_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Proc_GetMemberBalance_Result" nillable="true" type="tns:Proc_GetMemberBalance_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProc_GetMemberBalance_Result" nillable="true" type="tns:ArrayOfProc_GetMemberBalance_Result" />
+  <xs:complexType name="Proc_GetMemberBalance_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q11:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="After24HourPoints" type="xs:decimal" />
+          <xs:element minOccurs="0" name="MembershipId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RechargeAmount" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RemainingAmount" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RemainingPoints" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Proc_GetMemberBalance_Result" nillable="true" type="tns:Proc_GetMemberBalance_Result" />
+  <xs:complexType name="ArrayOfProc_CardTransaction_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Proc_CardTransaction_Result" nillable="true" type="tns:Proc_CardTransaction_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProc_CardTransaction_Result" nillable="true" type="tns:ArrayOfProc_CardTransaction_Result" />
+  <xs:complexType name="Proc_CardTransaction_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q12:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Transaction_Id" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Proc_CardTransaction_Result" nillable="true" type="tns:Proc_CardTransaction_Result" />
+  <xs:complexType name="ArrayOfProc_GetWebAccountByTempWebId_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Proc_GetWebAccountByTempWebId_Result" nillable="true" type="tns:Proc_GetWebAccountByTempWebId_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProc_GetWebAccountByTempWebId_Result" nillable="true" type="tns:ArrayOfProc_GetWebAccountByTempWebId_Result" />
+  <xs:complexType name="Proc_GetWebAccountByTempWebId_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q13:ComplexObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Address2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AnniversaryDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="County" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DOB" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Designation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MaritalStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Member_Id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Mobile" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PhoneNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Salutation" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Proc_GetWebAccountByTempWebId_Result" nillable="true" type="tns:Proc_GetWebAccountByTempWebId_Result" />
+</xs:schema>

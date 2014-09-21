@@ -1,0 +1,203 @@
+﻿using System;
+using System.Data;
+using System.Web.UI.WebControls;
+using KoDTicketing.BusinessLayer;
+using KoDTicketing.DataAccessLayer;
+
+public partial class MMTUSDefault : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+    //    string Enddat = "2013.11.30";
+    //    DateTime End = Convert.ToDateTime(Enddat);
+    //    string now = DateTime.Now.ToString("yyyy-MM-dd");
+    //    DateTime nw = Convert.ToDateTime(now);
+    //    if (nw > End)
+    //    {
+    //        grayBG.Visible = true;
+    //        showcontainer.Visible = true;
+    //        Container.Visible = true;
+    //    }
+    //    else
+    //    {
+    //        grayBG.Visible = false;
+    //        showcontainer.Visible = false;
+    //        Container.Visible = false;
+
+    //    }
+        if (!IsPostBack)
+        {
+            Load_Play();
+        }
+    }
+    void Load_Play()
+    {
+
+        Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write("Start Load Play");
+
+        ddl_Play.Items.Clear();
+        DataTable dtlocation = VistaBOL.Select_Play();
+        ddl_Play.Items.Add(new ListItem("Select", "0"));
+         if (dtlocation != null && dtlocation.Rows.Count > 0)
+        {
+            foreach (DataRow dr in dtlocation.Rows)
+            {
+                if (dr[0].ToString() != "MANA")
+                ddl_Play.Items.Add(new ListItem(dr[0].ToString(), dr[0].ToString()));
+            }
+        }
+        Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write("End Load Play");
+    }
+    /// <param name="e"></param>
+    protected void ddl_Play_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        //xbol.Parameters.Clear();
+        String Play = ddl_Play.SelectedValue;
+        ddl_Location.Items.Clear();
+        ddl_Location.Items.Add(new ListItem("Select", "0"));
+        DataTable dtAudi = VistaBOL.Select_Audi(Play);
+        foreach (DataRow dr in dtAudi.Rows)
+            ddl_Location.Items.Add(new ListItem(dr[1].ToString(), dr[0].ToString()));
+
+    }
+    protected void ddl_Location_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        String filmCode = ddl_Play.SelectedValue;
+        String Location = ddl_Location.SelectedValue;
+        ddl_Date.Items.Clear();
+        ddl_Date.Items.Add(new ListItem("Select", "0"));
+        ddl_Date.Items[0].Selected = true;
+        DataTable dtplaydate = VistaBOL.Select_PlayDate(Location, filmCode);
+        string Enddate = "2013.11.30";
+        DateTime Endt = Convert.ToDateTime(Enddate);
+        foreach (DataRow dr in dtplaydate.Rows)
+        {
+           if (!(dr[0].ToString().Equals("2012.12.31")))
+            {
+                if(Convert.ToDateTime(dr[0])<=Endt)
+                {
+                    if (Convert.ToDateTime(dr[0]).DayOfWeek.ToString().ToUpper() == "SUNDAY" || Convert.ToDateTime(dr[0]).DayOfWeek.ToString().ToUpper() == "SATURDAY" || (Convert.ToDateTime(dr[0]).DayOfWeek.ToString().ToUpper() == "FRIDAY" && ddl_Play.SelectedValue.ToString()=="ZANGOORA"))
+                    {
+                       ddl_Date.Items.Add(new ListItem(Convert.ToDateTime(dr[0].ToString()).ToString("ddd, MMM dd,yyyy"),
+                       Convert.ToDateTime(dr[0].ToString()).ToString("dd/MM/yyyy")));
+                    }
+                }
+            }
+        }
+    }
+    protected void ddl_Date_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        String filmCode = ddl_Play.SelectedValue;
+        String PlayDate = ddl_Date.SelectedValue;
+        //PlayDate = PlayDate.Replace("-", "/");
+        String Location = ddl_Location.SelectedValue;
+
+        ddl_ShowTimes.Items.Clear();
+        ddl_ShowTimes.Items.Add(new ListItem("Select", "0"));
+        ddl_Category.Items.Clear();
+        ddl_Category.Items.Add(new ListItem("Select", "0"));
+        ddl_Category.Items.Clear();
+        ddl_Category.Items.Add(new ListItem("Select", "0"));
+        foreach (DataRow dr in VistaBOL.Select_PlayTime(Location, filmCode, PlayDate).Rows)
+        {
+            ddl_ShowTimes.Items.Add(new ListItem(Convert.ToDateTime(dr[0].ToString()).ToShortTimeString(), dr[1].ToString().Trim()));
+        }
+    }
+    protected void ddl_ShowTimes_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        String filmCode = ddl_ShowTimes.SelectedValue;
+        ddl_Category.Items.Clear();
+        ddl_Category.Items.Add(new ListItem("Select", "0"));
+        DataSet ds = VistaBOL.Select_Category_DS(filmCode);
+            KoDTicketingLibrary.DTO.Promotion PromoSession = (KoDTicketingLibrary.DTO.Promotion)Session["PromotionCode"];
+            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+            {
+                if (ds.Tables[0].Rows[i][0].ToString() == "BZ")
+                {
+                    if (PromoSession.BZ == 1)
+                    {
+                        ddl_Category.Items.Add(new ListItem(ds.Tables[0].Rows[i][1].ToString() + ", Rs. " + String.Format("{0:#.##}",
+                        decimal.Parse(ds.Tables[0].Rows[i][2].ToString())), ds.Tables[0].Rows[i][0].ToString()));
+                    }
+                }
+                else if (ds.Tables[0].Rows[i][0].ToString() == "CO")
+                {
+                    if (PromoSession.CO == 1)
+                    {
+                        ddl_Category.Items.Add(new ListItem(ds.Tables[0].Rows[i][1].ToString() + ", Rs. " + String.Format("{0:#.##}",
+                    decimal.Parse(ds.Tables[0].Rows[i][2].ToString())), ds.Tables[0].Rows[i][0].ToString()));
+                    }
+                }
+                else if (ds.Tables[0].Rows[i][0].ToString() == "SL")
+                {
+                    if (PromoSession.SL == 1)
+                    {
+                        ddl_Category.Items.Add(new ListItem(ds.Tables[0].Rows[i][1].ToString() + ", Rs. " + String.Format("{0:#.##}",
+                    decimal.Parse(ds.Tables[0].Rows[i][2].ToString())), ds.Tables[0].Rows[i][0].ToString()));
+                    }
+                }
+                else if (ds.Tables[0].Rows[i][0].ToString() == "DM")
+                {
+                    if (PromoSession.DM == 1)
+                    {
+                        ddl_Category.Items.Add(new ListItem(ds.Tables[0].Rows[i][1].ToString() + ", Rs. " + String.Format("{0:#.##}",
+                    decimal.Parse(ds.Tables[0].Rows[i][2].ToString())), ds.Tables[0].Rows[i][0].ToString()));
+                    }
+                }
+                else if (ds.Tables[0].Rows[i][0].ToString() == "PL")
+                {
+                    if (PromoSession.PL == 1)
+                    {
+                        ddl_Category.Items.Add(new ListItem(ds.Tables[0].Rows[i][1].ToString() + ", Rs. " + String.Format("{0:#.##}",
+                    decimal.Parse(ds.Tables[0].Rows[i][2].ToString())), ds.Tables[0].Rows[i][0].ToString()));
+                    }
+                }
+                else if (ds.Tables[0].Rows[i][0].ToString() == "GL")
+                {
+                    if (PromoSession.GL == 1)
+                    {
+                        ddl_Category.Items.Add(new ListItem(ds.Tables[0].Rows[i][1].ToString() + ", Rs. " + String.Format("{0:#.##}",
+                    decimal.Parse(ds.Tables[0].Rows[i][2].ToString())), ds.Tables[0].Rows[i][0].ToString()));
+                    }
+                }
+            }
+        
+    }
+    protected void ddl_Category_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        String Category = ddl_Category.SelectedValue;
+        String PlayTime = ddl_ShowTimes.SelectedValue;
+        int availableSeats = VistaBOL.Select_Available_Seats(Category, PlayTime);
+    }
+    [System.Web.Services.WebMethod]
+    public static string BookingdateValidation(string selectedDate)
+    {
+        DateTime time = Convert.ToDateTime(selectedDate);
+        double remain = time.Subtract(DateTime.Today).TotalDays;
+        if (remain >= 30.0)
+        {
+            return "BOOKING TO OPEN 1 MONTH BEFORE THE SHOW";//"BOOKING TO OPEN 1 MONTH BEFORE THE SHOW";
+        }
+        return "Welcome";
+    }
+    protected void btn_Submit_Click(object sender, EventArgs e)
+    {
+        Session["play_Val"] = ddl_Play.SelectedValue;
+        Session["seat_Val"] = ddl_Location.SelectedValue + "," + ddl_Play.SelectedValue + "," + ddl_Date.SelectedValue +
+            "," + ddl_ShowTimes.SelectedValue + "," + ddl_Category.SelectedValue + "," +int.Parse(Session["NoofPackages"].ToString()) +
+            "," + ddl_Location.SelectedItem.Text + "," + ddl_ShowTimes.SelectedItem.Text + "," + ddl_Category.SelectedItem.Text;
+        Microsoft.Practices.EnterpriseLibrary.Logging.Logger.Write("Render Seat Layout for " + Session["seat_Val"].ToString());
+        string date = ddl_Date.SelectedItem.Text;
+        string category = ddl_Category.SelectedItem.Text;
+        string[] arrCat = category.Split('.');
+        string[] arrdt = date.Split(',');
+        decimal TotalAmount = Convert.ToDecimal(Session["NoofPackages"]) * Convert.ToDecimal(Session["TotalAmount"]);
+        decimal PayableAmount = Convert.ToDecimal(Session["NoofPackages"]) * Convert.ToDecimal(Session["PayableAmount"]);
+        string day = arrdt[0].ToString();
+        Session["day"] = day;
+        //Session["TotalAmount"] = TotalAmount;
+        //Session["PayableAmount"] = PayableAmount;
+        Response.Redirect("Seat-Layout.aspx?MMT=s", false);
+    }
+
+}

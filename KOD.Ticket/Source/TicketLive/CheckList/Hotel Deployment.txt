@@ -1,0 +1,11 @@
+﻿1. Added a promotion code to the Live DB i.e.(187) and corresponding regex.
+2. Added a condition for hotel to the Hotel Promotion Page.
+3. Corresponding Hotel condition to be added on the Mail Templete.
+  -a. Mail send to user 
+  -b. Mail send to KodRef and Gcab.
+In case of cab :
+1. Added a Promotion code for hotel to the Contact Details Load event.
+
+In case of hotels promotion for Vivanta, oberio & Trident :- 
+1. New Column named PayableAmount has to be added in the DB i.e (72) in Bookig Transaction & Booking Transaction_temp tables.
+

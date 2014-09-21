@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ReturnReceipt.aspx.cs" Inherits="RoyalWebApp.Payment.HDFC.ReturnReceipt" %>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="0751923b-7695-4021-9250-2be06fa2faa0" name="Administrator@PANKESH-VAIDVAN 2011-11-11 15:18:55" runUser="PANKESH-VAIDVAN\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="df831ba2-ca22-4d4d-8914-83235d3ba228">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_PANKESH-VAIDVAN 2011-11-11 15_18_55">
+      <DeploymentItem filename="E:\workarea\KOD_RoyalCard\WebApp\RoyalWebApp\RoyalWebApp\bin\RoyalWebApp.dll" />
+      <DeploymentItem filename="E:\workarea\KOD_RoyalCard\ClassLib\RoyalClassDBLib\RoyalClassDBLib\bin\Debug\RoyalClassDBLib.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-11-11T15:18:55.9488524+05:30" queuing="2011-11-11T15:18:58.9130219+05:30" start="2011-11-11T15:18:59.2210395+05:30" finish="2011-11-11T15:19:04.5243428+05:30" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="LoginConstructorTest" storage="e:\workarea\kod_royalcard\webapp\royalwebapp\testapproyal\bin\debug\testapproyal.dll" id="dd96a60c-62b0-d8df-0e9e-d57bf352943c">
+      <Execution id="bd97978d-f89c-4cc5-ac06-940c607920a6" />
+      <TestMethod codeBase="E:/workarea/KOD_RoyalCard/WebApp/RoyalWebApp/TestAppRoyal/bin/Debug/TestAppRoyal.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestAppRoyal.LoginTest, TestAppRoyal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LoginConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:2483/">
+        <Host pathToWebApp="E:\workarea\KOD_RoyalCard\WebApp\RoyalWebApp\RoyalWebApp" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="dd96a60c-62b0-d8df-0e9e-d57bf352943c" executionId="bd97978d-f89c-4cc5-ac06-940c607920a6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="bd97978d-f89c-4cc5-ac06-940c607920a6" testId="dd96a60c-62b0-d8df-0e9e-d57bf352943c" testName="LoginConstructorTest" computerName="PANKESH-VAIDVAN" duration="00:00:00.0240318" startTime="2011-11-11T15:19:00.5921179+05:30" endTime="2011-11-11T15:19:04.4293374+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bd97978d-f89c-4cc5-ac06-940c607920a6">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   at TestAppRoyal.LoginTest.LoginConstructorTest() in E:\workarea\KOD_RoyalCard\WebApp\RoyalWebApp\TestAppRoyal\LoginTest.cs:line 81
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

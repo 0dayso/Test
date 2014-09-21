@@ -1,0 +1,569 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AccMaster.master.cs"
+    Inherits="RoyalWebApp.Skins.Master.AccMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>Best Entertainment Places, Tourism Destination and Tourist Spots in India, Entertainment
+        Shows &#8211; Kingdom of Dreams</title>
+    <meta name="Description" content="The Best entertainment place in India which brings live entertainment shows, live theatre, Indian cuisine and Indian handicrafts with bollywood style musical at one place. Most incredible tourism destination in India which gives a new meaning to nightlife." />
+    <meta name="Keywords" content="best entertainment places, tourist places in india, entertainment, nightlife delhi, tourism destination india, tourist spots india, nightlife in india, live entertainment, entertainment show, bollywood online, bollywood watch, live theatre, Indian cuisine, Indian handicrafts, incredible India" />
+    <meta name="Keywords" content="best entertainment places, tourist places in india, entertainment, nightlife delhi, tourism destination india, tourist spots india, nightlife in india, live entertainment, entertainment show, bollwood online, bollwood watch, live theatre, indian cuisine, indian handicrafts, incredible india" />
+    <meta name="google-site-verification" content="uyhhZzldovhBWZih7cjw65a2fswRp5n4xQnp2oZ79iM" />
+    <link href="~/Skins/css/navigation.css" type="text/css" rel="stylesheet" />
+    <link href="~/Skins/css/scroll-bar.css" type="text/css" rel="stylesheet" />
+    <link href="~/Skins/css/style.css" type="text/css" rel="stylesheet" />
+    <link href="~/Skins/css/anylinkcssmenu.css" type="text/css" rel="stylesheet" />
+    <link href="~/Skins/css/royaltyCard.css" type="text/css" rel="stylesheet" />
+    <link href="~/Skins/css/scroll-bar.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.kingdomofdreams.in/images/favicon.ico" />
+    <%--<script language="javascript" type="text/javascript">
+        function validLogin() {
+            if ($('[id*=txtMemberId]').val() == "") {
+                alert("Please enter Membership Id");
+                $('[id*=txtMemberId]').focus();
+                return false;
+            }
+            if ($('[id*=txtPassword]').val() == "") {
+                alert("Please enter Password");
+                $('[id*=txtPassword]').focus();
+                return false;
+            }
+        }
+    </script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            $('#section').jScrollPane();
+
+        });		
+    </script>--%>
+    <style type="text/css">
+        .divbody
+        {
+            width: 230px;
+        }
+        .leftsection
+        {
+            width: 200px;
+            display: inline-block;
+            margin-left: 15px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .formcont
+        {
+            width: 220px;
+            display: inline-block;
+            margin: 8px 0 0 0;
+        }
+        .leftsection h1
+        {
+            font: 14px "Monotype Corsiva" , "Times New Roman" , Arial;
+            color: #53360a;
+            padding: 0px;
+            padding-top: 5px;
+            margin: 0px auto;
+            text-align: center;
+        }
+        label
+        {
+            display: inline-block;
+            color: #53360a;
+            font: 14px "Monotype Corsiva" , "Times New Roman" , Arial;
+            width: 85px;
+        }
+        
+        input[type="text"]
+        {
+            display: inline-block;
+            width: 115px;
+            border: 1px solid #b37b4b;
+            padding: 0 3px;
+            height: 16px;
+            font: 12px Arial, Helvetica, sans-serif;
+        }
+        input[type="password"]
+        {
+            display: inline-block;
+            width: 115px;
+            border: 1px solid #b37b4b;
+            padding: 0 3px;
+            height: 16px;
+            font: 12px Arial, Helvetica, sans-serif;
+        }
+        .formcont p, .formcont p a, .formcont p a:hover
+        {
+            color: #854c21;
+            font: 12px "Monotype Corsiva" , "Times New Roman" , Arial;
+            padding: 0px;
+            margin: 0px;
+            display: inline-block;
+            text-decoration: none;
+            float: left;
+        }
+        .formcont p a:hover
+        {
+            text-decoration: underline;
+        }
+        .formcont span, .formcont span a, .formcont span a:hover
+        {
+            color: #482912;
+            font: 13px "Monotype Corsiva" , "Times New Roman" , Arial;
+            padding: 0 5px 0 0;
+            margin: 0px;
+            margin-right: 5px;
+            display: inline-block;
+            text-decoration: none;
+            float: right;
+        }
+        .formcont span a:hover
+        {
+            text-decoration: underline;
+        }
+        .home-flash
+        {
+            background-image: url(../Skins/images/Pattern.png);
+            width: 761px; /*margin-left:0px;*/
+            height: 290px; /*align:center*/
+        }
+        .animation_block
+        {
+            position: relative; /*	left: 50%; top: 50%;
+	margin: -300px 0 0 -455px;
+*/
+        }
+        .main_view
+        {
+            float: left;
+            position: relative;
+            top: -0.5px;
+            left: 0px;
+            width: 761px;
+        }
+        .image_reel
+        {
+            position: relative;
+        }
+        .window12
+        {
+            height: 290px;
+            width: 770px;
+            overflow: hidden; /*--Hides anything outside of the set width/height--*/
+            position: relative;
+            top: 0px;
+            left: 0px;
+        }
+        .paging
+        {
+            position: absolute;
+            bottom: 0px;
+            right: 5px;
+            width: 128px;
+            height: 57px;
+            z-index: 100; /*--Assures the paging stays on the top layer--*/
+            text-align: center;
+            line-height: 40px;
+            font-size: 14px;
+            display: none; /*--Hidden by default, will be later shown with jQuery--*/
+        }
+        .paging a
+        {
+            padding: 5px;
+            text-decoration: none;
+            color: #fff;
+        }
+        .paging a.active
+        {
+            font-weight: bold;
+            background: #e6b931;
+            border: 1px solid #610000;
+            -moz-border-radius: 30px;
+            -khtml-border-radius: 30px;
+            -webkit-border-radius: 30px;
+        }
+        .paging a:hover
+        {
+            font-weight: bold;
+        }
+        .wrapper
+        {
+            width: 958px;
+            margin: 0 auto;
+        }
+    </style>
+    <%-- <script language="javascript" type="text/javascript">
+
+        function getd(id) {
+            return document.getElementById(id);
+        }
+
+        function showalert() {
+            OpenDiv(getd("PopupMsgAlert"));
+        }
+
+        function loadFileToElement() {
+
+            if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+
+            else {// code for IE6, IE5
+
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+            }
+
+            xmlhttp.open("GET", "admin/Notice.xml?qs=" + new Date().getTime(), false);
+
+            xmlhttp.send();
+
+            xmlDoc = xmlhttp.responseXML;
+
+            var x = xmlDoc.getElementsByTagName("notice");
+
+            var DisplayMessage = x[0].getElementsByTagName("display")[0].childNodes[0].nodeValue;
+
+            var Message = x[0].getElementsByTagName("message")[0].childNodes[0].nodeValue;
+
+            if (DisplayMessage == "1") {
+
+                getd("message").innerHTML = Message;
+
+                showalert();
+
+            }
+        }
+
+    </script>--%>
+    <script type="text/javascript" src="../Skins/js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="../Skins/js/sliderAni.js"></script>
+    <script type="text/javascript" src="../Skins/js/anylinkcssmenu.js"></script>
+    <script type="text/javascript">
+        //        anylinkcssmenu.init("menu_anchors_class") ////Pass in the CSS class of anchor links (that contain a sub menu)
+        anylinkcssmenu.init("anchorclass")
+    </script>
+</head>
+<body class="home-page-bg">
+    <form id="Form1" runat="server">
+    <div class="wrapper">
+        <div class="logo-row">
+            <div class="logo">
+                <a href="http://www.kingdomofdreams.in/index.html">
+                    <img src="../Skins/images/logo.jpg"></a>
+            </div>
+            <div class="sociallink">
+                <a target="_blank" href="http://www.tripadvisor.in/Attraction_Review-g297615-d1948085-Reviews-Kingdom_of_Dreams-Gurgaon_Haryana.html">
+                    <img src="../Skins/images/tripadvisor.jpg" alt="Trip Advisor" height="22" width="22"></a>
+                <a href="http://www.facebook.com/kingdomofdreams?ref=ts" target="_blank">
+                    <img src="../Skins/nav-btn-new/facebook-icon.jpg" height="23" width="22"></a>&nbsp;
+                <a href="http://www.linkedin.com/company/kingdom-of-dreams?trk=fc_badge" target="_blank">
+                    <img src="../Skins/nav-btn-new/in-icon.jpg" height="23" width="24"></a> <a href="http://twitter.com/KingdomOfDreams"
+                        target="_blank">
+                        <img src="../Skins/nav-btn-new/twitter-icn.jpg" height="23" width="25"></a>&nbsp;</div>
+        </div>
+        <!-- logo-row ends here -->
+        <div style="background: url(../Skins/images/tilebgd.png); width: 913px; margin: 0 auto;">
+            <table border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01" runat="server">
+             <tr>
+                    <td colspan="9" align="right"><span class="divtext" style="padding-right:10px"><b>
+                            <asp:Label ID="LblUserName" runat="server"></asp:Label></b> </span></td> </tr> 
+                <tr>
+                    <td colspan="9">
+                        <img src="../Skins/images/default_01.png" width="123" height="37" alt="" /><a href="Login.aspx"
+                            class="anchorclass" rel="homeSubmenuDivID"><img src="../Skins/images/default_02.png"
+                                alt="" width="58" height="37" border="0" /></a><a href="#" class="anchorclass" rel="membershiptiers"><img
+                                    src="../Skins/images/default_03.png" alt="" width="146" height="37" border="0" /></a><a
+                                        href="Benefits.aspx"><img src="../Skins/images/default_04.png" alt="" width="167"
+                                            height="37" border="0" /></a><a href="TermsAndConditions.aspx"><img src="../Skins/images/default_05.png"
+                                                alt="" width="170" height="37" border="0" /></a><a href="FAQ.aspx"><img src="../Skins/images/default_06.png"
+                                                    alt="" width="46" height="37" border="0" /></a><a href="Feedback.aspx"><img src="../Skins/images/default_07.png"
+                                                        alt="" width="80" height="37" border="0" /></a><img src="../Skins/images/default_08.png"
+                                                            width="123" height="37" alt="" />
+                        <div id="membershiptiers" class="anylinkcss">
+                            <ul>
+                                <li><a href="PurpleCard.aspx">Purple Card</a></li>
+                                <li><a href="BlueCard.aspx">Blue Card</a></li>
+                                <li><a href="PlatinumCard.aspx">Platinum Card</a></li>
+                                <li><a href="TitaniumCard.aspx">Titanium Card</a></li>
+                            </ul>
+                        </div>
+                        <div id="homeSubmenuDivID" class="anylinkcss">
+                            <ul>
+                                <%if (Session["IsLogged"] != null && Session["IsLogged"] != "")
+                                  {%>
+                                <li><a href="ViewProfile.aspx" rel="dropmenu1">My Account</a></li>
+                                <%}
+                                  else
+                                  {%>
+                                <li><a href="Login.aspx">Home</a></li>
+                                <%} %>
+                                <li><a href="#" rel="dropmenu2">Membership Tiers</a></li>
+                                <li><a href="Benefits.aspx">Membership Benefits</a></li>
+                                <li><a href="TermsAndConditions.aspx">Terms & Conditions</a></li>
+                                <li><a href="FAQ.aspx">Faq's</a></li>
+                                <li><a href="Feedback.aspx">Feedback</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <%--<td colspan="7"><img src="../Skins/images/KodNew_01.png" alt="" width="913" height="48" border="0" usemap="#Map2" /></td>--%>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img src="../Skins/images/KodNew_02.png" width="72" height="290" alt="" />
+                    </td>
+                    <td colspan="3" width="761" height="290">
+                        <div class="home-flash">
+                             <div class="contentDiv">
+                                    <!-- site navigation -->
+                                    <div class="tabNav" style="text-align: left;margin-top :30px">
+                                        <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                                        </asp:SiteMapPath>
+                                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                                    </div>
+                                    <br />
+                                    <!--end site navigation -->
+                                    <div class="home-content-left" style="text-align: left">
+                                        <h3>
+                                            <asp:ContentPlaceHolder ID="CPHPageHeading" runat="server" />
+                                        </h3>
+                                    </div>
+                                    <br />
+                                    <div style="width: 720px; float:left;" >
+                                        <asp:ContentPlaceHolder ID="CPHPageData" runat="server" />
+                                    </div>
+                                </div>
+                        </div>
+                    </td>
+                    <td colspan="2">
+                        <img src="../Skins/images/KodNew_04.png" width="80" height="290" alt="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="7">
+                        <img src="../Skins/images/KodNew_05.png" width="913" height="21" alt="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../Skins/images/KodNew_06.png" width="68" height="123" alt="" />
+                    </td>
+                    <%--<td width="260">
+        <div class="divbody">
+			<div class="leftsection">
+				<h1>MEMBER LOGIN</h1>
+			
+					<div class="formcont">
+						<label>MEMBER ID :</label>
+					    <input name="Email" type="text" title="Email" />
+					</div>
+
+					<div class="formcont">
+						<label>PASSWORD :</label>
+					    <input name="Email" type="password" title="Email" />
+					</div>
+
+					<div class="formcont">
+						<p><a href="#">FORGOT PASSWORD?</a></p>
+					    <span><a href="#">ENTER</a></span>
+					</div>
+				
+
+			</div>
+
+		</div>
+        </td>--%>
+                    <td width="260" height="123" colspan="5" valign="top" style="background-image: url(../Skins/images/tilebgd.png.png);
+                        background-repeat: no-repeat">
+                        <div style="float: left; margin-left: 50px;">
+                            <img src="../Skins/images/royalcardlogo.png" alt="" width="199" height="86" border="0" /></div>
+                        <div style="margin: 25px 50px 0px 0px; float: right">
+                            <img src="../Skins/images/kodlogo.png" width="86" height="54"></div>
+                    </td>
+                    <%--<td>
+                        <a href="#">
+                            <img src="../Skins/images/royalcardlogo.png" alt="" width="264" height="123" border="0" /></a>
+                    </td>--%>
+                    <%--<td colspan="2">
+                        <a href="#">
+                            <img src="../Skins/images/Special-Offers.png" alt="" width="281" height="123" border="0" /></a>
+                    </td>--%>
+                    <td>
+                        <img src="../Skins/images/KodNew_10.png" width="40" height="123" alt="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../Skins/images/spacer.gif" width="68" height="1" alt="" />
+                    </td>
+                    <td>
+                        <img src="../Skins/images/spacer.gif" width="4" height="1" alt="" />
+                    </td>
+                    <td>
+                        <img src="../Skins/images/spacer.gif" width="256" height="1" alt="" />
+                    </td>
+                    <td>
+                        <img src="../Skins/images/spacer.gif" width="264" height="1" alt="" />
+                    </td>
+                    <td>
+                        <img src="../Skins/images/spacer.gif" width="241" height="1" alt="" />
+                    </td>
+                    <td>
+                        <img src="../Skins/images/spacer.gif" width="40" height="1" alt="" />
+                    </td>
+                    <td>
+                        <img src="../Skins/images/spacer.gif" width="40" height="1" alt="" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="home-content">
+            <div class="home-content-left">
+                <h3 align="center">
+                    IIFA Buzz / Picture Gallery</h3>
+                <div id="section" class="scroll-pane">
+                    <p style="font: 12px,Palatino Linotype,Century Gothic,Arial">
+                        Taking off from the hugely popular Brand iifa, the iifa Buzz Cafe is planned as
+                        a complete Bollywood experience<br />
+                        - Thematic decor, props, music and special effects adds to the excitement of the
+                        place<br />
+                        - Larger-than -life moments of reel life in the form of posters, records, props
+                        and star memorabilia<br />
+                        - An engaging experience for both international and Indian tourists</p>
+                    </p>
+                </div>
+            </div>
+            <div class="home-content-right2">
+                <img src="../Skins/images/box-office.jpg" alt="Box Office" width="190" height="210"
+                    border="0" usemap="#Map" />
+                <map name="Map" id="Map">
+                    <area shape="rect" coords="36,63,171,122" href="http://www.kingdomofdreams.in/zangoora/index.html" />
+                    <area shape="rect" coords="35,126,173,181" href="http://www.kingdomofdreams.in/jhumroo/index.html" />
+                </map>
+            </div>
+        </div>
+    </div>
+    <!-- wrapper ends here -->
+    <div class="footer">
+        <div class="new-navigation">
+            <div class="new-nav">
+                <div class="the-kingdom">
+                    <a href="http://www.kingdomofdreams.in/the-kingdom.html">
+                        <img src="../Skins/nav-btn-new/the-kingdom.jpg"></a></div>
+                <div class="nautanki-mahal">
+                    <a href="http://www.kingdomofdreams.in/nautankimahal.html">
+                        <img src="../Skins/nav-btn-new/nautanki-mahal.jpg"></a></div>
+                <div class="showshaa-threatre">
+                    <a href="http://www.kingdomofdreams.in/showshaa.html">
+                        <img src="../Skins/nav-btn-new/showshaa-theatre.jpg"></a></div>
+                <div class="culture-gully">
+                    <a href="http://www.kingdomofdreams.in/culturegully.html">
+                        <img src="../Skins/nav-btn-new/culture-gully.jpg"></a></div>
+                <div class="iifa-buzz">
+                    <a href="http://www.kingdomofdreams.in/iifa-buzz.html">
+                        <img src="../Skins/nav-btn-new/iifa-buzz.jpg"></a></div>
+                <br>
+                <div class="clr">
+                </div>
+                <div class="home">
+                    <a href="http://www.kingdomofdreams.in/index.html">
+                        <img src="../Skins/nav-btn-new/home.jpg" height="17" width="45"></a></div>
+                <div class="about">
+                    <a href="http://www.kingdomofdreams.in/about-us.html">
+                        <img src="../Skins/nav-btn-new/about-us.jpg" height="17" width="77"></a></div>
+                <div class="contact">
+                    <a href="http://www.kingdomofdreams.in/contact-us.html">
+                        <img src="../Skins/nav-btn-new/contact-us.jpg" height="17" width="89"></a></div>
+                <div class="lost-found">
+                    <a href="http://www.kingdomofdreams.in/lost-and-found.html">
+                        <img src="../Skins/nav-btn-new/lost-and-found.jpg"></a></div>
+                <div class="blog">
+                    <a href="http://blog.kingdomofdreams.in/" target="_blank">
+                        <img src="../Skins/nav-btn-new/blog.jpg"></a></div>
+                <div class="career">
+                    <a href="http://www.kingdomofdreams.in/career.html">
+                        <img src="../Skins/nav-btn-new/career.jpg"></a></div>
+                <div class="gcell">
+                    <a href="http://www.gcell.in/" target="_blank">
+                        <img src="../Skins/nav-btn-new/gcell.jpg"></a></div>
+            </div>
+        </div>
+    </div>
+    <div id="boxes">
+        <div style="top: 438.5px; left: 710px; display: none;" id="PopupMsgAlert" runat="server"
+            class="windowAlrtMsg">
+            <a class="close" href="javascript:" onclick="closeAlertDiv();">
+                <img src="images/close2.png" alt="#" style="float: right; margin: -20px -20pt 0pt 20px;"
+                    height="26" width="26"></a>
+            <h2>
+                <center>
+                    NOTICE
+                </center>
+            </h2>
+            <p id="message">
+                5 Big parties at Kingdom of Dreams with unlimited food and drinks waiting for you
+                on the new years . For bookings Please call on 01244528000</p>
+            <script type="text/javascript">
+
+                window.setTimeout("loadFileToElement()", 0);</script>
+        </div>
+    </div>
+    <div style="width: 1920px; height: 977px; display: none; opacity: 0.8;" id="mask">
+    </div>
+    <%--<map name="Map2" id="Map2">
+
+  <area shape="rect" coords="129,11,177,29" href="#" />
+  <area shape="rect" coords="187,11,322,29" href="#" />
+  <area shape="rect" coords="331,10,490,30" href="Benefits.aspx" />
+  <area shape="rect" coords="499,9,662,31" href="TermsAndConditions.aspx" />
+  <area shape="rect" coords="672,9,708,31" href="FAQ.aspx" />
+  <area shape="rect" coords="714,10,787,30" href="Feedback.aspx" />
+</map>--%>
+    <script type="text/javascript">
+
+
+
+        var _gaq = _gaq || [];
+
+        _gaq.push(['_setAccount', 'UA-17427160-2']);
+
+        _gaq.push(['_trackPageview']);
+
+
+
+        (function () {
+
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+        })();
+
+
+
+    </script>
+    </form>
+</body>
+</html>
+<%--<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>--%>

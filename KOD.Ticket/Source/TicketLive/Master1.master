@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master1.master.cs" Inherits="Master1" %>
+
+<%@ Register Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="asp" %>
+<%@ Register Src="Controls/Footer.ascx" TagName="Footer" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+
+    <script type="text/javascript">
+        history.forward();
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Kingdom of Dreams : Ticket Booking</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35374139-1']);
+    _gaq.push(['_setDomainName', 'kingdomofdreams.in']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+</head>
+<body class="home-page-bg">
+    <form id="form1" runat="server">    
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="True">
+    </asp:ScriptManager>
+    <div class="wrapper">
+        <div class="logo-row">
+            <div class="logo">
+                <a href="http://kingdomofdreams.in/index.html" target="_blank">
+                    <img src="images/logo.jpg" /></a>
+            </div>
+        </div>
+        <!--logo-row ends here -->
+        <div class="seats-main">
+            <div class="seats-inside-jhumroooffer">
+                <div class="ticket-main">
+                    <asp:ContentPlaceHolder ID="mainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+        <!-- seats-main ends here -->
+    </div>
+    <!-- wrapper ends here -->
+    <uc1:Footer ID="Footer1" runat="server" />
+    <!-- footer-main ends here -->
+    </form>
+</body>
+</html>
+

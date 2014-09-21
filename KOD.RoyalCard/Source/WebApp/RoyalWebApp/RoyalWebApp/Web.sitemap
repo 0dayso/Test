@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="Account/Login.aspx" title="Home"  description="Home">
+      <siteMapNode url="Account/Benefits.aspx" title="Card Details"  description="Card Details ">
+        <siteMapNode url="Account/BlueCardBenefits.aspx" title="Blue Card Benifits"  description="Blue Card Benifits" />
+        <siteMapNode url="Account/GoldCardBenefits.aspx" title="Gold Card Benifits"  description="Gold Card Benifits" />
+        <siteMapNode url="Account/KingCardBenefits.aspx" title="King Card Benifits"  description="King Card Benifits" />
+        <siteMapNode url="Account/PlatinumCardBenefits.aspx" title="Platinum Card Benifits"  description="Platinum Card Benifits" />
+        <siteMapNode url="Account/PrinceCardBenefits.aspx" title="Prince Card Benifits"  description="Prince Card Benifits" />
+        <siteMapNode url="Account/PurpleCardBenefits.aspx" title="Purple Card Benifits"  description="Purple Card Benifits" />
+        <siteMapNode url="Account/TitaniumCardBenefits.aspx" title="Titanium Card Benifits"  description="Titanium Card Benifits" />
+       
+
+        <siteMapNode url="Account/BlueCard.aspx" title="Blue Card "  description="Blue Card " />
+        <siteMapNode url="Account/GoldCard.aspx" title="Gold Card "  description="Gold Card " />
+        <siteMapNode url="Account/KingCard.aspx" title="King Card "  description="King Card " />
+        <siteMapNode url="Account/PlatinumCard.aspx" title="Platinum Card "  description="Platinum Card " />
+        <siteMapNode url="Account/PrinceCard.aspx" title="Prince Card "  description="Prince Card " />
+        <siteMapNode url="Account/PurpleCard.aspx" title="Purple Card "  description="Purple Card " />
+        <siteMapNode url="Account/TitaniumCard.aspx" title="Titanium Card "  description="Titanium Card " />
+      </siteMapNode>
+
+      <siteMapNode url="Account/UserCard.aspx" title="My Account"  description="My Account">
+        <siteMapNode url="Account/TransactionDetails.aspx" title="My Transaction"  description="My Transaction"/>
+        <siteMapNode url="Account/TicketBooking.aspx" title="Book Tickets"  description="Book Tickets">
+          <siteMapNode url="Account/SeatLayout.aspx" title="Seat Layout"  description="Seat Layout"/>
+          <siteMapNode url="Account/ContactDetails.aspx" title="Contact Details"  description="Contact Details"/>
+          <siteMapNode url="Account/Print-Receipt.aspx" title="Payment Receipt"  description="Payment Receipt"/>
+        </siteMapNode>
+        <siteMapNode url="Account/ChangePassword.aspx" title="Change Password"  description="Change Password"/>
+        <siteMapNode url="Account/EditProfile.aspx" title="Edit Profile"  description="Edit Profile"/>
+        <siteMapNode url="Account/PGDetails.aspx" title="PG Details"  description="PG Details"/>
+        <siteMapNode url="Account/PointStatement.aspx" title="Point Statement"  description="Point Statement"/>
+        <siteMapNode url="Account/RedeemPoints.aspx" title="Redeem Points"  description="Redeem Points"/>
+        <siteMapNode url="Account/TopUp.aspx" title="Top Up"  description="Top Up"/>
+        <siteMapNode url="Account/ViewProfile.aspx" title="View Profile"  description="View Profile"/>
+        </siteMapNode>
+
+
+      <siteMapNode url="Account/FAQ.aspx" title="FAQ"  description="FAQ"/>
+      <siteMapNode url="Account/Feedback.aspx" title="Feedback"  description="Feedback"/>
+      <siteMapNode url="Account/ForgotPassword.aspx" title="Forgot Password"  description="Forgot Password"/>
+      <siteMapNode url="Account/Membership.aspx" title="Become A Member"  description="Become A Member"/>
+      <siteMapNode url="Account/TermsAndConditions.aspx" title="Terms And Conditions"  description="Terms And Conditions"/>
+      <siteMapNode url="Account/Logout.aspx" title="Logout"  description="Logout"/>
+       
+    
+    </siteMapNode>
+</siteMap>

@@ -1,0 +1,80 @@
+.new-navigation {
+	width:980px;
+	float:left;
+}
+.new-nav {
+	float:left;
+	margin-left:36px;
+}
+.new-nav .the-kingdom {
+	width:106px;
+	float:left;
+	padding-left:38px;
+}
+.new-nav .nautanki-mahal {
+	width:142px;
+	float:left;
+	padding-left:51px;
+}
+
+.new-nav .showshaa-threatre {
+	width:148px;
+	float:left;
+	padding-left:52px;
+}
+
+.new-nav .culture-gully {
+	width:107px;
+	float:left;
+	padding-left:51px;
+}
+
+.new-nav .iifa-buzz {
+	width:72px;
+	float:left;
+	padding-left:51px;
+}
+
+.new-nav .home {
+	width:45px;
+	float:left;
+	padding:6px 0 0 110px;
+}
+
+.new-nav .about {
+	width:77px;
+	float:left;
+	padding:6px 0 0 43px;
+}
+
+.new-nav .contact {
+	width:89px;
+	float:left;
+	padding:6px 0 0 43px;
+}
+
+.new-nav .lost-found {
+	width:111px;
+	float:left;
+	padding:6px 0 0 45px;
+}
+
+.new-nav .blog {
+	width:39px;
+	float:left;
+	padding:6px 0 0 43px;
+}
+
+.new-nav .career {
+	width:56px;
+	float:left;
+	padding:6px 0 0 44px;
+}
+
+.new-nav .gcell {
+	width:79px;
+	float:left;
+	padding:6px 0 0 41px;
+}
+
+.clr {clear:both;}

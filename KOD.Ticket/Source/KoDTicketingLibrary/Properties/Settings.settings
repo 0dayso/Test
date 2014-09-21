@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="KoDTicketingLibrary.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MailSenderAccount" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">noreplyKOD@gmail.com</Value>
+    </Setting>
+    <Setting Name="MailSenderAccountName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Kingdom OfDreams</Value>
+    </Setting>
+    <Setting Name="MailEmailAccountSMTPServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">smtp.gmail.com</Value>
+    </Setting>
+    <Setting Name="MailEmailAccountPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">k1ngd0m2012</Value>
+    </Setting>
+    <Setting Name="MailEmailAccountSMTPServerPort" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">587</Value>
+    </Setting>
+    <Setting Name="SMSServiceURI" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://perfectbulksms.com/Sendsmsapi.aspx</Value>
+    </Setting>
+    <Setting Name="SMSApiUsername" Type="System.String" Scope="User">
+      <Value Profile="(Default)">gcell</Value>
+    </Setting>
+    <Setting Name="SMSApiPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">cell321</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

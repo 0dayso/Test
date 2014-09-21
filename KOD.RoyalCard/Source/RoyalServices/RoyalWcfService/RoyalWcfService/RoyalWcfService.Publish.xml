@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\Administrator\Desktop\RoyalPublish\Service" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="False">
+    <file relUrl="EntityService.svc" publishTime="11/09/2011 14:37:30" />
+    <file relUrl="ServiceRoyal.svc" publishTime="11/08/2011 12:08:11" />
+    <file relUrl="bin/RoyalWcfService.pdb" publishTime="12/29/2011 17:41:54" />
+    <file relUrl="Web.config" publishTime="12/29/2011 17:41:55" />
+    <file relUrl="bin/RoyalWcfService.dll" publishTime="12/29/2011 17:41:54" />
+  </publishProfile>
+  <publishProfile publishUrl="C:\Users\Administrator\Desktop\RoyalPublish\Service" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="WCFRoyal" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="01/24/2012 16:52:05" />
+    <file relUrl="EntityService.svc" publishTime="11/09/2011 14:37:30" />
+    <file relUrl="ServiceRoyal.svc" publishTime="11/08/2011 12:08:11" />
+    <file relUrl="bin/RoyalWcfService.pdb" publishTime="01/24/2012 16:52:02" />
+    <file relUrl="bin/RoyalWcfService.dll" publishTime="01/24/2012 16:52:03" />
+  </publishProfile>
+</publishData>

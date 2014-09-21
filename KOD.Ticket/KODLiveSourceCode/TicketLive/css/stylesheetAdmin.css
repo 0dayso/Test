@@ -1,0 +1,28 @@
+
+body {margin:0px; font-family:Arial, Verdana, Helvetica, sans-serif; font-size:12px; color:#333333; text-decoration:none;}
+.headerbg {background: url(../Admin/images/header-bg.jpg) repeat-x;}
+.headerbgright {background: url(../Admin/images/header-right-image.jpg) right no-repeat; width:563px;}
+#headerbg .heading {font-family:Arial, Verdana, Helvetica, sans-serif; font-size:30px; color:#fff; padding-left:20px; font-weight:bold;}
+.leftnavbg {background: url(../Admin/images/left-nav-bg.jpg) repeat-y;}
+#nautankiMahal{background: url(../Admin/images/nautanki-mahal.jpg); width:246px; height:192px;background-repeat:no-repeat; background-position:right bottom;}
+.toplink {font-family:Arial, Verdana, Helvetica, sans-serif; font-size:11px; color:#000000; text-decoration:none; text-align:center; font-weight:bold;}
+.toplink a{font-family:Arial, Verdana, Helvetica, sans-serif; font-size:11px; color:#000000; text-decoration:none; text-align:center; font-weight:bold;}
+.toplink a:hover{font-family:Arial, Verdana, Helvetica, sans-serif; font-size:11px; color:#FF0000; text-decoration:underline; text-align:center; font-weight:bold;}
+.LNlink {font-family:Arial, Verdana, Helvetica, sans-serif; font-size:11px; color:#000000; text-decoration:none; line-height:18px; padding-left:15px; font-weight:bold;}
+.LNlink a{font-family:Arial, Verdana, Helvetica, sans-serif; font-size:11px; color:#000000; text-decoration:none; line-height:18px; font-weight:bold;}
+.LNlink a:hover{font-family:Arial, Verdana, Helvetica, sans-serif; font-size:11px; color:#999999; text-decoration:underline; line-height:18px; font-weight:bold;}
+#tablebg {background:#F9F9F9}
+#footbg {background: url(../Admin/images/foot-bg.jpg) repeat-x;}
+.LeftNavBg {background:#c7eafb;}
+.padding20 {padding:20px;}
+#border1 {background:#FFFFFF; border:#e5e5e5 1px solid; }
+.loginbdrbg {border:#d6d6d6; border-style:solid; border-width:1px; background:#fbfbfb;}
+.footlink {font-family:Arial, Verdana, Helvetica, sans-serif; font-size:11px; color:#FFFFFF; text-decoration:none; padding-left:10px;}
+.btmimg {background:url(../Admin/images/sms-bg-right.jpg); background-repeat:no-repeat; background-position:right bottom;}
+.btn {background:url(../Admin/images/btn.gif); height:16px; width:106px;}
+.leftbtn {background: url(../Admin/images/left_tab_bg.gif) no-repeat; height:16px; width:171px;}
+.myText{font-family:Arial, Verdana, Helvetica, sans-serif; font-size:12px; color:#58595b; text-decoration:none; text-align:left;}
+.myText_Msg{font-family:Arial, Verdana, Helvetica, sans-serif; font-size:12px; color:#000099; text-decoration:none; text-align:left;}
+
+.myTB{font-family:Arial, Verdana, Helvetica, sans-serif; width:180px; font-size:12px; color:#58595b; text-decoration:none; text-align:left;}
+.myHead{font-family:Arial, Verdana, Helvetica, sans-serif; font-weight:bold; font-size:12px; color:#58595b; text-decoration:none; text-align:left;}

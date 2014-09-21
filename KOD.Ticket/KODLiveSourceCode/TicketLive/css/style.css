@@ -1,0 +1,360 @@
+
+
+body
+{
+    padding: 0px;
+    margin: 0px;
+    font: 12px Verdana;
+    color: #ECA035;
+}
+img
+{
+    border: none;
+}
+.home-page-bg
+{
+    background: url(../images/page-bg.jpg) no-repeat center top #000000;
+}
+.wrapper
+{
+    width: 958px;
+    margin: 0 auto;
+}
+
+.wrapper_seatlayout
+{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo-row
+{
+    width: 930px;
+    margin: 0 auto;
+    height: 144px;
+}
+.logo-row .logo
+{
+    width: 330px;
+    float: left;
+    padding-top: 8px;
+}
+.seats-main
+{
+    width: 846px;
+    margin: 0 auto;
+}
+.seats-main_02
+{
+    width: 98%;
+    height:auto;
+    
+}
+.seats-inside
+{
+    width: 846px;
+    float: left;
+    background: url(../images/ticket-booking-bg.jpg) no-repeat;
+    overflow: auto;
+    height: 489px;
+    padding-left:245px;
+    *padding-left:245px;
+}
+.seats-inside-october
+{
+    width: 846px;
+    float: left;
+    background: url(../images/ticket-booking-_jhumroo_offer.jpg) no-repeat;
+    overflow: auto;
+    height: 489px;
+    padding-left:245px;
+    *padding-left:245px;
+}
+.seats-inside-jhumroooffer
+{
+    width: 846px;
+    float: left;
+    background: url(../images/ticket-booking_2nd-anni.jpg) no-repeat;
+    overflow: auto;
+    height: 489px;
+    padding-left:245px;
+    *padding-left:245px;
+}
+
+/* footer css starts here */
+.footer-main
+{
+    width: 100%;
+    float: left;
+    background: url(../images/footer-bg.jpg) no-repeat center;
+    height: 63px;
+    margin-top: 10px;
+}
+.footer-inside
+{
+    width: 980px;
+    margin: 0 auto;
+}
+.footer-inside .home
+{
+    width: 77px;
+    float: left;
+    padding-top: 38px;
+}
+.footer-inside .about
+{
+    width: 95px;
+    float: left;
+    padding-top: 38px;
+}
+.footer-inside .kingdom
+{
+    width: 108px;
+    float: left;
+    padding-top: 40px;
+}
+.footer-inside .nautanki-mahal
+{
+    width: 130px;
+    float: left;
+    padding-top: 38px;
+}
+.footer-inside .show-sha
+{
+    width: 150px;
+    float: left;
+    padding-top: 38px;
+}
+.footer-inside .culture-gully
+{
+    width: 111px;
+    float: left;
+    padding-top: 38px;
+}
+.footer-inside .iifa-buzz
+{
+    width: 89px;
+    float: left;
+    padding-top: 38px;
+}
+.footer-inside .contact-us
+{
+    width: 90px;
+    float: left;
+    padding-top: 38px;
+}
+.footer-inside .face-book
+{
+    width: 27px;
+    float: left;
+    padding-top: 38px;
+}
+.footer-inside .twitter
+{
+    width: 34px;
+    float: left;
+    padding-top: 39px;
+}
+.footer-inside .tnt
+{
+    width: 66px;
+    float: left;
+    padding-top: 39px;
+}
+.footer-inside .g-cell
+{
+    width: 67px;
+    padding-top: 29px;
+    padding-left: 980px;
+}
+/* footer css ends here */
+
+/* css for amit */
+.text-small
+{
+    font: 12px verdana;
+    color: #000000;
+}
+.text-big
+{
+    font: 14px "Palatino Linotype" , "Century Gothic" , Arial;
+    color: #ECA035;
+}
+.bold
+{
+    font-weight: bold;
+}
+.heading
+{
+    font: bold 16px "Palatino Linotype" , "Century Gothic" , Arial;
+    color: #ECA035;
+}
+.sub-heading
+{
+    font: bold 14px "Palatino Linotype" , "Century Gothic" , Arial;
+    color: #ECA035;
+}
+
+
+
+/* css for terms - condition page starts here */
+.terms-main
+{
+    width: 607px;
+    float: left;
+    padding: 30px 15px;
+    border: 1px solid #FF9900;
+    background: #000000;
+    color: #ECA035;
+    font-size: 13px;
+}
+.terms-main h2
+{
+    font: bold 18px "Palatino Linotype" , "Century Gothic" , Arial;
+    color: #FFF457;
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+}
+.terms-main h3
+{
+    font: bold 13px Verdana, Arial, Helvetica, sans-serif;
+    color: #ECA035;
+    padding: 0px;
+    margin: 0px 0px 5px 0px;
+    text-transform: uppercase;
+}
+.border-bottom
+{
+    border-bottom: 1px solid #ECA035;
+}
+.terms-text
+{
+    width: 607px;
+    float: left;
+    margin: 0px 0px 20px 0px;
+}
+.terms-text p
+{
+    padding: 0px;
+    margin: 0px;
+}
+.terms-text p a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.terms-text p a:hover
+{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.terms-ol
+{
+    padding: 0px;
+    margin: 0px;
+}
+.terms-ol li
+{
+    list-style: decimal;
+    list-style-position: inside;
+    line-height: 19px;
+    padding-bottom: 5px;
+}
+/* css for terms - condition page ends here */
+
+/* css added on 05/10/10 starts here */
+.ticket-main
+{
+    width: 286px;
+    float: left;
+    margin: 91px 0px 0px 47px;
+    *margin: 91px 0px 0px 27px;
+}
+.ticket-heading
+{
+    width: 286px;
+    float: left;
+    height: 50px;
+    text-align: center;
+}
+.ticket-row
+{
+    width: 286px;
+    float: left;
+    padding-bottom: 8px;
+}
+.ticket-name
+{
+    width: 132px;
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 3px;
+}
+.ticket-answer
+{
+    width: 154px;
+    float: left;
+}
+.ticket-select
+{
+    width: 152px;
+    font: 11px Arial, Helvetica, sans-serif;
+    color: #000000;
+    border: 1px solid #8D6F90;
+}
+.select-seat-button-main
+{
+    width: 286px;
+    float: left;
+    text-align: center;
+    margin-top: 41px;
+}
+
+/* css added on 05/10/10 ends here */
+.common-button
+{
+    width: 127px;
+    height: 25px;
+    background: url(../images/comon-button.jpg) no-repeat;
+    border: none;
+    color: #FCCB54;
+    font: bold 14px "Times New Roman" , Times, serif;
+    text-transform: uppercase;
+    cursor: pointer;    
+}
+.ticket-mainReceipt
+{
+    width: 700px;
+    height: 340px;
+    float: left;
+    margin: 91px 0px 0px 51px;
+    background-color: Black;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    _margin: 91px 0px 0px 25px;
+}
+.seats-inside02
+{
+    width: 846px;
+    float: left;
+   
+    background-image: url(../images/ticket-booking-bg02.jpg);
+    background-repeat: repeat-x;
+   
+    height: 489px;
+}
+.error
+{
+    color: #ff0000;
+    font-weight:bold;
+    background: #FFDAD5;
+    border: 0px solid #D4958D;
+}
+
+
+.clickhere
+{
+    font: 12px Verdana;
+    color: #ECA035;
+}

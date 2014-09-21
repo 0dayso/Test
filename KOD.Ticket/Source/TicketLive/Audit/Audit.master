@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Audit.master.cs" Inherits="Audit_Audit1" %>
+
+<%@ Register Src="~/Controls/Footer.ascx" TagName="Footer" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Kingdom Of Dreams : Ticket Booking</title>
+<link href="http://msticket.kingdomofdreams.in/css/payment.css" type="text/css" rel="stylesheet" />
+<link href="../css/payment.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
+<script type="text/javascript">
+    history.forward();
+</script>
+<script language="javascript" type="text/javascript">
+    function printPreviewDiv(strid) {
+        var prtContent = document.getElementById(strid);
+        var WinPrint = window.open('', '', 'left=2,top=5,width=800,height=600,toolbar=0,scrollbars=0,status=0,fullscreen=1');
+        WinPrint.document.write(prtContent.innerHTML);
+        WinPrint.document.close();
+        WinPrint.focus();
+        WinPrint.print();
+        window.close();
+    }
+</script>
+</head>
+<body class="home-page-bg">
+<form id="form1" runat="server">
+<div class="wrapper">
+<div class="logo-row">
+<div class="logo">
+<a href="http://kingdomofdreams.in/index.html" target="_blank" title="kingdom of Dreams">
+<img id="Img1" runat="server" src="~/images/logo.jpg" alt="Kingdom of Dreams" /></a>
+</div>
+</div>
+<!--logo-row ends here -->
+<div class="seats-main">
+<div class="seats-inside">
+<div class="ticket-mainReceipt">
+<asp:LinkButton Style="padding-left: 670px;" ID="btn_Logout" Font-Size="Small" Font-Bold="true"
+Font-Underline="true" ForeColor="Blue" runat="server" Text="Logout"
+onclick="btn_Logout_Click" ></asp:LinkButton>
+<asp:ContentPlaceHolder ID="mainContent" runat="server" />
+</div>
+</div>
+</div>
+<!-- seats-main ends here -->
+</div>
+<!-- wrapper ends here -->
+<uc1:Footer ID="Footer1" runat="server" />
+<!-- footer-main ends here -->
+</form>
+</body>
+</html>

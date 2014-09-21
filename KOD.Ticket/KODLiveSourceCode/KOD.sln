@@ -1,0 +1,140 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "KOD.Web_1_1", "http://localhost/KOD.Web_1", "{7B031586-54BF-4426-9932-EF4598D9FFCB}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{C36B862C-E3CC-49DC-8D23-435D80CAD748}|KoDTicketingLibrary.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/KOD.Web_1"
+		Debug.AspNetCompiler.PhysicalPath = "TicketLive\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\KOD.Web_1\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/KOD.Web_1"
+		Release.AspNetCompiler.PhysicalPath = "TicketLive\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\KOD.Web_1\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "TicketLive\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoDTicketingLibrary", "KoDTicketingLibrary\KoDTicketingLibrary.csproj", "{C36B862C-E3CC-49DC-8D23-435D80CAD748}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinServiceSample", "WinServiceSample\WinServiceSample\WinServiceSample.csproj", "{8381F2BB-0B90-42FE-9D4C-B939C353F253}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InquiryandRefundProcess", "InquiryandRefundProcess\HDFCMoneyReturnProcess\InquiryandRefundProcess.csproj", "{598B6159-B206-49E2-8BDB-CC5D5813B87D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winservice_payment.reversal.report", "winservice_payment.reversal.report\winservice_payment.reversal.report.csproj", "{953F525E-71C7-43CC-BABD-8AB2D0D7AFE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdbiPgService", "IdbiPgService\IdbiPgService.csproj", "{C1556193-1574-4B47-B297-EE8BA1FDC199}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://kranti.tfspreview.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = KoDTicketingLibrary\\KoDTicketingLibrary.csproj
+		SccProjectName1 = KoDTicketingLibrary
+		SccLocalPath1 = KoDTicketingLibrary
+		SccWebProject2 = true
+		SccProjectUniqueName2 = http://localhost/KOD.Web_1
+		SccProjectName2 = TicketLive
+		SccLocalPath2 = http://localhost/KOD.Web_1/
+		SccProjectEnlistmentChoice2 = 2
+		SccProjectUniqueName3 = WinServiceSample\\WinServiceSample\\WinServiceSample.csproj
+		SccProjectName3 = WinServiceSample/WinServiceSample
+		SccLocalPath3 = WinServiceSample\\WinServiceSample
+		SccProjectUniqueName4 = InquiryandRefundProcess\\HDFCMoneyReturnProcess\\InquiryandRefundProcess.csproj
+		SccProjectName4 = InquiryandRefundProcess/HDFCMoneyReturnProcess
+		SccLocalPath4 = InquiryandRefundProcess\\HDFCMoneyReturnProcess
+		SccProjectUniqueName5 = winservice_payment.reversal.report\\winservice_payment.reversal.report.csproj
+		SccProjectName5 = winservice_payment.reversal.report
+		SccLocalPath5 = winservice_payment.reversal.report
+		SccProjectUniqueName6 = IdbiPgService\\IdbiPgService.csproj
+		SccProjectName6 = IdbiPgService
+		SccLocalPath6 = IdbiPgService
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B031586-54BF-4426-9932-EF4598D9FFCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B031586-54BF-4426-9932-EF4598D9FFCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B031586-54BF-4426-9932-EF4598D9FFCB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7B031586-54BF-4426-9932-EF4598D9FFCB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7B031586-54BF-4426-9932-EF4598D9FFCB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7B031586-54BF-4426-9932-EF4598D9FFCB}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B031586-54BF-4426-9932-EF4598D9FFCB}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{7B031586-54BF-4426-9932-EF4598D9FFCB}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7B031586-54BF-4426-9932-EF4598D9FFCB}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7B031586-54BF-4426-9932-EF4598D9FFCB}.Release|x86.ActiveCfg = Debug|Any CPU
+		{C36B862C-E3CC-49DC-8D23-435D80CAD748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C36B862C-E3CC-49DC-8D23-435D80CAD748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C36B862C-E3CC-49DC-8D23-435D80CAD748}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C36B862C-E3CC-49DC-8D23-435D80CAD748}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C36B862C-E3CC-49DC-8D23-435D80CAD748}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C36B862C-E3CC-49DC-8D23-435D80CAD748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C36B862C-E3CC-49DC-8D23-435D80CAD748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C36B862C-E3CC-49DC-8D23-435D80CAD748}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C36B862C-E3CC-49DC-8D23-435D80CAD748}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C36B862C-E3CC-49DC-8D23-435D80CAD748}.Release|x86.ActiveCfg = Release|Any CPU
+		{8381F2BB-0B90-42FE-9D4C-B939C353F253}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{8381F2BB-0B90-42FE-9D4C-B939C353F253}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{8381F2BB-0B90-42FE-9D4C-B939C353F253}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{8381F2BB-0B90-42FE-9D4C-B939C353F253}.Debug|x86.ActiveCfg = Debug|x86
+		{8381F2BB-0B90-42FE-9D4C-B939C353F253}.Debug|x86.Build.0 = Debug|x86
+		{8381F2BB-0B90-42FE-9D4C-B939C353F253}.Release|Any CPU.ActiveCfg = Release|x86
+		{8381F2BB-0B90-42FE-9D4C-B939C353F253}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{8381F2BB-0B90-42FE-9D4C-B939C353F253}.Release|Mixed Platforms.Build.0 = Release|x86
+		{8381F2BB-0B90-42FE-9D4C-B939C353F253}.Release|x86.ActiveCfg = Release|x86
+		{8381F2BB-0B90-42FE-9D4C-B939C353F253}.Release|x86.Build.0 = Release|x86
+		{598B6159-B206-49E2-8BDB-CC5D5813B87D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{598B6159-B206-49E2-8BDB-CC5D5813B87D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{598B6159-B206-49E2-8BDB-CC5D5813B87D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{598B6159-B206-49E2-8BDB-CC5D5813B87D}.Debug|x86.ActiveCfg = Debug|x86
+		{598B6159-B206-49E2-8BDB-CC5D5813B87D}.Debug|x86.Build.0 = Debug|x86
+		{598B6159-B206-49E2-8BDB-CC5D5813B87D}.Release|Any CPU.ActiveCfg = Release|x86
+		{598B6159-B206-49E2-8BDB-CC5D5813B87D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{598B6159-B206-49E2-8BDB-CC5D5813B87D}.Release|Mixed Platforms.Build.0 = Release|x86
+		{598B6159-B206-49E2-8BDB-CC5D5813B87D}.Release|x86.ActiveCfg = Release|x86
+		{598B6159-B206-49E2-8BDB-CC5D5813B87D}.Release|x86.Build.0 = Release|x86
+		{953F525E-71C7-43CC-BABD-8AB2D0D7AFE1}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{953F525E-71C7-43CC-BABD-8AB2D0D7AFE1}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{953F525E-71C7-43CC-BABD-8AB2D0D7AFE1}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{953F525E-71C7-43CC-BABD-8AB2D0D7AFE1}.Debug|x86.ActiveCfg = Debug|x86
+		{953F525E-71C7-43CC-BABD-8AB2D0D7AFE1}.Debug|x86.Build.0 = Debug|x86
+		{953F525E-71C7-43CC-BABD-8AB2D0D7AFE1}.Release|Any CPU.ActiveCfg = Release|x86
+		{953F525E-71C7-43CC-BABD-8AB2D0D7AFE1}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{953F525E-71C7-43CC-BABD-8AB2D0D7AFE1}.Release|Mixed Platforms.Build.0 = Release|x86
+		{953F525E-71C7-43CC-BABD-8AB2D0D7AFE1}.Release|x86.ActiveCfg = Release|x86
+		{953F525E-71C7-43CC-BABD-8AB2D0D7AFE1}.Release|x86.Build.0 = Release|x86
+		{C1556193-1574-4B47-B297-EE8BA1FDC199}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C1556193-1574-4B47-B297-EE8BA1FDC199}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{C1556193-1574-4B47-B297-EE8BA1FDC199}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{C1556193-1574-4B47-B297-EE8BA1FDC199}.Debug|x86.ActiveCfg = Debug|x86
+		{C1556193-1574-4B47-B297-EE8BA1FDC199}.Debug|x86.Build.0 = Debug|x86
+		{C1556193-1574-4B47-B297-EE8BA1FDC199}.Release|Any CPU.ActiveCfg = Release|x86
+		{C1556193-1574-4B47-B297-EE8BA1FDC199}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{C1556193-1574-4B47-B297-EE8BA1FDC199}.Release|Mixed Platforms.Build.0 = Release|x86
+		{C1556193-1574-4B47-B297-EE8BA1FDC199}.Release|x86.ActiveCfg = Release|x86
+		{C1556193-1574-4B47-B297-EE8BA1FDC199}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

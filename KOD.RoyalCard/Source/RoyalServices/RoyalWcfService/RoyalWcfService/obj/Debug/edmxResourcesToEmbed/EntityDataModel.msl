@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LOYALTYNMModelStoreContainer" CdmEntityContainer="LOYALTYNMEntities">
+    <FunctionImportMapping FunctionImportName="Proc_ForgetPassword" FunctionName="LOYALTYNMModel.Store.Proc_ForgetPassword">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LOYALTYNMModel.Proc_ForgetPassword_Result">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Proc_Login" FunctionName="LOYALTYNMModel.Store.Proc_Login">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LOYALTYNMModel.Proc_Login_Result">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="ERPMemberId" ColumnName="ERPMemberId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Proc_PointStatment" FunctionName="LOYALTYNMModel.Store.Proc_PointStatment">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LOYALTYNMModel.Proc_PointStatment_Result">
+          <ScalarProperty Name="PointType" ColumnName="PointType" />
+          <ScalarProperty Name="DateOfIssue" ColumnName="DateOfIssue" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Proc_TierDetails" FunctionName="LOYALTYNMModel.Store.Proc_TierDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LOYALTYNMModel.Proc_TierDetails_Result">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="MinimumValue" ColumnName="MinimumValue" />
+          <ScalarProperty Name="MaximumValue" ColumnName="MaximumValue" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Proc_UpdatePassword" FunctionName="LOYALTYNMModel.Store.Proc_UpdatePassword" />
+    <FunctionImportMapping FunctionImportName="Proc_ViewAccountDetails" FunctionName="LOYALTYNMModel.Store.Proc_ViewAccountDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LOYALTYNMModel.Proc_ViewAccountDetails_Result">
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="Salutation" ColumnName="Salutation" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="AnniversaryDate" ColumnName="AnniversaryDate" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+          <ScalarProperty Name="CardCode" ColumnName="CardCode" />
+          <ScalarProperty Name="CardName" ColumnName="CardName" />
+          <ScalarProperty Name="CardNumber" ColumnName="CardNumber" />
+          <ScalarProperty Name="DateonCard" ColumnName="DateonCard" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Proc_UpdateAccountDetails" FunctionName="LOYALTYNMModel.Store.Proc_UpdateAccountDetails" />
+    <FunctionImportMapping FunctionImportName="Proc_AllTierDetails" FunctionName="LOYALTYNMModel.Store.Proc_AllTierDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LOYALTYNMModel.Proc_AllTierDetails_Result">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="MinimumValue" ColumnName="MinimumValue" />
+          <ScalarProperty Name="MaximumValue" ColumnName="MaximumValue" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Proc_TopUp" FunctionName="LOYALTYNMModel.Store.Proc_TopUp" />
+    <FunctionImportMapping FunctionImportName="Proc_GetWebAccountByEmailId" FunctionName="LOYALTYNMModel.Store.Proc_GetWebAccountByEmailId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LOYALTYNMModel.Proc_GetWebAccountByEmailId_Result">
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="Salutation" ColumnName="Salutation" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="AnniversaryDate" ColumnName="AnniversaryDate" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Proc_CardTransaction" FunctionName="LOYALTYNMModel.Store.Proc_CardTransaction">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LOYALTYNMModel.Proc_CardTransaction_Result">
+          <ScalarProperty Name="Transaction_Id" ColumnName="Transaction_Id" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Proc_PaymentSuccessfullUpdate" FunctionName="LOYALTYNMModel.Store.Proc_PaymentSuccessfullUpdate" />
+    <FunctionImportMapping FunctionImportName="Proc_UpdateAccountPaymentDetails" FunctionName="LOYALTYNMModel.Store.Proc_UpdateAccountPaymentDetails" />
+    <FunctionImportMapping FunctionImportName="Proc_GetWebAccountByTempWebId" FunctionName="LOYALTYNMModel.Store.Proc_GetWebAccountByTempWebId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LOYALTYNMModel.Proc_GetWebAccountByTempWebId_Result">
+          <ScalarProperty Name="Salutation" ColumnName="Salutation" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="AnniversaryDate" ColumnName="AnniversaryDate" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+          <ScalarProperty Name="Member_Id" ColumnName="Member Id" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Proc_GetTopWebId" FunctionName="LOYALTYNMModel.Store.Proc_GetTopWebId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LOYALTYNMModel.Proc_GetTopWebId_Result1">
+          <ScalarProperty Name="No_" ColumnName="No_" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Proc_InsertWebAccount" FunctionName="LOYALTYNMModel.Store.Proc_InsertWebAccount">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LOYALTYNMModel.Proc_InsertWebAccount_Result1">
+          <ScalarProperty Name="tempwebid" ColumnName="tempwebid" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Proc_GetMemberBalance" FunctionName="LOYALTYNMModel.Store.Proc_GetMemberBalance">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LOYALTYNMModel.Proc_GetMemberBalance_Result">
+          <ScalarProperty Name="MembershipId" ColumnName="MembershipId" />
+          <ScalarProperty Name="RemainingPoints" ColumnName="RemainingPoints" />
+          <ScalarProperty Name="RemainingAmount" ColumnName="RemainingAmount" />
+          <ScalarProperty Name="After24HourPoints" ColumnName="After24HourPoints" />
+          <ScalarProperty Name="RechargeAmount" ColumnName="RechargeAmount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Proc_RegisterUsers" FunctionName="LOYALTYNMModel.Store.Proc_RegisterUsers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LOYALTYNMModel.Proc_RegisterUsers_Result">
+          <ScalarProperty Name="tempwebid" ColumnName="tempwebid" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Great_Indian_Nautanki_Company_Temp_Web_Booking">
+      <EntityTypeMapping TypeName="LOYALTYNMModel.Great_Indian_Nautanki_Company_Temp_Web_Booking">
+        <MappingFragment StoreEntitySet="Great Indian Nautanki Company$Temp Web Booking">
+          <ScalarProperty Name="No_" ColumnName="No_" />
+          <ScalarProperty Name="Replication_Counter" ColumnName="Replication Counter" />
+          <ScalarProperty Name="Loyalty_Member_ID" ColumnName="Loyalty Member ID" />
+          <ScalarProperty Name="WebTransaction" ColumnName="WebTransaction" />
+          <ScalarProperty Name="Successful" ColumnName="Successful" />
+          <ScalarProperty Name="ReceiptNo" ColumnName="ReceiptNo" />
+          <ScalarProperty Name="PaymentAmount" ColumnName="PaymentAmount" />
+          <ScalarProperty Name="ReadyToCreate" ColumnName="ReadyToCreate" />
+          <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
+          <ScalarProperty Name="Salutation" ColumnName="Salutation" />
+          <ScalarProperty Name="Create_Contact_Card" ColumnName="Create Contact Card" />
+          <ScalarProperty Name="Courier" ColumnName="Courier" />
+          <ScalarProperty Name="Box_Office" ColumnName="Box Office" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="User_Name" ColumnName="User Name" />
+          <ScalarProperty Name="Bank_Name" ColumnName="Bank Name" />
+          <ScalarProperty Name="Card_No_" ColumnName="Card No_" />
+          <ScalarProperty Name="Payment_Date" ColumnName="Payment Date" />
+          <ScalarProperty Name="Payment_Amount" ColumnName="Payment Amount" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Marital_Status" ColumnName="Marital Status" />
+          <ScalarProperty Name="Anniversary_Date" ColumnName="Anniversary Date" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="E_Mail" ColumnName="E-Mail" />
+          <ScalarProperty Name="Mobile_Phone_No_" ColumnName="Mobile Phone No_" />
+          <ScalarProperty Name="Phone_No_" ColumnName="Phone No_" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address_2" ColumnName="Address 2" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name_2" ColumnName="Name 2" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Member_Id" ColumnName="Member Id" />
+          <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Great_Indian_Nautanki_Company_Contact">
+      <EntityTypeMapping TypeName="LOYALTYNMModel.Great_Indian_Nautanki_Company_Contact">
+        <MappingFragment StoreEntitySet="Great Indian Nautanki Company$Contact">
+          <ScalarProperty Name="Send_E_Mail" ColumnName="Send E-Mail" />
+          <ScalarProperty Name="Send_SMS" ColumnName="Send SMS" />
+          <ScalarProperty Name="Enrollment_Date" ColumnName="Enrollment Date" />
+          <ScalarProperty Name="Tele_Web_ID" ColumnName="Tele_Web ID" />
+          <ScalarProperty Name="Web_Member_Id" ColumnName="Web Member Id" />
+          <ScalarProperty Name="Web_Password" ColumnName="Web Password" />
+          <ScalarProperty Name="Web_User_Name" ColumnName="Web User Name" />
+          <ScalarProperty Name="Replication_Counter" ColumnName="Replication Counter" />
+          <ScalarProperty Name="Last_Modify_UserId" ColumnName="Last Modify UserId" />
+          <ScalarProperty Name="Add_On_Front2" ColumnName="Add On Front2" />
+          <ScalarProperty Name="Add_On_Front1" ColumnName="Add On Front1" />
+          <ScalarProperty Name="Addon_RelationShip2" ColumnName="Addon RelationShip2" />
+          <ScalarProperty Name="Addon_RelationShip1" ColumnName="Addon RelationShip1" />
+          <ScalarProperty Name="Issue_Addon_card2" ColumnName="Issue Addon card2" />
+          <ScalarProperty Name="Issue_Addon_Membership_Card2" ColumnName="Issue Addon Membership Card2" />
+          <ScalarProperty Name="Addon_Member_Martial_Status2" ColumnName="Addon Member Martial Status2" />
+          <ScalarProperty Name="Addon_Member_Gender2" ColumnName="Addon Member Gender2" />
+          <ScalarProperty Name="Addon_Member_Anniversary_Date2" ColumnName="Addon Member Anniversary Date2" />
+          <ScalarProperty Name="Addon_Member_DOB2" ColumnName="Addon Member DOB2" />
+          <ScalarProperty Name="Addon_Member_E_Mail2" ColumnName="Addon Member E-Mail2" />
+          <ScalarProperty Name="Addon_member_Mobile_No2" ColumnName="Addon member Mobile No2" />
+          <ScalarProperty Name="Addon_Member_Address2_2" ColumnName="Addon Member Address2-2" />
+          <ScalarProperty Name="Addon_Member_Address_2" ColumnName="Addon Member Address-2" />
+          <ScalarProperty Name="Addon_Member_Name2" ColumnName="Addon Member Name2" />
+          <ScalarProperty Name="Issue_Addon_card1" ColumnName="Issue Addon card1" />
+          <ScalarProperty Name="Issue_Addon_Membership_Card1" ColumnName="Issue Addon Membership Card1" />
+          <ScalarProperty Name="Addon_Member_Martial_Status1" ColumnName="Addon Member Martial Status1" />
+          <ScalarProperty Name="Addon_Member_Gender1" ColumnName="Addon Member Gender1" />
+          <ScalarProperty Name="Addon_Member_Anniversary_Date1" ColumnName="Addon Member Anniversary Date1" />
+          <ScalarProperty Name="Addon_Member_DOB1" ColumnName="Addon Member DOB1" />
+          <ScalarProperty Name="Addon_Member_E_Mail1" ColumnName="Addon Member E-Mail1" />
+          <ScalarProperty Name="Addon_member_Mobile_No1" ColumnName="Addon member Mobile No1" />
+          <ScalarProperty Name="Addon_Member_Address2_1" ColumnName="Addon Member Address2-1" />
+          <ScalarProperty Name="Addon_Member_Address1" ColumnName="Addon Member Address1" />
+          <ScalarProperty Name="Addon_Member_Name1" ColumnName="Addon Member Name1" />
+          <ScalarProperty Name="No_Of_Add_On_Upgrade_Prints" ColumnName="No Of Add On Upgrade Prints" />
+          <ScalarProperty Name="No_Of_Add_On_Prints" ColumnName="No Of Add On Prints" />
+          <ScalarProperty Name="No_Of_Re_issue_Prints" ColumnName="No Of Re-issue Prints" />
+          <ScalarProperty Name="No_Of_Upgrade_Prints" ColumnName="No Of Upgrade Prints" />
+          <ScalarProperty Name="No_Of_Membership_Prints" ColumnName="No Of Membership Prints" />
+          <ScalarProperty Name="Add_On_Front" ColumnName="Add On Front" />
+          <ScalarProperty Name="Form_Serial_No" ColumnName="Form Serial No" />
+          <ScalarProperty Name="Booking_ID" ColumnName="Booking ID" />
+          <ScalarProperty Name="NM_Receipt_No" ColumnName="NM Receipt No" />
+          <ScalarProperty Name="Seat_No" ColumnName="Seat No" />
+          <ScalarProperty Name="Show_Date" ColumnName="Show Date" />
+          <ScalarProperty Name="Show_Allocation_ID" ColumnName="Show Allocation ID" />
+          <ScalarProperty Name="UpgradeUSERID_Card_Print_Back" ColumnName="UpgradeUSERID Card Print-Back" />
+          <ScalarProperty Name="UpgradeUSERID_Card_Print_Front" ColumnName="UpgradeUSERID Card Print-Front" />
+          <ScalarProperty Name="Upgrade_Member_Card_Print_Back" ColumnName="Upgrade Member Card Print-Back" />
+          <ScalarProperty Name="UpgradeMember_Card_Print_Front" ColumnName="UpgradeMember Card Print-Front" />
+          <ScalarProperty Name="ReissueUSERID_Card_Print_Back" ColumnName="ReissueUSERID Card Print-Back" />
+          <ScalarProperty Name="ReissueUSERID_Card_Print_Front" ColumnName="ReissueUSERID Card Print-Front" />
+          <ScalarProperty Name="Reissue_Member_Card_Print_Back" ColumnName="Reissue Member Card Print-Back" />
+          <ScalarProperty Name="ReissueMember_Card_Print_Front" ColumnName="ReissueMember Card Print-Front" />
+          <ScalarProperty Name="USERID_Card_Print_Back" ColumnName="USERID Card Print-Back" />
+          <ScalarProperty Name="USERID_Card_Print_Front" ColumnName="USERID Card Print-Front" />
+          <ScalarProperty Name="Member_Card_Print_Back" ColumnName="Member Card Print-Back" />
+          <ScalarProperty Name="Member_Card_Print_Front" ColumnName="Member Card Print-Front" />
+          <ScalarProperty Name="Free_Complimentary_Drink_Date" ColumnName="Free Complimentary Drink Date" />
+          <ScalarProperty Name="Free_Complimentary_Drink" ColumnName="Free Complimentary Drink" />
+          <ScalarProperty Name="Free_Valet_Parking_Date" ColumnName="Free Valet Parking Date" />
+          <ScalarProperty Name="Free_valet_Parking" ColumnName="Free valet Parking" />
+          <ScalarProperty Name="Guest_Entered_Date" ColumnName="Guest Entered Date" />
+          <ScalarProperty Name="No_of_Guest_Entered" ColumnName="No of Guest Entered" />
+          <ScalarProperty Name="Created_Time" ColumnName="Created Time" />
+          <ScalarProperty Name="Salutation" ColumnName="Salutation" />
+          <ScalarProperty Name="Issue_Addon_card" ColumnName="Issue Addon card" />
+          <ScalarProperty Name="Issue_Addon_Membership_Card" ColumnName="Issue Addon Membership Card" />
+          <ScalarProperty Name="Addon_Member_Martial_Status" ColumnName="Addon Member Martial Status" />
+          <ScalarProperty Name="Addon_Member_Gender" ColumnName="Addon Member Gender" />
+          <ScalarProperty Name="Addon_Member_Anniversary_Date" ColumnName="Addon Member Anniversary Date" />
+          <ScalarProperty Name="Addon_Member_DOB" ColumnName="Addon Member DOB" />
+          <ScalarProperty Name="Addon_Member_E_Mail" ColumnName="Addon Member E-Mail" />
+          <ScalarProperty Name="Addon_member_Mobile_No" ColumnName="Addon member Mobile No" />
+          <ScalarProperty Name="RelationShip" ColumnName="RelationShip" />
+          <ScalarProperty Name="Addon_Member_Address2" ColumnName="Addon Member Address2" />
+          <ScalarProperty Name="Addon_Member_Address" ColumnName="Addon Member Address" />
+          <ScalarProperty Name="Addon_Member_Name" ColumnName="Addon Member Name" />
+          <ScalarProperty Name="Anniversary_Year" ColumnName="Anniversary Year" />
+          <ScalarProperty Name="Anniversary" ColumnName="Anniversary" />
+          <ScalarProperty Name="Bithday_Year" ColumnName="Bithday Year" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Marital_Status" ColumnName="Marital Status" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="Old_POS_Data_Entry" ColumnName="Old POS Data Entry" />
+          <ScalarProperty Name="Issue_MemberShip" ColumnName="Issue MemberShip" />
+          <ScalarProperty Name="POS_Data_Entry_No" ColumnName="POS Data Entry No" />
+          <ScalarProperty Name="Expiry_Date" ColumnName="Expiry Date" />
+          <ScalarProperty Name="Issue_Date" ColumnName="Issue Date" />
+          <ScalarProperty Name="SC_Number" ColumnName="SC Number" />
+          <ScalarProperty Name="Anniversary_Date" ColumnName="Anniversary Date" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Date_Created" ColumnName="Date Created" />
+          <ScalarProperty Name="Next_Order_Rest__Temporary" ColumnName="Next Order Rest_ Temporary" />
+          <ScalarProperty Name="Recall_Order" ColumnName="Recall Order" />
+          <ScalarProperty Name="Next_Delivery_Tender" ColumnName="Next Delivery Tender" />
+          <ScalarProperty Name="Next_Order_Time" ColumnName="Next Order Time" />
+          <ScalarProperty Name="Next_Order_Date" ColumnName="Next Order Date" />
+          <ScalarProperty Name="Next_Order_Restaurant" ColumnName="Next Order Restaurant" />
+          <ScalarProperty Name="Next_Order_Selection" ColumnName="Next Order Selection" />
+          <ScalarProperty Name="E_Mail_2" ColumnName="E-Mail 2" />
+          <ScalarProperty Name="Last_Time_Modified" ColumnName="Last Time Modified" />
+          <ScalarProperty Name="Search_E_Mail" ColumnName="Search E-Mail" />
+          <ScalarProperty Name="Salutation_Code" ColumnName="Salutation Code" />
+          <ScalarProperty Name="Correspondence_Type" ColumnName="Correspondence Type" />
+          <ScalarProperty Name="External_ID" ColumnName="External ID" />
+          <ScalarProperty Name="Exclude_from_Segment" ColumnName="Exclude from Segment" />
+          <ScalarProperty Name="Organizational_Level_Code" ColumnName="Organizational Level Code" />
+          <ScalarProperty Name="Pager" ColumnName="Pager" />
+          <ScalarProperty Name="Mobile_Phone_No_" ColumnName="Mobile Phone No_" />
+          <ScalarProperty Name="Extension_No_" ColumnName="Extension No_" />
+          <ScalarProperty Name="Initials" ColumnName="Initials" />
+          <ScalarProperty Name="Job_Title" ColumnName="Job Title" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Middle_Name" ColumnName="Middle Name" />
+          <ScalarProperty Name="First_Name" ColumnName="First Name" />
+          <ScalarProperty Name="Lookup_Contact_No_" ColumnName="Lookup Contact No_" />
+          <ScalarProperty Name="Company_Name" ColumnName="Company Name" />
+          <ScalarProperty Name="Company_No_" ColumnName="Company No_" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="No__Series" ColumnName="No_ Series" />
+          <ScalarProperty Name="Home_Page" ColumnName="Home Page" />
+          <ScalarProperty Name="E_Mail" ColumnName="E-Mail" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="Post_Code" ColumnName="Post Code" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="VAT_Registration_No_" ColumnName="VAT Registration No_" />
+          <ScalarProperty Name="Telex_Answer_Back" ColumnName="Telex Answer Back" />
+          <ScalarProperty Name="Fax_No_" ColumnName="Fax No_" />
+          <ScalarProperty Name="Last_Date_Modified" ColumnName="Last Date Modified" />
+          <ScalarProperty Name="Country_Region_Code" ColumnName="Country_Region Code" />
+          <ScalarProperty Name="Salesperson_Code" ColumnName="Salesperson Code" />
+          <ScalarProperty Name="Language_Code" ColumnName="Language Code" />
+          <ScalarProperty Name="Currency_Code" ColumnName="Currency Code" />
+          <ScalarProperty Name="Territory_Code" ColumnName="Territory Code" />
+          <ScalarProperty Name="Telex_No_" ColumnName="Telex No_" />
+          <ScalarProperty Name="Phone_No_" ColumnName="Phone No_" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address_2" ColumnName="Address 2" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name_2" ColumnName="Name 2" />
+          <ScalarProperty Name="Search_Name" ColumnName="Search Name" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="No_" ColumnName="No_" />
+          <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

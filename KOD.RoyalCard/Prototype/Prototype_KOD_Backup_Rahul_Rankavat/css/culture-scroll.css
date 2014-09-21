@@ -1,0 +1,41 @@
+
+.scroll-pane {
+width: 600px;
+height: 200px;
+overflow: auto;
+float: left;
+font-size:12px;
+font-family:"Palatino Linotype", "Century Gothic", Arial;
+color:#EBE364;
+}
+		
+ /*JScrollPane CSS*/
+.jScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	padding-right:20px;
+}
+.jScrollPaneTrack{
+	position:absolute;
+	cursor:pointer;
+	right:0;top:0;
+	height:50px;
+	width:50px;
+	background: url(../images/culture-scroll-bg.gif) no-repeat;
+}
+.jScrollPaneDrag{
+	position:absolute; 
+	background:url(../images/culture-scroll.jpg) no-repeat 9px 8px;
+	cursor:pointer;
+	overflow:hidden;
+	}	
+.scroll-pane{}
+.scroll-pane p{
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	background:#232323;
+	padding:12px;
+	font-size:14px;
+	line-height:16px;
+}

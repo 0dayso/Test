@@ -1,0 +1,21 @@
+﻿1. Add a new project i.e. window service.
+2. After completion of codeing install the service:
+   a. GO to the command prompt.
+   b. go to the debug folder of the service.
+   c. go to the Installutil space .exe file of window service. 
+3. Test it on local system
+   a.set the time interval according to your fisibilty in app.config file.
+   b.set your email id in app.config file.
+   c.go to the task manager click on sevices and then find your service and click on start.
+4. Test it on staging server
+   a.install the window service as in point 2.
+   b.first of all convert the date in MM/dd/yyyy formate if your system have the date in MM-dd-yyyy formate.
+   c.set the time interval according to your fisibilty in app.config file.
+   d.set your email id in app.config file.
+   e.go to the task manager click on sevices and then find your service and click on start.
+5. Test it on Live server
+   a.install the window service as in point 2.
+   b.first of all convert the date in MM/dd/yyyy formate if your system have the date in MM-dd-yyyy formate.
+   c.set the time interval according to the reqirment in app.config file.
+   d.set email id in app.config file according to the reqirment.
+   e.go to the task manager click on sevices and then find your service and click on start.            

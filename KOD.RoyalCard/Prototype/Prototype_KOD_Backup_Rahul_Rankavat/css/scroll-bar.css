@@ -1,0 +1,33 @@
+
+.scroll-pane {
+width: 710px;
+overflow: auto;
+height:130px;
+float: left;
+}
+
+ /*JScrollPane CSS*/
+.jScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	padding-right:20px;
+}
+.jScrollPaneTrack{
+	position:absolute;
+	cursor:pointer;
+	right:0;top:0;
+	height:100%;
+	background:url(../images/scroll-track.jpg) no-repeat -3px 0px;
+}
+.jScrollPaneDrag{
+	position:absolute; 
+	background:url(../images/scroll-drag.jpg) no-repeat 4px 10px;
+	cursor:pointer;
+	overflow:hidden;
+	}
+
+.scroll-pane{padding:0;}
+.scroll-pane p{
+
+}

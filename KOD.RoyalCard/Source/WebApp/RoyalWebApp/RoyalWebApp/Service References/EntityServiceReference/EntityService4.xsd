@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/RoyalWcfService/EntityService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/RoyalWcfService" />
+  <xs:element name="GetUserDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="memberId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/RoyalWcfService" minOccurs="0" name="GetUserDetailsResult" nillable="true" type="q1:ArrayOfProc_ViewAccountDetails_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUserDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="membershipid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="salutation" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="firstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="address" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="addressTwo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="city" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="country" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="phoneNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mobileNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateOfBirth" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="anniversaryDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="maritalStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="gender" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="paymentAmount" type="xs:decimal" />
+        <xs:element minOccurs="0" name="paymentDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="cardNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bankName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="designation" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="boxOffiec" type="xs:boolean" />
+        <xs:element minOccurs="0" name="coupon" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUserDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/RoyalWcfService" minOccurs="0" name="InsertUserDetailsResult" nillable="true" type="q2:ArrayOfProc_InsertWebAccount_Result1" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registeruserwithoutpayment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="membershipid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="salutation" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="firstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="address" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="addressTwo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="city" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="country" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="phoneNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mobileNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateOfBirth" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="anniversaryDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="maritalStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="gender" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="paymentAmount" type="xs:decimal" />
+        <xs:element minOccurs="0" name="paymentDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="cardNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bankName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="designation" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="boxOffiec" type="xs:boolean" />
+        <xs:element minOccurs="0" name="coupon" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registeruserwithoutpaymentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/RoyalWcfService" minOccurs="0" name="registeruserwithoutpaymentResult" nillable="true" type="q3:ArrayOfProc_RegisterUsers_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserLogin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Membershipid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pwd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserLoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/RoyalWcfService" minOccurs="0" name="GetUserLoginResult" nillable="true" type="q4:ArrayOfProc_Login_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangePassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Membershipid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="oldpwd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="newpwd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangePasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ChangePasswordResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForgotPassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Membershipid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="emailid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ForgotPasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/RoyalWcfService" minOccurs="0" name="ForgotPasswordResult" nillable="true" type="q5:ArrayOfProc_ForgetPassword_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="membershipid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="salutation" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="firstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="address" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="addressTwo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="city" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="country" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mobileNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dateOfBirth" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="anniversaryDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="maritalStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="designation" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="phoneNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateUserDetailsResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMaxMemberId">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMaxMemberIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/RoyalWcfService" minOccurs="0" name="GetMaxMemberIdResult" nillable="true" type="q6:ArrayOfProc_GetTopWebId_Result1" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserDetailsByEmailId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="useremailid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserDetailsByEmailIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/RoyalWcfService" minOccurs="0" name="GetUserDetailsByEmailIdResult" nillable="true" type="q7:ArrayOfProc_GetWebAccountByEmailId_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllCardsDetails">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllCardsDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/RoyalWcfService" minOccurs="0" name="GetAllCardsDetailsResult" nillable="true" type="q8:ArrayOfProc_AllTierDetails_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCardsDetailsbyType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CardType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCardsDetailsbyTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/RoyalWcfService" minOccurs="0" name="GetCardsDetailsbyTypeResult" nillable="true" type="q9:ArrayOfProc_TierDetails_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePaymentDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="membershipid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PayStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="Readytocreate" type="xs:int" />
+        <xs:element minOccurs="0" name="paidamt" type="xs:decimal" />
+        <xs:element minOccurs="0" name="receiptno" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePaymentDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePaymentDetailsResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPointStatusByMemberId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="membershipid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPointStatusByMemberIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/RoyalWcfService" minOccurs="0" name="GetPointStatusByMemberIdResult" nillable="true" type="q10:ArrayOfProc_PointStatment_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCardsBalanceByMemberId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="membershipid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCardsBalanceByMemberIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/RoyalWcfService" minOccurs="0" name="GetCardsBalanceByMemberIdResult" nillable="true" type="q11:ArrayOfProc_GetMemberBalance_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTopUpDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="membershipid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="paidAmount" type="xs:decimal" />
+        <xs:element minOccurs="0" name="paiddate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="PaidReceiptNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TransType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertTopUpDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/RoyalWcfService" minOccurs="0" name="InsertTopUpDetailsResult" nillable="true" type="q12:ArrayOfProc_CardTransaction_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateTopUpStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Transactionid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="success" type="xs:int" />
+        <xs:element minOccurs="0" name="transType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateTopUpStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateTopUpStatusResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTempUserDetailsByWebId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tempwebid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTempUserDetailsByWebIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/RoyalWcfService" minOccurs="0" name="GetTempUserDetailsByWebIdResult" nillable="true" type="q13:ArrayOfProc_GetWebAccountByTempWebId_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmailExists">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmailExistsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmailExistsResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MobilenoExist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mobile" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MobilenoExistResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MobilenoExistResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FirstTimeLogin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="memberid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="doB" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FirstTimeLoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FirstTimeLoginResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PasswordExistsCheck">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="memberid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="doB" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PasswordExistsCheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PasswordExistsCheckResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

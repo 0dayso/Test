@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Event.master.cs" Inherits="Event" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<%@ Register Src="Controls/Footer.ascx" TagName="Footer" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Kingdom of Dreams : Ticket Booking</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    <body class="home-page-bg">
+    <form id="form1" runat="server">  
+    <asp:HiddenField ID="mailertracker" runat="server"  Value=""/>  
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="True">
+    </asp:ScriptManager>
+    
+    <div class="wrapper">
+        <div class="logo-row">
+            <div class="logo">
+                <a href="http://kingdomofdreams.in/index.html" target="_blank">
+                    <img src="images/logo.jpg" alt="l" /></a>
+            </div>
+        </div>
+        <!--logo-row ends here -->
+        <div class="seats-main">
+           
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+                 </asp:ContentPlaceHolder>
+              
+        </div>
+        <!-- seats-main ends here -->
+    </div>
+    <!-- wrapper ends here -->
+    <uc1:Footer ID="Footer2" runat="server" />
+    <!-- footer-main ends here -->
+    </form>
+
+
+
+
+
+
+</body>
+</html>

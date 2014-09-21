@@ -1,0 +1,5 @@
+D:\KOD.RoyalCard\Source\RoyalServices\RoyalWcfService\RoyalWcfService\bin\RoyalWcfService.dll
+D:\KOD.RoyalCard\Source\RoyalServices\RoyalWcfService\RoyalWcfService\bin\RoyalWcfService.pdb
+D:\KOD.RoyalCard\Source\RoyalServices\RoyalWcfService\RoyalWcfService\bin\log4net.dll
+D:\KOD.RoyalCard\Source\RoyalServices\RoyalWcfService\RoyalWcfService\obj\Debug\RoyalWcfService.dll
+D:\KOD.RoyalCard\Source\RoyalServices\RoyalWcfService\RoyalWcfService\obj\Debug\RoyalWcfService.pdb

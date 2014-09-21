@@ -1,0 +1,232 @@
+ThreadId:5768 Timestamp: 9/8/2014 10:36:43 PM Message: Start Load Play
+----------------------------------------
+ThreadId:5768 Timestamp: 9/8/2014 10:36:43 PM Message: Error creating DataTable for [select Distinct([Show Code]) from [NMLIVEDB].[dbo].[Great Indian Nautanki Company$Audi Show Allocation] (UPDLOCK) where  convert(date,Date) >= convert(date,GETDATE()) and [Show Closed]=0]
+Error [Cannot open database "NMLIVEDB" requested by the login. The login failed.
+Login failed for user 'web'.]
+----------------------------------------
+ThreadId:5768 Timestamp: 9/8/2014 10:36:43 PM Message: End Load Play
+----------------------------------------
+ThreadId:6512 Timestamp: 9/8/2014 10:44:05 PM Message: Start Load Play
+----------------------------------------
+ThreadId:6512 Timestamp: 9/8/2014 10:44:06 PM Message: End Load Play
+----------------------------------------
+ThreadId:6512 Timestamp: 9/8/2014 10:44:36 PM Message: Start Load Play
+----------------------------------------
+ThreadId:6512 Timestamp: 9/8/2014 10:44:36 PM Message: End Load Play
+----------------------------------------
+ThreadId:6360 Timestamp: 9/8/2014 10:44:58 PM Message: Render Seat Layout for SHOW,WIZWITS,29/09/2014,NM/1011/002891,PRM,1,WIZWITS @ SHOWSHAA,6:00 PM,PREMIUM, Rs. 849,,,1000486129
+----------------------------------------
+ThreadId:6360 Timestamp: 9/8/2014 10:44:58 PM Message: Insert MaX Of Booking ID and Its Details
+----------------------------------------
+ThreadId:6360 Timestamp: 9/8/2014 10:44:58 PM Message: Insert into GINC$BookingStatus values('1000486129','User Try to move from Default to Seat layout Page.',1,getdate(),'')
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:44:59 PM Message: Fetch show Details where1000486129Select * from [dbo].[GINC$TransactionCounter] where [Counter] = 1000486129
+----------------------------------------
+ThreadId:5800 Timestamp: 9/8/2014 10:45:29 PM Message: Fetch show Details where1000486129Select * from [dbo].[GINC$TransactionCounter] where [Counter] = 1000486129
+----------------------------------------
+ThreadId:5800 Timestamp: 9/8/2014 10:45:30 PM Message: Insert into GINC$BookingStatus values('1000486129','Seats are available.',5,getdate(),'')
+----------------------------------------
+ThreadId:5800 Timestamp: 9/8/2014 10:45:30 PM Message: Insert MaX Of Booking ID and Its Details
+----------------------------------------
+ThreadId:5800 Timestamp: 9/8/2014 10:45:30 PM Message: Request Contact Details for Transaction... : 1000486129
+----------------------------------------
+ThreadId:5800 Timestamp: 9/8/2014 10:45:30 PM Message: 1000486129
+----------------------------------------
+ThreadId:488 Timestamp: 9/8/2014 10:45:30 PM Message: 1000486129
+----------------------------------------
+ThreadId:488 Timestamp: 9/8/2014 10:45:30 PM Message: 1000486129
+----------------------------------------
+ThreadId:488 Timestamp: 9/8/2014 10:45:30 PM Message: 1000486129
+----------------------------------------
+ThreadId:488 Timestamp: 9/8/2014 10:45:30 PM Message: Fetch show Details where1000486129Select * from [dbo].[GINC$TransactionCounter] where [Counter] = 1000486129
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:45:57 PM Message: 1000486129
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:45:57 PM Message: 1000486129
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:45:57 PM Message: 1000486129
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:45:57 PM Message: Fetch show Details where1000486129Select * from [dbo].[GINC$TransactionCounter] where [Counter] = 1000486129
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:45:57 PM Message: Transaction [1000486129]  
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:45:57 PM Message: Seats  SHOW,WIZWITS,29/09/2014,NM/1011/002891,PRM,1,WIZWITS @ SHOWSHAA,6:00 PM,PREMIUM, Rs. 849,,,1000486129
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:45:57 PM Message: Date : 9/8/2014
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:45:58 PM Message: Insert into GINC$BookingStatus values('1000486129','Starting to write Information to temp Session Table',7,getdate(),'')
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:45:58 PM Message: Insert into GINC$BookingStatus values('1000486129','Category : PREMIUM ,Seat Info : M15, Total Amt : 849.00',8,getdate(),'')
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:45:58 PM Message: Insert into GINC$BookingStatus values('1000486129','Data Successfully Written to Temp Transaction Table',9,getdate(),'1100180003')
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:45:58 PM Message: Insert into GINC$BookingStatus values('1000486129','Sending to HDFC Payment Gateway',12,getdate(),'1100180003')
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:45:58 PM Message: Contact Details Page PG_DB
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:45:58 PM Message: insert error values into PG_DB table
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:45:59 PM Message: Preparing for HDFC Payment...id=90001457&password=password1&action=1&langid=USA&currencycode=356&amt=849.00&responseURL=http%3a%2f%2fmsticket.kingdomofdreams.in%2fPayment%2fHDFC%2fReturnReceipt.aspx&errorURL=http%3a%2f%2fmsticket.kingdomofdreams.in%2fPayment%2fHDFC%2fError.aspx&trackid=1000486129_1100180003-WEB&udf1=TicketBooking&udf2=test@xyz.com&udf3=918888888888&udf4=test&udf5=1000486129
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:45:59 PM Message: Redirecting for HDFC Payment...https://securepgtest.fssnet.co.in/pgway/servlet/PaymentInitHTTPServlet
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:46:02 PM Message: Processing request for HDFC Payment...
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:46:03 PM Message: Review validation response from HDFC Payment Gateway...
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:46:03 PM Message: Response: 8867847462242510:https://securepgtest.fssnet.co.in:443/pgway/gateway/payment/payment.jsp
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:46:03 PM Message: Payment Redirection: https://securepgtest.fssnet.co.in:443/pgway/gateway/payment/payment.jsp?PaymentID=8867847462242510
+----------------------------------------
+ThreadId:6360 Timestamp: 9/8/2014 10:48:34 PM Message: Start Load Play
+----------------------------------------
+ThreadId:6360 Timestamp: 9/8/2014 10:48:34 PM Message: End Load Play
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:48:36 PM Message: Start Load Play
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:48:37 PM Message: End Load Play
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:49:08 PM Message: Render Seat Layout for JA14,JHUMROO,30/09/2014,NM/1011/002888,VLU,1,Jhumroo @ Nautanki Mahal,2:30 PM,VALUE, Rs. 799,,,1000486130
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:49:08 PM Message: Insert MaX Of Booking ID and Its Details
+----------------------------------------
+ThreadId:2036 Timestamp: 9/8/2014 10:49:08 PM Message: Insert into GINC$BookingStatus values('1000486130','User Try to move from Default to Seat layout Page.',1,getdate(),'')
+----------------------------------------
+ThreadId:5800 Timestamp: 9/8/2014 10:49:08 PM Message: Fetch show Details where1000486130Select * from [dbo].[GINC$TransactionCounter] where [Counter] = 1000486130
+----------------------------------------
+ThreadId:6360 Timestamp: 9/8/2014 10:49:13 PM Message: Fetch show Details where1000486130Select * from [dbo].[GINC$TransactionCounter] where [Counter] = 1000486130
+----------------------------------------
+ThreadId:6360 Timestamp: 9/8/2014 10:49:13 PM Message: Insert into GINC$BookingStatus values('1000486130','Seats are available.',5,getdate(),'')
+----------------------------------------
+ThreadId:6360 Timestamp: 9/8/2014 10:49:13 PM Message: Insert MaX Of Booking ID and Its Details
+----------------------------------------
+ThreadId:6360 Timestamp: 9/8/2014 10:49:13 PM Message: Request Contact Details for Transaction... : 1000486130
+----------------------------------------
+ThreadId:6360 Timestamp: 9/8/2014 10:49:13 PM Message: 1000486130
+----------------------------------------
+ThreadId:7784 Timestamp: 9/8/2014 10:49:14 PM Message: 1000486130
+----------------------------------------
+ThreadId:7784 Timestamp: 9/8/2014 10:49:14 PM Message: 1000486130
+----------------------------------------
+ThreadId:7784 Timestamp: 9/8/2014 10:49:14 PM Message: 1000486130
+----------------------------------------
+ThreadId:7784 Timestamp: 9/8/2014 10:49:14 PM Message: Fetch show Details where1000486130Select * from [dbo].[GINC$TransactionCounter] where [Counter] = 1000486130
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:49:35 PM Message: 1000486130
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:49:35 PM Message: 1000486130
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:49:35 PM Message: 1000486130
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:49:35 PM Message: Fetch show Details where1000486130Select * from [dbo].[GINC$TransactionCounter] where [Counter] = 1000486130
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:49:35 PM Message: Transaction [1000486130]  
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:49:35 PM Message: Seats  JA14,JHUMROO,30/09/2014,NM/1011/002888,VLU,1,Jhumroo @ Nautanki Mahal,2:30 PM,VALUE, Rs. 799,,,1000486130
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:49:36 PM Message: Date : 9/8/2014
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:49:36 PM Message: Insert into GINC$BookingStatus values('1000486130','Starting to write Information to temp Session Table',7,getdate(),'')
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:49:36 PM Message: Insert into GINC$BookingStatus values('1000486130','Category : VALUE ,Seat Info : U14, Total Amt : 799.00',8,getdate(),'')
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:49:36 PM Message: Insert into GINC$BookingStatus values('1000486130','Data Successfully Written to Temp Transaction Table',9,getdate(),'1100180004')
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:49:36 PM Message: Insert into GINC$BookingStatus values('1000486130','Sending to HDFC Payment Gateway',12,getdate(),'1100180004')
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:49:36 PM Message: Contact Details Page PG_DB
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:49:36 PM Message: insert error values into PG_DB table
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:49:37 PM Message: Preparing for HDFC Payment...id=90001457&password=password1&action=1&langid=USA&currencycode=356&amt=799.00&responseURL=http%3a%2f%2f122.177.39.170%2fKOD.WEB_1%2fPayment%2fHDFC%2fReturnReceipt.aspx&errorURL=http%3a%2f%2f122.177.39.170%2fKOD.WEB_1%2fPayment%2fHDFC%2fError.aspx&trackid=1000486130_1100180004-WEB&udf1=TicketBooking&udf2=tt@xy.com&udf3=918888888888&udf4=ttt&udf5=1000486130
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:49:37 PM Message: Redirecting for HDFC Payment...https://securepgtest.fssnet.co.in/pgway/servlet/PaymentInitHTTPServlet
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:49:40 PM Message: Processing request for HDFC Payment...
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:49:40 PM Message: Review validation response from HDFC Payment Gateway...
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:49:40 PM Message: Response: 3939495492242510:https://securepgtest.fssnet.co.in:443/pgway/gateway/payment/payment.jsp
+----------------------------------------
+ThreadId:4528 Timestamp: 9/8/2014 10:49:40 PM Message: Payment Redirection: https://securepgtest.fssnet.co.in:443/pgway/gateway/payment/payment.jsp?PaymentID=3939495492242510
+----------------------------------------
+ThreadId:7500 Timestamp: 9/9/2014 10:53:06 AM Message: Start Load Play
+----------------------------------------
+ThreadId:7500 Timestamp: 9/9/2014 10:53:08 AM Message: End Load Play
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 10:54:38 AM Message: Start Load Play
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 10:54:39 AM Message: End Load Play
+----------------------------------------
+ThreadId:2572 Timestamp: 9/9/2014 10:55:10 AM Message: Render Seat Layout for JA14,JHUMROO,30/09/2014,NM/1011/002888,ECO,1,Jhumroo @ Nautanki Mahal,2:30 PM,ECONOMY, Rs. 999,,,1000486131
+----------------------------------------
+ThreadId:2572 Timestamp: 9/9/2014 10:55:10 AM Message: Insert MaX Of Booking ID and Its Details
+----------------------------------------
+ThreadId:2572 Timestamp: 9/9/2014 10:55:10 AM Message: Insert into GINC$BookingStatus values('1000486131','User Try to move from Default to Seat layout Page.',1,getdate(),'')
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 10:55:11 AM Message: Fetch show Details where1000486131Select * from [dbo].[GINC$TransactionCounter] where [Counter] = 1000486131
+----------------------------------------
+ThreadId:8156 Timestamp: 9/9/2014 10:55:22 AM Message: Fetch show Details where1000486131Select * from [dbo].[GINC$TransactionCounter] where [Counter] = 1000486131
+----------------------------------------
+ThreadId:8156 Timestamp: 9/9/2014 10:55:22 AM Message: Insert into GINC$BookingStatus values('1000486131','Seats are available.',5,getdate(),'')
+----------------------------------------
+ThreadId:8156 Timestamp: 9/9/2014 10:55:23 AM Message: Insert MaX Of Booking ID and Its Details
+----------------------------------------
+ThreadId:8156 Timestamp: 9/9/2014 10:55:23 AM Message: Request Contact Details for Transaction... : 1000486131
+----------------------------------------
+ThreadId:8156 Timestamp: 9/9/2014 10:55:23 AM Message: 1000486131
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 10:55:23 AM Message: 1000486131
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 10:55:23 AM Message: 1000486131
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 10:55:23 AM Message: 1000486131
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 10:55:23 AM Message: Fetch show Details where1000486131Select * from [dbo].[GINC$TransactionCounter] where [Counter] = 1000486131
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 11:00:02 AM Message: 1000486131
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 11:00:02 AM Message: 1000486131
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 11:00:02 AM Message: 1000486131
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 11:00:02 AM Message: Fetch show Details where1000486131Select * from [dbo].[GINC$TransactionCounter] where [Counter] = 1000486131
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 11:00:03 AM Message: Transaction [1000486131]  
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 11:00:03 AM Message: Seats  JA14,JHUMROO,30/09/2014,NM/1011/002888,ECO,1,Jhumroo @ Nautanki Mahal,2:30 PM,ECONOMY, Rs. 999,,,1000486131
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 11:00:04 AM Message: Date : 9/9/2014
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 11:00:05 AM Message: Insert into GINC$BookingStatus values('1000486131','Starting to write Information to temp Session Table',7,getdate(),'')
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 11:00:05 AM Message: Insert into GINC$BookingStatus values('1000486131','Category : ECONOMY ,Seat Info : X1, Total Amt : 999.00',8,getdate(),'')
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 11:00:05 AM Message: Insert into GINC$BookingStatus values('1000486131','Data Successfully Written to Temp Transaction Table',9,getdate(),'1100180005')
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 11:00:05 AM Message: Insert into GINC$BookingStatus values('1000486131','Sending to HDFC Payment Gateway',12,getdate(),'1100180005')
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 11:00:06 AM Message: Contact Details Page PG_DB
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 11:00:06 AM Message: insert error values into PG_DB table
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 11:00:06 AM Message: Preparing for HDFC Payment...id=90001457&password=password1&action=1&langid=USA&currencycode=356&amt=999.00&responseURL=http%3a%2f%2f122.177.86.112%2fKOD.WEB_1%2fPayment%2fHDFC%2fReturnReceipt.aspx&errorURL=http%3a%2f%2f122.177.86.112%2fKOD.WEB_1%2fPayment%2fHDFC%2fError.aspx&trackid=1000486131_1100180005-WEB&udf1=TicketBooking&udf2=test@xt.com&udf3=918888888888&udf4=gurgaon&udf5=1000486131
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 11:00:06 AM Message: Redirecting for HDFC Payment...https://securepgtest.fssnet.co.in/pgway/servlet/PaymentInitHTTPServlet
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 11:00:09 AM Message: Processing request for HDFC Payment...
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 11:00:14 AM Message: Review validation response from HDFC Payment Gateway...
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 11:00:14 AM Message: Response: 6310978001142520:https://securepgtest.fssnet.co.in:443/pgway/gateway/payment/payment.jsp
+----------------------------------------
+ThreadId:7116 Timestamp: 9/9/2014 11:00:15 AM Message: Payment Redirection: https://securepgtest.fssnet.co.in:443/pgway/gateway/payment/payment.jsp?PaymentID=6310978001142520
+----------------------------------------
+ThreadId:7268 Timestamp: 9/9/2014 11:01:57 AM Message: Start Load Play
+----------------------------------------
+ThreadId:7268 Timestamp: 9/9/2014 11:01:58 AM Message: End Load Play
+----------------------------------------
+ThreadId:1156 Timestamp: 9/9/2014 11:02:12 AM Message: Start Load Play
+----------------------------------------
+ThreadId:1156 Timestamp: 9/9/2014 11:02:13 AM Message: End Load Play
+----------------------------------------

@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AuditReport.master.cs" Inherits="Audit_AuditReport1" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+    <script language="javascript" type="text/javascript">
+
+        function printPreviewDiv(strid) {
+            var prtContent = document.getElementById(strid);
+            var WinPrint = window.open('', '', 'left=2,top=5,width=800,height=600,toolbar=0,scrollbars=0,status=0,fullscreen=1');
+            WinPrint.document.body.innerHTML = prtContent.innerHTML;
+            WinPrint.document.close();
+            WinPrint.focus();
+            WinPrint.print();
+            window.close();
+        }
+    </script>
+
+</head>
+<body style="color: Black;">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" AsyncPostBackTimeout="6000">
+    </asp:ScriptManager>
+    <center>
+        <div style="font-size: large; font-weight: bolder;">
+            Kingdom Of Dreams : Audit Report
+        </div>
+    </center>
+    <div style="float: left">
+        <div style="width: 120px; display: inline; float: left; font-size: small">
+            <b>Transactions :-</b></div>
+        <div style="width: 300px; display: inline; float: left">
+        <asp:Menu ID="maenu" runat="server" Orientation="Horizontal" Font-Size="Small" Font-Bold="true"
+                Font-Underline="true" StaticMenuItemStyle-HorizontalPadding="10px" ForeColor="Blue">
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/Audit/AuditReport.aspx" Text="Audit Report" />
+                    <asp:MenuItem NavigateUrl="~/Audit/AdditionalReport1.aspx" Text="Audit No1" />
+                    <asp:MenuItem NavigateUrl="~/Audit/AdditionalReport2.aspx" Text="Audit No2" />
+                </Items>
+            </asp:Menu>
+        </div>
+        <asp:LinkButton Style="padding-left: 10px" ID="btn_Logout" Font-Size="Small" Font-Bold="true"
+            Font-Underline="true" ForeColor="Blue" runat="server" Text="Logout" OnClick="btn_Logout_Click"></asp:LinkButton>
+    </div>
+    <br />
+    <br />
+    <div style="width: 100%; float: left;">
+        <asp:ContentPlaceHolder ID="mainContent" runat="server" />
+        <asp:UpdateProgress ID="upd12" runat="server">
+            <ProgressTemplate>
+                <cc1:AlwaysVisibleControlExtender ID="as12" HorizontalSide="Center" TargetControlID="DivAlways"
+                    VerticalSide="Top" runat="server" />
+                <div id="DivAlways" runat="server">
+                    <span style="background-color: Yellow; font-size: 14px; font-weight: bolder; font-family: Verdana;
+                        text-align: center; padding: 5px 10px 5px 10px">Please Wait...</span>
+                </div>
+            </ProgressTemplate>
+        </asp:UpdateProgress>
+    </div>
+    </form>
+</body>
+</html>
+

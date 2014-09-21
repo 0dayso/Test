@@ -1,0 +1,110 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Print.master.cs" Inherits="Royal_Card_Skins_Master_Print" %>
+
+<%@ Register Src="~/RoyalCard/Skins/UC/PrintTopMenu.ascx" TagName="TopMenu" TagPrefix="uc2" %>
+<%@ Register Src="~/RoyalCard/Skins/UC/PrintBottomMenu.ascx" TagName="BottomMenu" TagPrefix="uc1" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Kingdom of Dreams :: Royalty Card</title>
+    <meta name="Description" content="" />
+    <meta name="Keywords" content="" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../images/favicon.ico" />
+    <link href="../../../css/navigation.css" rel="stylesheet" type="text/css" />
+    <link href="../../../css/pngfix.css" rel="stylesheet" type="text/css" />
+    <link href="../../../css/royaltyCard.css" rel="stylesheet" type="text/css" />
+    <link href="../../../css/scrollBar.css" rel="stylesheet" type="text/css" />
+    <link href="../../../css/navigation.css" rel="stylesheet" type="text/css" />
+    <script src="../../../js/dropDown.js" type="text/javascript"></script>
+    <script src="../../../js/jquery-1.3.2.min.js" type="text/javascript"></script>
+    <!--[if lt IE 7]>
+      <link href="~/Skins/css/pngfix.css" media="screen" rel="stylesheet" type="text/css" />    
+    <![endif]-->
+    <script src="../../../js/scrolling.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            // $('#section').jScrollPane();
+        });
+    </script>
+</head>
+<body class="home-page-bg">
+    <center>
+        <form id="form1" runat="server" method="post">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
+        </asp:ScriptManager>
+        <div class="wrapper">
+            <div class="logo-row">
+                <div class="logo" style="width: 250px; float: left;">
+                    <a href="http://kingdomofdreams.in/index.html">
+                        <img src="../../../images/logo.jpg" border="0" /></a>
+                </div>
+                <div class="sociallink">
+                    <a href="http://www.facebook.com/kingdomofdreams?ref=ts" target="_blank">
+                        <img src="../../../images/facebook-icon.jpg" width="22" height="23" /></a>&nbsp;<a
+                            href="http://www.linkedin.com/company/kingdom-of-dreams?trk=fc_badge" target="_blank"><img
+                                src="../../../images/in-icon.jpg" width="24" height="23" /></a>
+                    <a href="http://twitter.com/KingdomOfDreams" target="_blank">
+                        <img src="../../../images/twitter-icn.jpg" width="25" height="23" /></a>&nbsp;</div>
+            </div>
+            <!-- logo-row ends here -->
+            <div class="royaltyCardProgram">
+                <div class="royaltyCardInner">
+                    <div class="mainImg">
+                        <span class="divtext"><b>
+                            <asp:Label ID="LblUserName" runat="server"></asp:Label></b> </span>
+                        <div class="navigationBand">
+                            <!--PV Top Menu UC -->
+                            <uc2:TopMenu ID="TopMenu1" runat="server" />
+                            <!--End Top Menu UC -->
+                        </div>
+                      <%--  <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+                            <ContentTemplate>--%>
+                                <div class="contentDiv">
+                                    <!-- site navigation -->
+                                    <%--<div class="tabNav" style="text-align: left">
+                                        <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                                        </asp:SiteMapPath>
+                                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                                    </div>--%>
+                                    <br />
+                                    <!--end site navigation -->
+                                    <div class="home-content-left" style="text-align: left">
+                                        <h3>
+                                            <asp:ContentPlaceHolder ID="CPHPageHeading" runat="server" />
+                                        </h3>
+                                    </div>
+                                    <br />
+                                    <div style="width: 720px; float:left;" >
+                                        <asp:ContentPlaceHolder ID="CPHPageData" runat="server" />
+                                    </div>
+                                </div>
+
+                              <%--  </ContentTemplate> </asp:UpdatePanel>--%>
+                                <div style="vertical-align: top;">
+                                    <div style="float: left; margin-left: 50px; *margin-left: 50px;">
+                                        <img src="../../../images/royalcardlogo.png" width="199" height="86" /></div>
+                                    <div style="float: right; margin: 25px 50px 0px 0px; *margin: 25px 50px 0px 0px;">
+                                        <img src="../../../images/kodlogo.png" width="86" height="54" /></div>
+                                </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer navigation start here -->
+            <div style="margin-top: 300px; *margin-top: 50px">
+                <div class="new-navigation">
+                    <div class="new-navigation">
+                        <!-- footer navigation starts here -->
+                        <uc1:BottomMenu ID="BottomMenu1" runat="server" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </form>
+    </center>
+    <script type="text/javascript">
+        cssdropdown.startchrome("chromemenu")
+    </script>
+</body>
+</html>
